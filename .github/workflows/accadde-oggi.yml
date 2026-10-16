@@ -15,7 +15,8 @@ on:
         required: false
 
 permissions:
-  contents: write
+  contents: write    
+  models: read
 
 concurrency:
   group: accadde-oggi
@@ -50,7 +51,9 @@ jobs:
           PRIVACY: ${{ vars.PRIVACY || 'public' }}
           PROVA: ${{ inputs.prova && '1' || '0' }}
           DATA: ${{ inputs.data }}
+          GITHUB_TOKEN: ${{ github.token }}
         run: python -m accadde_oggi
+       
 
       - name: Salva il video come allegato del giro
         if: always()
