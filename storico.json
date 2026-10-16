@@ -1,3 +1,17 @@
 {
-  "video": []
+  "video": [
+    {
+      "data": "2026-10-16",
+      "data_uscita": "1961-10-16",
+      "titolo": "Parata con razzi e soldati a Formosa",
+      "testo": "Il filmato mostra una parata \"Chiang Kai shek\" con razzi e soldati. Le truppe formano il segno del doppio 10. Cinegiornale parziale.",
+      "fonte": "Internet Archive",
+      "id_filmato": "1961-10-16_Formosa",
+      "pagina_filmato": "https://archive.org/details/1961-10-16_Formosa",
+      "verifica": "verificato sulla scheda (dopo una correzione)",
+      "inizio": 0.0,
+      "durata": 54.696,
+      "youtube_id": "zapier:short-2026-10-16"
+    }
+  ]
 }
