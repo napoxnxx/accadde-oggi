@@ -4,10 +4,11 @@ on:
   # Orologio principale: cron-job.org chiama GitHub ogni giorno all'ora scelta
   repository_dispatch:
     types: [giro-giornaliero]
-  # Orologi di riserva di GitHub (orari UTC). Il programma non pubblica mai due volte nello stesso giorno.
+  # Orologi di riserva di GitHub (orari UTC, cioè 12:17 e 17:17 in Italia con l'ora solare).
+  # Il programma non pubblica mai due volte nello stesso giorno.
   schedule:
-    - cron: "47 8 * * *"
-    - cron: "17 15 * * *"
+    - cron: "17 11 * * *"
+    - cron: "17 16 * * *"
   workflow_dispatch:
     inputs:
       prova:
@@ -32,6 +33,8 @@ jobs:
     timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # sempre l'ultima versione, con lo storico aggiornato dai giri precedenti
 
       - uses: actions/setup-python@v5
         with:
@@ -81,7 +84,11 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           TAG=$(cat output/release_tag.txt)
-          gh release create "$TAG" output/accadde-oggi-*.mp4 --title "$TAG" --notes-file output/ultimo-video.txt
+          if gh release view "$TAG" > /dev/null 2>&1; then
+            gh release upload "$TAG" output/accadde-oggi-*.mp4 --clobber
+          else
+            gh release create "$TAG" output/accadde-oggi-*.mp4 --title "$TAG" --notes-file output/ultimo-video.txt
+          fi
 
       - name: Aggiorna lo storico
         if: success()
@@ -90,4 +97,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add storico.json
           if [ -f feed.xml ]; then git add feed.xml; fi
-          git diff --cached --quiet || (git commit -m "Storico: $(date -u +%F)" && git push)
+          if ! git diff --cached --quiet; then
+            git commit -m "Storico: $(date -u +%F)"
+            for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && break; sleep 5; done
+          fi
