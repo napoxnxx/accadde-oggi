@@ -15,7 +15,7 @@ on:
         required: false
 
 permissions:
-  contents: write    
+  contents: write
   models: read
 
 concurrency:
@@ -40,6 +40,9 @@ jobs:
       - name: Installa dipendenze
         run: pip install -r requirements.txt
 
+      - name: Installa Claude Code (redattore)
+        run: npm install -g @anthropic-ai/claude-code
+
       - name: Crea e pubblica lo Short
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
@@ -52,8 +55,10 @@ jobs:
           PROVA: ${{ inputs.prova && '1' || '0' }}
           DATA: ${{ inputs.data }}
           GITHUB_TOKEN: ${{ github.token }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: python -m accadde_oggi
-       
 
       - name: Salva il video come allegato del giro
         if: always()
