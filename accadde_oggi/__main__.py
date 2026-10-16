@@ -23,11 +23,14 @@ from zoneinfo import ZoneInfo
 from . import montaggio
 from .eventi import MESI, eventi_del_giorno, titolo_pagina
 from .fonti import e_spaziale, licenza_ok, scarica, trova_filmato
+from .verifica import IANonDisponibile, Redattore
 
 RADICE = Path(__file__).resolve().parent.parent
 STORICO = RADICE / "storico.json"
 USCITA = RADICE / "output"
-MAX_EVENTI = 25
+MAX_EVENTI = 10
+# prima oggi, poi i giorni vicini (sempre con la data vera scritta nel video)
+SCOSTAMENTI = [0, -1, 1, -2, 2, -3, 3]
 
 
 def oggi():
@@ -76,10 +79,10 @@ def nome_licenza(candidato):
     return "CC BY"
 
 
-def titolo_youtube(evento):
+def titolo_youtube(evento, data):
     testo = evento["testo"]
-    breve = testo if len(testo) <= 78 else testo[:78].rsplit(" ", 1)[0].rstrip(",;:") + "…"
-    return f"{evento['anno']}: {breve}"[:100]
+    breve = testo if len(testo) <= 70 else testo[:70].rsplit(" ", 1)[0].rstrip(",;:") + "…"
+    return f"{data.day} {MESI[data.month - 1]} {evento['anno']}: {breve}"[:100]
 
 
 def descrizione_youtube(evento, data, anni_fa, filmato):
@@ -117,74 +120,94 @@ def giro_completo():
         print(f"Si pubblica un giorno ogni {ogni}: oggi riposo.")
         return 0
     gia_usati = {v["id_filmato"] for v in storico["video"]}
+    redattore = Redattore()
 
-    print(f"Eventi del {titolo_pagina(data)}…")
-    eventi = eventi_del_giorno(data)
-    in_ordine = sorted(((priorita(e, data), e) for e in eventi if priorita(e, data) is not None),
-                       key=lambda x: x[0], reverse=True)
-    print(f"  {len(eventi)} eventi, {len(in_ordine)} adatti")
-
-    for _, evento in in_ordine[:MAX_EVENTI]:
-        print(f"→ {evento['anno']}: {evento['testo'][:90]}")
-        filmato = trova_filmato(evento, gia_usati)
-        if not filmato:
-            continue
-        if filmato["fonte"] != "NASA" and not licenza_ok(filmato.get("licenza_url")):
-            continue
-        print(f"  Filmato: {filmato['titolo']} ({filmato['fonte']})")
-        with tempfile.TemporaryDirectory() as lavoro:
-            sorgente = scarica(filmato["url_video"], Path(lavoro) / "sorgente.mp4")
-            anni_fa = data.year - evento["anno"]
-            crediti = [f"Filmato: {filmato['fonte']} · {nome_licenza(filmato)}",
-                       "Testo: Wikipedia · CC BY-SA 4.0"]
-            USCITA.mkdir(exist_ok=True)
-            file_short = USCITA / f"accadde-oggi-{data.isoformat()}.mp4"
-            try:
-                segmento = montaggio.monta(sorgente, evento, data, anni_fa, crediti,
-                                           file_short, lavoro)
-            except (ValueError, subprocess.CalledProcessError, StopIteration) as errore:
-                print("  Montaggio non riuscito, provo il prossimo evento:", errore)
+    try:
+        for scostamento in SCOSTAMENTI:
+            data_ev = data + dt.timedelta(days=scostamento)
+            print(f"=== Eventi del {titolo_pagina(data_ev)} ===")
+            eventi = eventi_del_giorno(data_ev)
+            in_ordine = sorted(((priorita(e, data), e) for e in eventi
+                                if priorita(e, data) is not None),
+                               key=lambda x: x[0], reverse=True)
+            for _, evento in in_ordine[:MAX_EVENTI]:
+                if not redattore.disponibile():
+                    print("Limite di controlli raggiunto per oggi.")
+                    break
+                print(f"→ {evento['anno']}: {evento['testo'][:90]}")
+                filmato = trova_filmato(evento, gia_usati, data_ev, redattore)
+                if not filmato:
+                    continue
+                if filmato["fonte"] != "NASA" and not licenza_ok(filmato.get("licenza_url")):
+                    continue
                 gia_usati.add(filmato["id"])
-                continue
+                esito = produci(evento, filmato, data, data_ev, scostamento, storico)
+                if esito is not None:
+                    return esito
+    except IANonDisponibile as errore:
+        print(f"STOP: il controllo di precisione non è disponibile ({errore}). "
+              "Per sicurezza oggi non pubblico nulla.")
+        return 1
 
-        voce = {"data": data.isoformat(), "anno": evento["anno"], "evento": evento["testo"],
-                "fonte": filmato["fonte"], "id_filmato": filmato["id"],
-                "pagina_filmato": filmato["pagina"], **segmento}
-        titolo = titolo_youtube(evento)
-        descrizione = descrizione_youtube(evento, data, anni_fa, filmato)
-        (USCITA / "ultimo-video.txt").write_text(titolo + "\n\n" + descrizione, encoding="utf-8")
+    print("Nessun filmato verificato con certezza questa settimana. Oggi non pubblico nulla.")
+    return 0
 
-        from . import youtube
-        if os.environ.get("PROVA") == "1":
-            print("Modalità prova: video creato ma non pubblicato.")
-            return 0
-        if not youtube.credenziali_presenti():
-            # Strada gratuita: il video va in una Release di GitHub e nel feed RSS,
-            # Zapier lo vede e lo carica su YouTube.
-            from . import feed
-            tag_release = f"short-{data.isoformat()}"
-            url = feed.url_release(tag_release, file_short.name)
-            feed.aggiungi(RADICE / "feed.xml", titolo, descrizione, url, tag_release,
-                          file_short.stat().st_size)
-            (USCITA / "release_tag.txt").write_text(tag_release, encoding="utf-8")
-            voce["youtube_id"] = "zapier:" + tag_release
-            storico["video"].append(voce)
-            salva_storico(storico)
-            print(f"Video pronto per Zapier: {url}")
-            return 0
-        tag = ["accadde oggi", "storia", "storia d'Italia", "filmati d'epoca", str(evento["anno"])]
-        privacy = os.environ.get("PRIVACY") or "public"
-        voce["youtube_id"] = youtube.carica(file_short, titolo, descrizione, tag, privacy)
-        voce["privacy"] = privacy
+
+def produci(evento, filmato, data, data_ev, scostamento, storico):
+    print(f"  Filmato verificato: {filmato['titolo']} ({filmato['fonte']})")
+    etichetta = "ACCADDE OGGI" if scostamento == 0 else "ACCADDE QUESTA SETTIMANA"
+    anni_fa = data.year - evento["anno"]
+    with tempfile.TemporaryDirectory() as lavoro:
+        sorgente = scarica(filmato["url_video"], Path(lavoro) / "sorgente.mp4")
+        crediti = [f"Filmato: {filmato['fonte']} · {nome_licenza(filmato)}",
+                   "Testo: Wikipedia · CC BY-SA 4.0"]
+        USCITA.mkdir(exist_ok=True)
+        file_short = USCITA / f"accadde-oggi-{data.isoformat()}.mp4"
+        try:
+            segmento = montaggio.monta(sorgente, evento, data_ev, anni_fa, crediti,
+                                       file_short, lavoro, etichetta)
+        except (ValueError, subprocess.CalledProcessError, StopIteration) as errore:
+            print("  Montaggio non riuscito, provo il prossimo:", errore)
+            return None
+
+    voce = {"data": data.isoformat(), "data_evento": f"{evento['anno']}-{data_ev:%m-%d}",
+            "anno": evento["anno"], "evento": evento["testo"], "fonte": filmato["fonte"],
+            "id_filmato": filmato["id"], "pagina_filmato": filmato["pagina"],
+            "verifica": filmato.get("verifica", ""), **segmento}
+    titolo = titolo_youtube(evento, data_ev)
+    descrizione = descrizione_youtube(evento, data_ev, anni_fa, filmato)
+    (USCITA / "ultimo-video.txt").write_text(
+        titolo + "\n\n" + descrizione + "\n\n[Controllo redattore IA: "
+        + filmato.get("verifica", "") + "]", encoding="utf-8")
+
+    from . import youtube
+    if os.environ.get("PROVA") == "1":
+        print("Modalità prova: video creato ma non pubblicato.")
+        return 0
+    if not youtube.credenziali_presenti():
+        # Strada gratuita: il video va in una Release di GitHub e nel feed RSS,
+        # Zapier lo vede e lo carica su YouTube.
+        from . import feed
+        tag_release = f"short-{data.isoformat()}"
+        url = feed.url_release(tag_release, file_short.name)
+        feed.aggiungi(RADICE / "feed.xml", titolo, descrizione, url, tag_release,
+                      file_short.stat().st_size)
+        (USCITA / "release_tag.txt").write_text(tag_release, encoding="utf-8")
+        voce["youtube_id"] = "zapier:" + tag_release
         storico["video"].append(voce)
         salva_storico(storico)
-        if youtube.usa_uploadpost():
-            print(f"Inviato a Upload-Post (richiesta {voce['youtube_id']}).")
-        else:
-            print(f"Pubblicato: https://youtube.com/shorts/{voce['youtube_id']}")
+        print(f"Video pronto per Zapier: {url}")
         return 0
-
-    print("Nessun filmato libero trovato per gli eventi di oggi. Riprovo domani.")
+    tag = ["accadde oggi", "storia", "filmati d'epoca", str(evento["anno"])]
+    privacy = os.environ.get("PRIVACY") or "public"
+    voce["youtube_id"] = youtube.carica(file_short, titolo, descrizione, tag, privacy)
+    voce["privacy"] = privacy
+    storico["video"].append(voce)
+    salva_storico(storico)
+    if youtube.usa_uploadpost():
+        print(f"Inviato a Upload-Post (richiesta {voce['youtube_id']}).")
+    else:
+        print(f"Pubblicato: https://youtube.com/shorts/{voce['youtube_id']}")
     return 0
 
 

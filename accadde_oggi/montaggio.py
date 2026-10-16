@@ -84,7 +84,8 @@ def _testo_a_capo(draw, testo, f, larghezza, max_righe):
     return righe
 
 
-def disegna_grafica(evento, data, anni_fa, crediti, rapporto, destinazione):
+def disegna_grafica(evento, data, anni_fa, crediti, rapporto, destinazione,
+                    etichetta="ACCADDE OGGI"):
     """Sfondo con buchi trasparenti dove passano il video e la barra di avanzamento."""
     altezza_video = int(min(680, max(500, LARGH_VIDEO / rapporto)))
     x_video, y_video = (W - LARGH_VIDEO) // 2, 600
@@ -102,7 +103,6 @@ def disegna_grafica(evento, data, anni_fa, crediti, rapporto, destinazione):
 
     # intestazione
     f_etichetta = font("Bold", 38)
-    etichetta = "ACCADDE OGGI"
     larg = _larghezza_spaziata(d, etichetta, f_etichetta, 9)
     x0 = (W - larg) / 2
     d.line((x0 - 90, 145, x0 - 25, 145), fill=AMBRA, width=3)
@@ -148,13 +148,15 @@ def disegna_grafica(evento, data, anni_fa, crediti, rapporto, destinazione):
     return x_video, y_video, altezza_video, y_barra
 
 
-def monta(video, evento, data, anni_fa, crediti, uscita, cartella_lavoro):
+def monta(video, evento, data, anni_fa, crediti, uscita, cartella_lavoro,
+          etichetta="ACCADDE OGGI"):
     durata, rapporto, ha_audio = analizza(video)
     if durata < 8:
         raise ValueError(f"Filmato troppo corto ({durata:.1f}s)")
     inizio, clip = scegli_segmento(durata)
     grafica = Path(cartella_lavoro) / "grafica.png"
-    xv, yv, hv, yb = disegna_grafica(evento, data, anni_fa, crediti, rapporto, grafica)
+    xv, yv, hv, yb = disegna_grafica(evento, data, anni_fa, crediti, rapporto, grafica,
+                                     etichetta)
     lb = W - 2 * MARGINE
 
     comandi = ["ffmpeg", "-y", "-loglevel", "error",

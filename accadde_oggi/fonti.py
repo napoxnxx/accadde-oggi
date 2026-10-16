@@ -27,6 +27,13 @@ def licenza_ok(url):
     return any(x in u for x in ("publicdomain", "/licenses/by/", "/licenses/by-sa/"))
 
 
+def testo_pulito(testo, massimo=1500):
+    if isinstance(testo, list):
+        testo = " ".join(str(t) for t in testo)
+    testo = re.sub(r"<[^>]+>", " ", str(testo or ""))
+    return re.sub(r"\s+", " ", testo).strip()[:massimo]
+
+
 def _parole(testo):
     return {p for p in re.findall(r"[a-z0-9]{4,}", testo.lower())}
 
@@ -37,7 +44,18 @@ def pertinente(titolo_filmato, parola_chiave):
     if not chiave:
         return False
     comuni = chiave & _parole(titolo_filmato)
-    return len(comuni) >= min(2, len(chiave))
+    serve = len(chiave) if len(chiave) <= 3 else -(-3 * len(chiave) // 4)
+    return len(comuni) >= serve
+
+
+def anno_compatibile(candidato, titolo, anno_evento):
+    """Il filmato deve essere dell'anno dell'evento (±1), anche secondo il titolo."""
+    if not candidato or abs(candidato - anno_evento) > 1:
+        return False
+    for a in re.findall(r"\b(1[89]\d\d|20\d\d)\b", titolo):
+        if abs(int(a) - anno_evento) > 1:
+            return False
+    return True
 
 
 def parole_chiave(evento):
@@ -68,6 +86,7 @@ def cerca_nasa(parola, anno):
             "fonte": "NASA", "id": d["nasa_id"], "titolo": d.get("title", ""),
             "anno": int(str(d.get("date_created", "0000"))[:4] or 0),
             "pagina": f"https://images.nasa.gov/details/{d['nasa_id']}",
+            "descrizione": testo_pulito(d.get("description", "")),
             "licenza": "Pubblico dominio (NASA)",
         })
     return trovati
@@ -88,9 +107,7 @@ def url_video_nasa(nasa_id):
 # ---------------------------------------------------------- Internet Archive
 
 def cerca_archive(parola, anno):
-    filtro_anno = f" AND year:[{anno} TO {anno + 1}]"
-    if len(parola.split()) >= 3:  # molto specifico: va bene anche senza anno
-        filtro_anno = ""
+    filtro_anno = f" AND year:[{anno - 1} TO {anno + 1}]"
     base = f'title:("{parola}") AND mediatype:(movies){filtro_anno}'
     con_licenza = base + (' AND (licenseurl:*publicdomain* OR licenseurl:*licenses/by/*'
                           ' OR licenseurl:*licenses/by-sa/*)')
@@ -100,7 +117,7 @@ def cerca_archive(parola, anno):
             r = requests.get("https://archive.org/advancedsearch.php", headers=UA, timeout=30,
                              params={"q": q, "rows": 50, "output": "json",
                                      "fl[]": ["identifier", "title", "licenseurl", "year",
-                                              "collection"]})
+                                              "collection", "description"]})
             r.raise_for_status()
             docs = r.json().get("response", {}).get("docs", [])
         except (requests.RequestException, ValueError):
@@ -118,6 +135,7 @@ def cerca_archive(parola, anno):
             "fonte": "Internet Archive", "id": d["identifier"], "titolo": d.get("title", ""),
             "anno": int(str(d.get("year", "0"))[:4] or 0) if str(d.get("year", "")).isdigit() else 0,
             "pagina": f"https://archive.org/details/{d['identifier']}",
+            "descrizione": testo_pulito(d.get("description", "")),
             "licenza_url": d["licenseurl"], "collezioni": collezioni,
         })
     return trovati
@@ -157,8 +175,9 @@ def punteggio(candidato, evento):
     return p
 
 
-def trova_filmato(evento, gia_usati):
-    candidati = []
+def trova_filmato(evento, gia_usati, data_evento, redattore):
+    """Restituisce il primo filmato che supera tutti i controlli, redattore IA compreso."""
+    candidati, visti = [], set()
     for parola in parole_chiave(evento):
         ricerche = [cerca_archive]
         if e_spaziale(evento):
@@ -166,19 +185,30 @@ def trova_filmato(evento, gia_usati):
         for cerca in ricerche:
             try:
                 for c in cerca(parola, evento["anno"]):
-                    if c["id"] not in gia_usati:
-                        c["parola_chiave"] = parola
-                        candidati.append(c)
+                    if c["id"] in visti or c["id"] in gia_usati:
+                        continue
+                    if not anno_compatibile(c["anno"], c["titolo"], evento["anno"]):
+                        continue
+                    visti.add(c["id"])
+                    c["parola_chiave"] = parola
+                    candidati.append(c)
             except requests.RequestException as errore:
                 print(f"  Ricerca {cerca.__name__} '{parola}' non riuscita: {errore}")
     candidati.sort(key=lambda c: punteggio(c, evento), reverse=True)
-    for c in candidati[:6]:
+    for c in candidati[:4]:
         try:
             url = url_video_nasa(c["id"]) if c["fonte"] == "NASA" else url_video_archive(c["id"])
         except requests.RequestException:
             url = None
-        if url:
+        if not url:
+            continue
+        if not redattore.disponibile():
+            return None
+        ok, motivo = redattore.giudica(evento, data_evento, c)
+        print(f"  Redattore su \"{c['titolo'][:70]}\": {'OK' if ok else 'SCARTATO'} ({motivo})")
+        if ok:
             c["url_video"] = url
+            c["verifica"] = motivo
             return c
     return None
 
