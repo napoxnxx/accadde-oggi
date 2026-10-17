@@ -12,6 +12,23 @@
       "inizio": 0.0,
       "durata": 54.696,
       "youtube_id": "zapier:short-2026-10-16"
+    },
+    {
+      "data": "2026-10-17",
+      "data_uscita": "1961-10-16",
+      "titolo": "Aeroporti chiusi per 12 ore in una prova",
+      "testo": "Una prova della Difesa civile ha tenuto chiusi gli aeroporti per 12 ore, nell'ambito dell'Operazione Sky Shield.",
+      "fonte": "Internet Archive",
+      "id_filmato": "1961-10-16_Civil_Planes_Grounded",
+      "pagina_filmato": "https://archive.org/details/1961-10-16_Civil_Planes_Grounded",
+      "verifica": "verificato sulla scheda (dopo una correzione)",
+      "inizio": 0.0,
+      "durata": 56.616,
+      "youtube_id": "zapier:short-2026-10-17"
     }
-  ]
+  ],
+  "scartati": {
+    "1946-10-17_Byrnes_Wants_All_To_Share_Peacemaking": "troppo lungo (96s): non si potrebbe mostrare intero",
+    "1934-10-17_King_Alexander_Assassination": "troppo lungo (189s): non si potrebbe mostrare intero"
+  }
 }
