@@ -25,10 +25,59 @@
       "inizio": 0.0,
       "durata": 56.616,
       "youtube_id": "zapier:short-2026-10-17"
+    },
+    {
+      "data": "2026-10-18",
+      "data_uscita": "1961-10-16",
+      "titolo": "Lo scià dell'Iran in visita da De Gaulle",
+      "testo": "Lo scià dell'Iran fa visita a De Gaulle in Francia insieme alla moglie. Nel filmato c'è anche una cena formale.",
+      "fonte": "Internet Archive",
+      "id_filmato": "1961-10-16_France",
+      "pagina_filmato": "https://archive.org/details/1961-10-16_France",
+      "verifica": "verificato sulla scheda: 0 affermazioni non supportate",
+      "inizio": 0.0,
+      "durata": 49.872,
+      "youtube_id": "zapier:short-2026-10-18"
+    },
+    {
+      "data": "2026-10-19",
+      "data_uscita": "1933-10-16",
+      "titolo": "Ernest Soong Soong Yee, australiano adottato da cinesi",
+      "testo": "Primi piani di Ernest Soong Soong Yee, nato nel Nuovo Galles del Sud e adottato da una famiglia cinese. Ha bisogno di un interprete per parlare con i concittadini.",
+      "fonte": "Internet Archive",
+      "id_filmato": "1933-10-16_Anzac_In_Curious_Racial_Mix-Up",
+      "pagina_filmato": "https://archive.org/details/1933-10-16_Anzac_In_Curious_Racial_Mix-Up",
+      "verifica": "verificato sulla scheda: 0 affermazioni non supportate",
+      "inizio": 0.0,
+      "durata": 58.584,
+      "youtube_id": "zapier:short-2026-10-19"
+    },
+    {
+      "data": "2026-10-20",
+      "data_uscita": "1933-10-23",
+      "titolo": "Leader sovietici e i negoziati con gli Stati Uniti",
+      "testo": "Primi piani di Mikhail Kalinin, Stalin e Maksim Litvinov, coinvolti nei negoziati tra URSS e Stati Uniti per possibili relazioni diplomatiche.",
+      "fonte": "Internet Archive",
+      "id_filmato": "1933-10-23_Russian_Recognition_Nears",
+      "pagina_filmato": "https://archive.org/details/1933-10-23_Russian_Recognition_Nears",
+      "verifica": "verificato sulla scheda: 0 affermazioni non supportate",
+      "inizio": 0.0,
+      "durata": 58.625292,
+      "youtube_id": "zapier:short-2026-10-20"
     }
   ],
   "scartati": {
     "1946-10-17_Byrnes_Wants_All_To_Share_Peacemaking": "troppo lungo (96s): non si potrebbe mostrare intero",
-    "1934-10-17_King_Alexander_Assassination": "troppo lungo (189s): non si potrebbe mostrare intero"
+    "1934-10-17_King_Alexander_Assassination": "troppo lungo (189s): non si potrebbe mostrare intero",
+    "1933-10-18_Cameraman_Risks_Life_in_Sub": "scartato: controllo non leggibile",
+    "1942-10-19_Big_Convoy_To_Russia": "troppo lungo (354s): non si potrebbe mostrare intero",
+    "1961-10-19_Fifty_Megatons": "troppo lungo (118s): non si potrebbe mostrare intero",
+    "1964-10-19_The_Olympics": "troppo lungo (136s): non si potrebbe mostrare intero",
+    "1947-10-20_Hollywood_Red_Probe_Begins": "troppo lungo (112s): non si potrebbe mostrare intero",
+    "1946-10-21_Navy_Day": "troppo lungo (201s): non si potrebbe mostrare intero",
+    "1948-10-21_Clay_speaks_on_Berlin_Airlift": "troppo lungo (110s): non si potrebbe mostrare intero",
+    "1962-10-22_The_Red_Threat": "troppo lungo (189s): non si potrebbe mostrare intero",
+    "1945-10-22_Nazi_War_Criminal_Sentenced": "troppo lungo (209s): non si potrebbe mostrare intero",
+    "1947-10-23_US_Films_Fight_Reds": "troppo lungo (301s): non si potrebbe mostrare intero"
   }
 }
