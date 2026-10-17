@@ -4,11 +4,10 @@ on:
   # Orologio principale: cron-job.org chiama GitHub ogni giorno all'ora scelta
   repository_dispatch:
     types: [giro-giornaliero]
-  # Orologi di riserva di GitHub (orari UTC, cioè 12:17 e 17:17 in Italia con l'ora solare).
-  # Il programma non pubblica mai due volte nello stesso giorno.
+  # Si tengono sempre pronti i video dei prossimi 3 giorni; YouTube li pubblica da solo alle 10:00.
+  # Un giro ogni ora: se manca qualcosa lo prepara, altrimenti si chiude in meno di un minuto.
   schedule:
-    - cron: "17 11 * * *"
-    - cron: "17 16 * * *"
+    - cron: "23 * * * *"
   workflow_dispatch:
     inputs:
       prova:
@@ -16,7 +15,7 @@ on:
         type: boolean
         default: true
       data:
-        description: "Data da usare, es. 2026-10-16 (vuoto = oggi)"
+        description: "Giorno di uscita, es. 2026-10-18 (vuoto = domani)"
         required: false
 
 permissions:
@@ -30,7 +29,8 @@ concurrency:
 jobs:
   short:
     runs-on: ubuntu-24.04
-    timeout-minutes: 45
+    timeout-minutes: 50
+    continue-on-error: true   # niente giri rossi né email: il giro dopo recupera
     steps:
       - uses: actions/checkout@v4
         with:
@@ -62,6 +62,7 @@ jobs:
           PROVA: ${{ inputs.prova && '1' || '0' }}
           DATA: ${{ inputs.data }}
           GITHUB_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ github.token }}
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -78,20 +79,8 @@ jobs:
           if-no-files-found: ignore
           retention-days: 7
 
-      - name: Metti online il video per Zapier
-        if: success() && hashFiles('output/release_tag.txt') != ''
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          TAG=$(cat output/release_tag.txt)
-          if gh release view "$TAG" > /dev/null 2>&1; then
-            gh release upload "$TAG" output/accadde-oggi-*.mp4 --clobber
-          else
-            gh release create "$TAG" output/accadde-oggi-*.mp4 --title "$TAG" --notes-file output/ultimo-video.txt
-          fi
-
       - name: Aggiorna lo storico
-        if: success()
+        if: always()
         run: |
           git config user.name "accadde-oggi-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -99,5 +88,6 @@ jobs:
           if [ -f feed.xml ]; then git add feed.xml; fi
           if ! git diff --cached --quiet; then
             git commit -m "Storico: $(date -u +%F)"
-            for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && break; sleep 5; done
+            for i in 1 2 3 4 5; do git pull --rebase origin main && git push origin HEAD:main && break; sleep 10; done
           fi
+          true
