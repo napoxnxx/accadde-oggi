@@ -64,6 +64,19 @@
       "inizio": 0.0,
       "durata": 58.625292,
       "youtube_id": "zapier:short-2026-10-20"
+    },
+    {
+      "data": "2026-10-21",
+      "data_uscita": "1933-10-25",
+      "titolo": "Un raccolto record di tacchini a Westley",
+      "testo": "A Westley, in California, un raccolto record di tacchini viene ingrassato per il pranzo del Ringraziamento. Un enorme gruppo di animali sfamerà 200.000 persone.",
+      "fonte": "Internet Archive",
+      "id_filmato": "1933-10-25_Axe_for_Turkeys",
+      "pagina_filmato": "https://archive.org/details/1933-10-25_Axe_for_Turkeys",
+      "verifica": "verificato sulla scheda: 0 affermazioni non supportate",
+      "inizio": 0.0,
+      "durata": 35.952,
+      "youtube_id": "zapier:short-2026-10-21"
     }
   ],
   "scartati": {
@@ -78,6 +91,12 @@
     "1948-10-21_Clay_speaks_on_Berlin_Airlift": "troppo lungo (110s): non si potrebbe mostrare intero",
     "1962-10-22_The_Red_Threat": "troppo lungo (189s): non si potrebbe mostrare intero",
     "1945-10-22_Nazi_War_Criminal_Sentenced": "troppo lungo (209s): non si potrebbe mostrare intero",
-    "1947-10-23_US_Films_Fight_Reds": "troppo lungo (301s): non si potrebbe mostrare intero"
+    "1947-10-23_US_Films_Fight_Reds": "troppo lungo (301s): non si potrebbe mostrare intero",
+    "1933-10-23_Torpedoes_Launched_From_Air": "scartato dopo la correzione: «a pochi metri dall'acqua»: la scheda dice «a few feet off the water» (pochi piedi), quindi la conversione in «metri» ingrandisce l'altezza di volo.",
+    "1933-10-23_President_Outlines_Recovery_Progress": "troppo lungo (226s): non si potrebbe mostrare intero",
+    "1956-10-24_Freedom_Road": "troppo lungo (390s): non si potrebbe mostrare intero",
+    "1967-10-24_Anti-War_Demonstrators_Storm_Pentagon": "troppo lungo (111s): non si potrebbe mostrare intero",
+    "1962-10-25_The_Cuban_Crisis": "troppo lungo (360s): non si potrebbe mostrare intero",
+    "1933-10-25_Senate_Starts_Racket_Probe": "troppo lungo (177s): non si potrebbe mostrare intero"
   }
 }
