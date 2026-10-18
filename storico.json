@@ -77,6 +77,19 @@
       "inizio": 0.0,
       "durata": 35.952,
       "youtube_id": "zapier:short-2026-10-21"
+    },
+    {
+      "data": "2026-10-22",
+      "data_uscita": "1933-10-25",
+      "titolo": "Carl Laemmle arriva a casa",
+      "testo": "Il noto capo dell'industria cinematografica, di ritorno da un viaggio all'estero, parla della fiducia dell'Europa in Roosevelt e dell'interesse per l'NRA.",
+      "fonte": "Internet Archive",
+      "id_filmato": "1933-10-25_Carl_Laemmle_Arrives_Home",
+      "pagina_filmato": "https://archive.org/details/1933-10-25_Carl_Laemmle_Arrives_Home",
+      "verifica": "verificato sulla scheda (dopo una correzione)",
+      "inizio": 0.0,
+      "durata": 50.712,
+      "youtube_id": "zapier:short-2026-10-22"
     }
   ],
   "scartati": {
