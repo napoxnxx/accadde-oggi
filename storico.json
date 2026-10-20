@@ -103,6 +103,19 @@
       "inizio": 0.0,
       "durata": 31.848,
       "youtube_id": "zapier:short-2026-10-23"
+    },
+    {
+      "data": "2026-10-24",
+      "data_uscita": "1933-10-25",
+      "titolo": "Primo Carrera accolto a Sequals",
+      "testo": "A Sequals, in Italia, il campione mondiale dei pesi massimi è accolto dalla famiglia e acclamato dai compatrioti del villaggio dove è nato. Filmato senza audio.",
+      "fonte": "Internet Archive",
+      "id_filmato": "1933-10-25_Primo_Carrera",
+      "pagina_filmato": "https://archive.org/details/1933-10-25_Primo_Carrera",
+      "verifica": "verificato sulla scheda: 0 affermazioni non supportate",
+      "inizio": 0.0,
+      "durata": 32.928,
+      "youtube_id": "zapier:short-2026-10-24"
     }
   ],
   "scartati": {
@@ -123,6 +136,7 @@
     "1956-10-24_Freedom_Road": "troppo lungo (390s): non si potrebbe mostrare intero",
     "1967-10-24_Anti-War_Demonstrators_Storm_Pentagon": "troppo lungo (111s): non si potrebbe mostrare intero",
     "1962-10-25_The_Cuban_Crisis": "troppo lungo (360s): non si potrebbe mostrare intero",
-    "1933-10-25_Senate_Starts_Racket_Probe": "troppo lungo (177s): non si potrebbe mostrare intero"
+    "1933-10-25_Senate_Starts_Racket_Probe": "troppo lungo (177s): non si potrebbe mostrare intero",
+    "1933-10-25_Loving_Husband": "scartato dopo la correzione: \"vigili\": la scheda parla genericamente di \"guardians of the law\" (forze dell'ordine), non di vigili urbani o addetti al traffico.; \"in stazione\" nel titolo: la scheda dic"
   }
 }
