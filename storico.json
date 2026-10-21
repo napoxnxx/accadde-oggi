@@ -116,6 +116,19 @@
       "inizio": 0.0,
       "durata": 32.928,
       "youtube_id": "zapier:short-2026-10-24"
+    },
+    {
+      "data": "2026-10-25",
+      "data_uscita": "1933-10-25",
+      "titolo": "Un nuovo veicolo per l'aviatore Alex Brun",
+      "testo": "Immagini in esclusiva da Cincinnati, Ohio, di un nuovo veicolo inventato dall'aviatore Alex Brun. Può essere portato in aereo e usato per raggiungere i paesi vicini in caso di atterraggio forzato.",
+      "fonte": "Internet Archive",
+      "id_filmato": "1933-10-25_Vest_Pocket_Cycle",
+      "pagina_filmato": "https://archive.org/details/1933-10-25_Vest_Pocket_Cycle",
+      "verifica": "verificato sulla scheda (dopo una correzione)",
+      "inizio": 0.0,
+      "durata": 39.84,
+      "youtube_id": "zapier:short-2026-10-25"
     }
   ],
   "scartati": {
