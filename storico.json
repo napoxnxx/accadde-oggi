@@ -129,6 +129,19 @@
       "inizio": 0.0,
       "durata": 39.84,
       "youtube_id": "zapier:short-2026-10-25"
+    },
+    {
+      "data": "2026-10-26",
+      "data_uscita": "1933-10-25",
+      "titolo": "I Lindbergh arrivano a Mosca",
+      "testo": "A Mosca, il famoso aviatore e sua moglie arrivano durante un viaggio di rilevamento aereo e di buona volontà, salutati da alti funzionari del governo.",
+      "fonte": "Internet Archive",
+      "id_filmato": "1933-10-25_Lindberghs_in_Russia",
+      "pagina_filmato": "https://archive.org/details/1933-10-25_Lindberghs_in_Russia",
+      "verifica": "verificato sulla scheda: 0 affermazioni non supportate",
+      "inizio": 0.0,
+      "durata": 42.528,
+      "youtube_id": "zapier:short-2026-10-26"
     }
   ],
   "scartati": {
