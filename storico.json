@@ -142,6 +142,19 @@
       "inizio": 0.0,
       "durata": 42.528,
       "youtube_id": "zapier:short-2026-10-26"
+    },
+    {
+      "data": "2026-10-27",
+      "data_uscita": "1948-10-28",
+      "titolo": "Il processo a Ilse Lock in Germania",
+      "testo": "Immagini senza sonoro del processo per crimini di guerra a Ilse Lock, svolto in Germania.",
+      "fonte": "Internet Archive",
+      "id_filmato": "1948-10-28_Ilse_Lock_war_crimes_trial",
+      "pagina_filmato": "https://archive.org/details/1948-10-28_Ilse_Lock_war_crimes_trial",
+      "verifica": "verificato sulla scheda: 0 affermazioni non supportate",
+      "inizio": 0.0,
+      "durata": 54.144,
+      "youtube_id": "zapier:short-2026-10-27"
     }
   ],
   "scartati": {
@@ -165,6 +178,8 @@
     "1933-10-25_Senate_Starts_Racket_Probe": "troppo lungo (177s): non si potrebbe mostrare intero",
     "1933-10-25_Loving_Husband": "scartato dopo la correzione: \"vigili\": la scheda parla genericamente di \"guardians of the law\" (forze dell'ordine), non di vigili urbani o addetti al traffico.; \"in stazione\" nel titolo: la scheda dic",
     "1964-10-26_Olympics_End": "troppo lungo (204s): non si potrebbe mostrare intero",
-    "1964-10-26_Fashions": "troppo lungo (128s): non si potrebbe mostrare intero"
+    "1964-10-26_Fashions": "troppo lungo (128s): non si potrebbe mostrare intero",
+    "1955-10-27_1st_Pictures_of_Ike_Since_His_Illness": "troppo lungo (196s): non si potrebbe mostrare intero",
+    "1957-10-28_Space_Race": "troppo lungo (122s): non si potrebbe mostrare intero"
   }
 }
