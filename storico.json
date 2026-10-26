@@ -181,6 +181,19 @@
       "inizio": 0.0,
       "durata": 88.888889,
       "youtube_id": "zapier:short-2026-10-29"
+    },
+    {
+      "data": "2026-10-30",
+      "data_uscita": "1960-10-31",
+      "titolo": "Louis Armstrong arriva in Congo e suona la tromba",
+      "testo": "Louis Armstrong arriva in Congo e suona la tromba.",
+      "fonte": "Internet Archive",
+      "id_filmato": "1960-10-31_Satchmo_Swings_In_Congo",
+      "pagina_filmato": "https://archive.org/details/1960-10-31_Satchmo_Swings_In_Congo",
+      "verifica": "verificato sulla scheda: 0 affermazioni non supportate",
+      "inizio": 0.0,
+      "durata": 47.112,
+      "youtube_id": "zapier:short-2026-10-30"
     }
   ],
   "scartati": {
@@ -211,6 +224,8 @@
     "1940-10-30_Nations_Draft_Lottery_Held": "troppo lungo (124s): non si potrebbe mostrare intero",
     "1945-10-25_Truman_Asks_One_Years_Army_Service": "troppo lungo (98s): non si potrebbe mostrare intero",
     "1948-10-25_Berlin_Airlift_increased": "troppo lungo (123s): non si potrebbe mostrare intero",
-    "1946-10-31_Soviets_UN_Proposals_Answered": "troppo lungo (169s): non si potrebbe mostrare intero"
+    "1946-10-31_Soviets_UN_Proposals_Answered": "troppo lungo (169s): non si potrebbe mostrare intero",
+    "1955-10-31_Deadlock": "troppo lungo (176s): non si potrebbe mostrare intero",
+    "1960-10-31_Invasion_Scare": "scartato dopo la correzione: controllo non leggibile"
   }
 }
