@@ -168,6 +168,19 @@
       "inizio": 0.0,
       "durata": 66.888,
       "youtube_id": "zapier:short-2026-10-28"
+    },
+    {
+      "data": "2026-10-29",
+      "data_uscita": "1938-10-31",
+      "titolo": "Radiodramma di Welles: ascoltatori spaventati",
+      "testo": "Migliaia di radioascoltatori negli Stati Uniti si spaventano per un adattamento de La guerra dei mondi di H. G. Wells, messo in scena da Orson Welles.",
+      "fonte": "Internet Archive",
+      "id_filmato": "1938-10-31_Attack_By_Mars_Panics_Thousands",
+      "pagina_filmato": "https://archive.org/details/1938-10-31_Attack_By_Mars_Panics_Thousands",
+      "verifica": "verificato sulla scheda: 0 affermazioni non supportate",
+      "inizio": 0.0,
+      "durata": 88.888889,
+      "youtube_id": "zapier:short-2026-10-29"
     }
   ],
   "scartati": {
@@ -197,6 +210,7 @@
     "1962-10-29_Crisis_Eases": "troppo lungo (112s): non si potrebbe mostrare intero",
     "1940-10-30_Nations_Draft_Lottery_Held": "troppo lungo (124s): non si potrebbe mostrare intero",
     "1945-10-25_Truman_Asks_One_Years_Army_Service": "troppo lungo (98s): non si potrebbe mostrare intero",
-    "1948-10-25_Berlin_Airlift_increased": "troppo lungo (123s): non si potrebbe mostrare intero"
+    "1948-10-25_Berlin_Airlift_increased": "troppo lungo (123s): non si potrebbe mostrare intero",
+    "1946-10-31_Soviets_UN_Proposals_Answered": "troppo lungo (169s): non si potrebbe mostrare intero"
   }
 }
