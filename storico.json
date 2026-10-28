@@ -194,6 +194,19 @@
       "inizio": 0.0,
       "durata": 47.112,
       "youtube_id": "zapier:short-2026-10-30"
+    },
+    {
+      "data": "2026-10-31",
+      "data_uscita": "1933-11-01",
+      "titolo": "Eleanor Roosevelt: aiutate i disoccupati bisognosi",
+      "testo": "A Chicago la signora Roosevelt parla a 8.000 socie della Federazione dei club professionali e femminili dell'Illinois. Invita le donne di tutto il paese ad aiutare i disoccupati in difficoltà collaborando con i comitati locali.",
+      "fonte": "Internet Archive",
+      "id_filmato": "1933-11-01_Help_Needy_Says_First_Lady",
+      "pagina_filmato": "https://archive.org/details/1933-11-01_Help_Needy_Says_First_Lady",
+      "verifica": "verificato sulla scheda: 0 affermazioni non supportate",
+      "inizio": 0.0,
+      "durata": 60.624,
+      "youtube_id": "zapier:short-2026-10-31"
     }
   ],
   "scartati": {
@@ -226,6 +239,7 @@
     "1948-10-25_Berlin_Airlift_increased": "troppo lungo (123s): non si potrebbe mostrare intero",
     "1946-10-31_Soviets_UN_Proposals_Answered": "troppo lungo (169s): non si potrebbe mostrare intero",
     "1955-10-31_Deadlock": "troppo lungo (176s): non si potrebbe mostrare intero",
-    "1960-10-31_Invasion_Scare": "scartato dopo la correzione: controllo non leggibile"
+    "1960-10-31_Invasion_Scare": "scartato dopo la correzione: controllo non leggibile",
+    "1956-11-01_War_in_Egypt": "troppo lungo (456s): non si potrebbe mostrare intero"
   }
 }
