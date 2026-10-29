@@ -207,6 +207,19 @@
       "inizio": 0.0,
       "durata": 60.624,
       "youtube_id": "zapier:short-2026-10-31"
+    },
+    {
+      "data": "2026-11-01",
+      "data_uscita": "1962-11-01",
+      "titolo": "U Thant torna a New York dopo l'incontro con Castro",
+      "testo": "U Thant torna a New York dall'incontro con Castro sulla crisi dei missili a Cuba e parla ai giornalisti. Seguono immagini di Salinger alla Casa Bianca.",
+      "fonte": "Internet Archive",
+      "id_filmato": "1962-11-01_Missile_Bases",
+      "pagina_filmato": "https://archive.org/details/1962-11-01_Missile_Bases",
+      "verifica": "verificato sulla scheda: 0 affermazioni non supportate",
+      "inizio": 0.0,
+      "durata": 87.552,
+      "youtube_id": "zapier:short-2026-11-01"
     }
   ],
   "scartati": {
@@ -240,6 +253,7 @@
     "1946-10-31_Soviets_UN_Proposals_Answered": "troppo lungo (169s): non si potrebbe mostrare intero",
     "1955-10-31_Deadlock": "troppo lungo (176s): non si potrebbe mostrare intero",
     "1960-10-31_Invasion_Scare": "scartato dopo la correzione: controllo non leggibile",
-    "1956-11-01_War_in_Egypt": "troppo lungo (456s): non si potrebbe mostrare intero"
+    "1956-11-01_War_in_Egypt": "troppo lungo (456s): non si potrebbe mostrare intero",
+    "1945-11-01_Pres_Truman_Urges_Wage_Adjustment": "troppo lungo (335s): non si potrebbe mostrare intero"
   }
 }
