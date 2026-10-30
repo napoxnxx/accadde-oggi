@@ -233,6 +233,19 @@
       "inizio": 0.0,
       "durata": 41.256,
       "youtube_id": "zapier:short-2026-11-02"
+    },
+    {
+      "data": "2026-11-03",
+      "data_uscita": "1967-11-03",
+      "titolo": "Il Queen Mary verso Long Beach",
+      "testo": "Il transatlantico Queen Mary compie il suo ultimo viaggio dalla Gran Bretagna a Long Beach.",
+      "fonte": "Internet Archive",
+      "id_filmato": "1967-11-03_England",
+      "pagina_filmato": "https://archive.org/details/1967-11-03_England",
+      "verifica": "verificato sulla scheda: 0 affermazioni non supportate",
+      "inizio": 0.0,
+      "durata": 26.784,
+      "youtube_id": "zapier:short-2026-11-03"
     }
   ],
   "scartati": {
@@ -270,6 +283,7 @@
     "1945-11-01_Pres_Truman_Urges_Wage_Adjustment": "troppo lungo (335s): non si potrebbe mostrare intero",
     "1944-11-02_3rd_Army_blasts_Nazi_Strongholds": "troppo lungo (470s): non si potrebbe mostrare intero",
     "1938-11-02_Light_Tanks_Show_Their_Prowess": "troppo lungo (180s): non si potrebbe mostrare intero",
-    "1959-11-02_Good-Will_Swap": "scartato: controllo non leggibile"
+    "1959-11-02_Good-Will_Swap": "scartato: controllo non leggibile",
+    "1941-11-03_President_Proclaims_Natl_Defense_Week": "scartato: risposta non leggibile"
   }
 }
