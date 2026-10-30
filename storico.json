@@ -220,6 +220,19 @@
       "inizio": 0.0,
       "durata": 87.552,
       "youtube_id": "zapier:short-2026-11-01"
+    },
+    {
+      "data": "2026-11-02",
+      "data_uscita": "1959-11-02",
+      "titolo": "Iran, fuochi d'artificio per lo Scià",
+      "testo": "In Iran si festeggiano i 40 anni dello Scià con fuochi d'artificio e uno spettacolo pirotecnico.",
+      "fonte": "Internet Archive",
+      "id_filmato": "1959-11-02_Iran",
+      "pagina_filmato": "https://archive.org/details/1959-11-02_Iran",
+      "verifica": "verificato sulla scheda: 0 affermazioni non supportate",
+      "inizio": 0.0,
+      "durata": 41.256,
+      "youtube_id": "zapier:short-2026-11-02"
     }
   ],
   "scartati": {
@@ -254,6 +267,9 @@
     "1955-10-31_Deadlock": "troppo lungo (176s): non si potrebbe mostrare intero",
     "1960-10-31_Invasion_Scare": "scartato dopo la correzione: controllo non leggibile",
     "1956-11-01_War_in_Egypt": "troppo lungo (456s): non si potrebbe mostrare intero",
-    "1945-11-01_Pres_Truman_Urges_Wage_Adjustment": "troppo lungo (335s): non si potrebbe mostrare intero"
+    "1945-11-01_Pres_Truman_Urges_Wage_Adjustment": "troppo lungo (335s): non si potrebbe mostrare intero",
+    "1944-11-02_3rd_Army_blasts_Nazi_Strongholds": "troppo lungo (470s): non si potrebbe mostrare intero",
+    "1938-11-02_Light_Tanks_Show_Their_Prowess": "troppo lungo (180s): non si potrebbe mostrare intero",
+    "1959-11-02_Good-Will_Swap": "scartato: controllo non leggibile"
   }
 }
