@@ -285,6 +285,19 @@
       "inizio": 0.0,
       "durata": 41.064,
       "youtube_id": "zapier:short-2026-11-06"
+    },
+    {
+      "data": "2026-11-07",
+      "data_uscita": "1938-11-07",
+      "titolo": "Roosevelt: la democrazia sia una forza positiva",
+      "testo": "Alla vigilia delle elezioni Roosevelt avverte che la democrazia deve essere una forza positiva per mantenere la libertà contro l'aggressione militare all'estero.",
+      "fonte": "Internet Archive",
+      "id_filmato": "1938-11-07_Roosevelt_Urges_National_Unity",
+      "pagina_filmato": "https://archive.org/details/1938-11-07_Roosevelt_Urges_National_Unity",
+      "verifica": "verificato sulla scheda: 0 affermazioni non supportate",
+      "inizio": 0.0,
+      "durata": 52.872,
+      "youtube_id": "zapier:short-2026-11-07"
     }
   ],
   "scartati": {
@@ -325,6 +338,7 @@
     "1959-11-02_Good-Will_Swap": "scartato: controllo non leggibile",
     "1941-11-03_President_Proclaims_Natl_Defense_Week": "scartato: risposta non leggibile",
     "1956-11-05_Eisenhower_Re-Elected": "troppo lungo (386s): non si potrebbe mostrare intero",
-    "1957-11-04_Pennsylvania": "troppo lungo (135s): non si potrebbe mostrare intero"
+    "1957-11-04_Pennsylvania": "troppo lungo (135s): non si potrebbe mostrare intero",
+    "1936-11-07_Roosevelt_Landslide": "troppo lungo (213s): non si potrebbe mostrare intero"
   }
 }
