@@ -298,6 +298,19 @@
       "inizio": 0.0,
       "durata": 52.872,
       "youtube_id": "zapier:short-2026-11-07"
+    },
+    {
+      "data": "2026-11-08",
+      "data_uscita": "1936-11-09",
+      "titolo": "Un'automobile per attraversare la campagna",
+      "testo": "Ingegneri europei provano un'automobile con nuove sospensioni, che le permettono di ignorare la pavimentazione liscia delle strade e di attraversare fossi, colline e persino dirupi.",
+      "fonte": "Internet Archive",
+      "id_filmato": "1936-11-09_Automobile_for_Cross-Country_Travel_Devised",
+      "pagina_filmato": "https://archive.org/details/1936-11-09_Automobile_for_Cross-Country_Travel_Devised",
+      "verifica": "verificato sulla scheda (dopo una correzione)",
+      "inizio": 0.0,
+      "durata": 40.896,
+      "youtube_id": "zapier:short-2026-11-08"
     }
   ],
   "scartati": {
@@ -339,6 +352,10 @@
     "1941-11-03_President_Proclaims_Natl_Defense_Week": "scartato: risposta non leggibile",
     "1956-11-05_Eisenhower_Re-Elected": "troppo lungo (386s): non si potrebbe mostrare intero",
     "1957-11-04_Pennsylvania": "troppo lungo (135s): non si potrebbe mostrare intero",
-    "1936-11-07_Roosevelt_Landslide": "troppo lungo (213s): non si potrebbe mostrare intero"
+    "1936-11-07_Roosevelt_Landslide": "troppo lungo (213s): non si potrebbe mostrare intero",
+    "1956-11-08_Landslide_for_Eisenhower": "troppo lungo (388s): non si potrebbe mostrare intero",
+    "1945-11-08_Management_Labor_Seek_Agreement": "troppo lungo (358s): non si potrebbe mostrare intero",
+    "1957-11-07_Ike_Reports": "troppo lungo (93s): non si potrebbe mostrare intero",
+    "1936-11-09_Roosevelt_Welcomed_Back": "scartato: controllo non leggibile"
   }
 }
