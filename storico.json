@@ -311,6 +311,19 @@
       "inizio": 0.0,
       "durata": 40.896,
       "youtube_id": "zapier:short-2026-11-08"
+    },
+    {
+      "data": "2026-11-09",
+      "data_uscita": "1938-11-09",
+      "titolo": "Il sindaco La Guardia apre la campagna Croce Rossa",
+      "testo": "Il sindaco La Guardia dà il via alla campagna della Croce Rossa.",
+      "fonte": "Internet Archive",
+      "id_filmato": "1938-11-09_Mayor_La_Guardia_opens_Red_Cross_drive",
+      "pagina_filmato": "https://archive.org/details/1938-11-09_Mayor_La_Guardia_opens_Red_Cross_drive",
+      "verifica": "verificato sulla scheda (dopo una correzione)",
+      "inizio": 0.0,
+      "durata": 78.936,
+      "youtube_id": "zapier:short-2026-11-09"
     }
   ],
   "scartati": {
