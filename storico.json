@@ -324,6 +324,19 @@
       "inizio": 0.0,
       "durata": 78.936,
       "youtube_id": "zapier:short-2026-11-09"
+    },
+    {
+      "data": "2026-11-10",
+      "data_uscita": "1933-11-13",
+      "titolo": "Al Smith commenta la fine del Dry Law",
+      "testo": "A New York si esprime soddisfazione per l'abrogazione del Diciottesimo Emendamento. Per la prima volta in tredici anni partono grandi spedizioni di gin, con l'approvazione del governo federale.",
+      "fonte": "Internet Archive",
+      "id_filmato": "1933-11-13_Al_Smith_Hails_End_of_Dry_Law",
+      "pagina_filmato": "https://archive.org/details/1933-11-13_Al_Smith_Hails_End_of_Dry_Law",
+      "verifica": "verificato sulla scheda (dopo una correzione)",
+      "inizio": 0.0,
+      "durata": 44.444444,
+      "youtube_id": "zapier:short-2026-11-10"
     }
   ],
   "scartati": {
@@ -369,6 +382,9 @@
     "1956-11-08_Landslide_for_Eisenhower": "troppo lungo (388s): non si potrebbe mostrare intero",
     "1945-11-08_Management_Labor_Seek_Agreement": "troppo lungo (358s): non si potrebbe mostrare intero",
     "1957-11-07_Ike_Reports": "troppo lungo (93s): non si potrebbe mostrare intero",
-    "1936-11-09_Roosevelt_Welcomed_Back": "scartato: controllo non leggibile"
+    "1936-11-09_Roosevelt_Welcomed_Back": "scartato: controllo non leggibile",
+    "1960-11-10_Kennedy_Elected": "troppo lungo (350s): non si potrebbe mostrare intero",
+    "1956-11-12_Near_East_Crisis": "troppo lungo (248s): non si potrebbe mostrare intero",
+    "1945-11-13_Attlee_Here_For_Parley": "troppo lungo (270s): non si potrebbe mostrare intero"
   }
 }
