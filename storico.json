@@ -337,6 +337,19 @@
       "inizio": 0.0,
       "durata": 44.444444,
       "youtube_id": "zapier:short-2026-11-10"
+    },
+    {
+      "data": "2026-11-11",
+      "data_uscita": "1963-11-14",
+      "titolo": "Una telecamera sul missile Titan II in volo",
+      "testo": "Lancio di un missile Titan II nell'Atlantico meridionale. Una telecamera sul secondo stadio filma la separazione degli stadi sopra la Terra, con la curvatura terrestre ben visibile.",
+      "fonte": "Internet Archive",
+      "id_filmato": "1963-11-14_Space_Movie",
+      "pagina_filmato": "https://archive.org/details/1963-11-14_Space_Movie",
+      "verifica": "verificato sulla scheda: 0 affermazioni non supportate",
+      "inizio": 0.0,
+      "durata": 59.448,
+      "youtube_id": "zapier:short-2026-11-11"
     }
   ],
   "scartati": {
