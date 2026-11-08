@@ -350,6 +350,19 @@
       "inizio": 0.0,
       "durata": 59.448,
       "youtube_id": "zapier:short-2026-11-11"
+    },
+    {
+      "data": "2026-11-12",
+      "data_uscita": "1933-11-15",
+      "titolo": "Brindisi, inaugurato il monumento ai marinai caduti",
+      "testo": "A Brindisi Vittorio Emanuele III e il principe ereditario Umberto consacrano un grande cenotafio ai marinai della Marina Reale morti nella guerra mondiale, nel quindicesimo anniversario dell'armistizio.",
+      "fonte": "Internet Archive",
+      "id_filmato": "1933-11-15_King_Dedicates_Memorial",
+      "pagina_filmato": "https://archive.org/details/1933-11-15_King_Dedicates_Memorial",
+      "verifica": "verificato sulla scheda: 0 affermazioni non supportate",
+      "inizio": 0.0,
+      "durata": 42.432,
+      "youtube_id": "zapier:short-2026-11-12"
     }
   ],
   "scartati": {
@@ -398,6 +411,7 @@
     "1936-11-09_Roosevelt_Welcomed_Back": "scartato: controllo non leggibile",
     "1960-11-10_Kennedy_Elected": "troppo lungo (350s): non si potrebbe mostrare intero",
     "1956-11-12_Near_East_Crisis": "troppo lungo (248s): non si potrebbe mostrare intero",
-    "1945-11-13_Attlee_Here_For_Parley": "troppo lungo (270s): non si potrebbe mostrare intero"
+    "1945-11-13_Attlee_Here_For_Parley": "troppo lungo (270s): non si potrebbe mostrare intero",
+    "1955-11-14_Ike_Returns": "troppo lungo (194s): non si potrebbe mostrare intero"
   }
 }
