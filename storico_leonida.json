@@ -51,6 +51,27 @@
    "data": "2026-11-13",
    "slot": "sera",
    "uscita": "2026-11-13T19:00:00+01:00"
+  },
+  {
+   "formato": "notizia",
+   "titolo": "GTA 6, Rockstar annuncia un festival a Miami il 21 novembre con Cardi B e Travis Scott",
+   "descrizione": "Rockstar organizza a Miami il festival di GTA 6, un concerto dal vivo.\nL'evento si terrà il 21 novembre al Mana Wynwood.\nTra gli artisti in programma ci sono Cardi B, Travis Scott e Justice.\n\nTu cosa ne pensi? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nNotizia confermata da almeno 3 testate diverse e raccontata con parole nostre. Fonti:\n- IGN Italia: https://it.ign.com/grand-theft-auto-vi/229123/rockstar-games-annuncia-gta-vi-the-festival-a-miami-concerto-dal-vivo-per-il-lancio-del-gioco\n- Eurogamer: https://www.eurogamer.net/rockstar-gta-6-miami-music-festival\n- Multiplayer.it: https://multiplayer.it/notizie/rockstar-ha-annunciato-il-festival-musicale-di-gta-6-a-miami-con-cardi-b-travis-scott-e-justice.html\n- GameSpot: https://www.gamespot.com/articles/gta-6-music-festival-announced-for-miami-with-a-stacked-lineup-of-artists/\n- VGC: https://www.videogameschronicle.com/news/rockstar-announces-grand-theft-auto-6-music-festival-taking-place-in-miami/\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Fonti: IGN Italia, Eurogamer, Multiplayer.it, GameSpot",
+   "tag": "notizia-2026-11-10",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notizia-2026-11-10/notizia-2026-11-10.mp4",
+   "dimensione": 2881863,
+   "preparato": "2026-11-10 14:27",
+   "link": [
+    "https://it.ign.com/grand-theft-auto-vi/229123/rockstar-games-annuncia-gta-vi-the-festival-a-miami-concerto-dal-vivo-per-il-lancio-del-gioco",
+    "https://www.eurogamer.net/rockstar-gta-6-miami-music-festival",
+    "https://multiplayer.it/notizie/rockstar-ha-annunciato-il-festival-musicale-di-gta-6-a-miami-con-cardi-b-travis-scott-e-justice.html",
+    "https://www.gamespot.com/articles/gta-6-music-festival-announced-for-miami-with-a-stacked-lineup-of-artists/",
+    "https://www.videogameschronicle.com/news/rockstar-announces-grand-theft-auto-6-music-festival-taking-place-in-miami/"
+   ],
+   "chiave": "soggetti:gta vi|rockstar",
+   "data": "2026-11-10",
+   "slot": "notizia",
+   "uscita": "2026-11-10T16:00:00+01:00"
   }
  ],
  "riserva": [
@@ -87,8 +108,12 @@
   "media_rockstar/artwork/Jason_and_Lucia_Beach_ultrawide.jpg",
   "media_rockstar/artwork/Cal_Hampton_tablet.jpg",
   "media_rockstar/artwork/Jason_Lucia_Lock_And_Load_With_Logos_landscape.jpg",
-  "media_rockstar/screenshot/Jason_Duval_04.jpg"
+  "media_rockstar/screenshot/Jason_Duval_04.jpg",
+  "media_rockstar/screenshot/Brian_Heder_03.jpg"
  ],
- "tentativi_notizia": {},
+ "tentativi_notizia": {
+  "data": "2026-11-10",
+  "n": 1
+ },
  "chicche_usate": []
 }
