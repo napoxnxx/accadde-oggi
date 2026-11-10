@@ -540,7 +540,8 @@ def foto_riquadro(percorso, larg, alt, raggio=28, bordo=6):
         foto = foto.crop(((foto.width - nuova) // 2, 0, (foto.width - nuova) // 2 + nuova, foto.height))
     else:
         nuova = int(foto.width / rapporto)
-        foto = foto.crop((0, (foto.height - nuova) // 2, foto.width, (foto.height - nuova) // 2 + nuova))
+        alto = int((foto.height - nuova) * 0.28)  # foto verticali: i volti stanno in alto, non al centro
+        foto = foto.crop((0, alto, foto.width, alto + nuova))
     foto = foto.resize((larg, alt), Image.LANCZOS).convert("RGBA")
     maschera = Image.new("L", (larg * 2, alt * 2), 0)
     ImageDraw.Draw(maschera).rounded_rectangle((0, 0, larg * 2 - 1, alt * 2 - 1), radius=raggio * 2, fill=255)
