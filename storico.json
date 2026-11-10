@@ -376,6 +376,19 @@
       "inizio": 0.0,
       "durata": 40.656,
       "youtube_id": "zapier:short-2026-11-13"
+    },
+    {
+      "data": "2026-11-14",
+      "data_uscita": "1960-11-17",
+      "titolo": "Algeri, manifestazioni contro la Francia",
+      "testo": "Manifestazioni ad Algeri contro la Francia in Algeria. Nel filmato si vede anche un autobus che si schianta fuori controllo.",
+      "fonte": "Internet Archive",
+      "id_filmato": "1960-11-17_Algeria",
+      "pagina_filmato": "https://archive.org/details/1960-11-17_Algeria",
+      "verifica": "verificato sulla scheda: 0 affermazioni non supportate",
+      "inizio": 0.0,
+      "durata": 51.672,
+      "youtube_id": "zapier:short-2026-11-14"
     }
   ],
   "scartati": {
@@ -425,6 +438,9 @@
     "1960-11-10_Kennedy_Elected": "troppo lungo (350s): non si potrebbe mostrare intero",
     "1956-11-12_Near_East_Crisis": "troppo lungo (248s): non si potrebbe mostrare intero",
     "1945-11-13_Attlee_Here_For_Parley": "troppo lungo (270s): non si potrebbe mostrare intero",
-    "1955-11-14_Ike_Returns": "troppo lungo (194s): non si potrebbe mostrare intero"
+    "1955-11-14_Ike_Returns": "troppo lungo (194s): non si potrebbe mostrare intero",
+    "1933-11-15_Loyola_Students_Compete_For_Keg": "scartato: controllo non leggibile",
+    "1938-11-16_FDR_Leads_Nation_Against_Nazi_Persecutions": "troppo lungo (139s): non si potrebbe mostrare intero",
+    "1960-11-17_Nuclear_Navy": "troppo lungo (177s): non si potrebbe mostrare intero"
   }
 }
