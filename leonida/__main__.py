@@ -133,7 +133,7 @@ def contenuto_chicca(giorno, elenco, storico):
     else:
         storico["media_usati"] = (storico["media_usati"] + [m["file"] for m in scelti])[-60:]
     dati = {"titolo": c["titolo"], "frasi": c["frasi"], "domanda": c["domanda"], "etichetta": c["etichetta"],
-            "fonti": ["Rockstar Games (sito ufficiale)"]}
+            "fonti": testi.fonti_brevi(c)}
     return {"formato": "chicca", "chicca": c, "notizia": dati, "media": scelti}
 
 
@@ -293,7 +293,7 @@ def giro_completo():
         try:
             if giorni_mancanti(giorno) >= 0:
                 c = contenuto_countdown(giorno, elenco, storico)
-            elif giorno.toordinal() % 2 == 0:
+            elif giorno.toordinal() % 3 != 0:  # dopo l'uscita: 2 sere su 3 pillole, 1 su 3 montaggio di immagini
                 c = contenuto_chicca(giorno, elenco, storico)
             else:
                 c = contenuto_montaggio(giorno, elenco, storico)
