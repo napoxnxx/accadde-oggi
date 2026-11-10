@@ -562,15 +562,21 @@ def _tempo_lettura(testo):
 def video_notizia(notizia, uscita, media_scelti=(), seme=0):
     """Notizia su GTA VI: titolo, immagine ufficiale, 2-3 frasi, fonti, domanda per i commenti."""
     largo = X_MAX - X_MIN
-    titolo = blocco_testo(notizia["titolo"].upper(), "titolo", 98, largo, 3, BIANCO, dim_min=56)
-    frasi = [blocco_testo(f, "semi", 52, largo, 3, BIANCO, dim_min=38) for f in notizia["frasi"]]
+    foto_possibile = bool(media_scelti) and media_scelti[0].get("tipo") != "clip"
+    # si rimpicciolisce il testo finché c'è posto per la foto ufficiale (le foto sono la cosa che si guarda)
+    for dim_titolo, dim_frasi in ((98, 52), (90, 48), (84, 45), (78, 42), (72, 40)):
+        titolo = blocco_testo(notizia["titolo"].upper(), "titolo", dim_titolo, largo, 3, BIANCO, dim_min=52)
+        frasi = [blocco_testo(f, "semi", dim_frasi, largo, 3, BIANCO, dim_min=36) for f in notizia["frasi"]]
+        spazio = Y_MAX - 50 - (320 + titolo.height + 20) - sum(f.height for f in frasi) - 16 * len(frasi)
+        if not foto_possibile or spazio >= 330:
+            break
     tempi, t = [], 1.5
     for testo in notizia["frasi"]:
         tempi.append(t)
         t += _tempo_lettura(testo)
     t_domanda = t + 0.3
     durata = t_domanda + 2.8
-    fondale = _fondale_per(media_scelti, durata, seme, scuro=0.62, sfocato=True)
+    fondale = _fondale_per(media_scelti, durata, seme, scuro=0.58, sfocato=True)
     video = Video(uscita, fondale, seme)
     pill = etichetta(notizia.get("etichetta", "NEWS GTA VI"), ROSA)
     y_titolo = 320
@@ -578,9 +584,9 @@ def video_notizia(notizia, uscita, media_scelti=(), seme=0):
     spazio_frasi = sum(f.height for f in frasi) + 16 * len(frasi)
     riquadro = None
     disponibile = Y_MAX - 50 - y - spazio_frasi
-    if media_scelti and media_scelti[0].get("tipo") != "clip" and disponibile >= 280:
+    if foto_possibile and disponibile >= 250:
         try:
-            riquadro = foto_riquadro(media_scelti[0]["percorso"], largo - 12, int(min(470, disponibile - 24)))
+            riquadro = foto_riquadro(media_scelti[0]["percorso"], largo - 12, int(min(520, disponibile - 24)))
         except OSError:
             riquadro = None
     y_riquadro = y

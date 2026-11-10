@@ -36,7 +36,11 @@ ESTENSIONI_FOTO = {".jpg", ".jpeg", ".png"}
 ESTENSIONI_VIDEO = {".mp4", ".mov", ".m4v", ".webm"}
 
 
-_RUMORE = r"(?i)\b(gtavi?|gta|vi|screenshots?|wallpapers?|video|clip|landscape|portrait|mobile|desktop|\d{3,4}x\d{3,4}|\d+k)\b"
+_FORMATI = r"landscape|portrait|mobile|desktop|phone|tablet|square|vertical|horizontal|story|stories|ultrawide|banner|header"
+_RUMORE = r"(?i)\b(gtavi?|gta|vi|screenshots?|wallpapers?|video|clip|" + _FORMATI + r"|\d{3,4}x\d{3,4}|\d+k)\b"
+# immagini con scritte o grafiche sopra: belle nei montaggi, non come sfondo di numeri e testi
+GRAFICHE = r"(?i)postcard|cover|logo|badge|edition|pack|poster|key.?art|album|merch"
+VERSIONE = 2  # se cambia il modo di sistemare i file, i pacchetti si risistemano da capo
 _NON_DIDASCALIA = ("COVER", "ART", "LOGO", "EDITION", "PACK", "BADGE", "POSTER", "KEY", "ALBUM")
 
 
@@ -59,7 +63,7 @@ def didascalia_mostrabile(testo):
 def _chiave(nome):
     """Stessa immagine in formati diversi = stessa chiave (si tiene la versione più grande)."""
     base = re.sub(r"\.[a-z0-9]+$", "", nome, flags=re.I)
-    verticale = "P" if re.search(r"(?i)portrait|mobile|vertical", base) else "L"
+    verticale = "P" if re.search(r"(?i)portrait|mobile|vertical|phone|story|stories", base) else "L"
     base = re.sub(r"(?i)\d{3,4}x\d{3,4}|\d+k\b", " ", base)
     numeri = re.findall(r"\d+", base)
     return f"{didascalia(nome)}#{numeri[-1] if numeri else ''}#{verticale}"
@@ -114,6 +118,8 @@ def prepara():
     """Scarica e sistema i pacchetti ufficiali nuovi o aggiornati. Restituisce l'elenco dei file pronti."""
     elenco_file = CARTELLA / "elenco.json"
     elenco = json.loads(elenco_file.read_text()) if elenco_file.exists() else {}
+    if elenco.get("_versione") != VERSIONE:
+        elenco = {"_versione": VERSIONE}
     firme = elenco.setdefault("_firme", {})
     for tipo, url in PACCHETTI.items():
         firma = _firma(url)
@@ -190,9 +196,11 @@ def scegli_per(elenco, parole, seme, quanti=1, evita=()):
     return [dict(v, percorso=str(RADICE / v["file"])) for v in freschi[:quanti]]
 
 
-def scegli(elenco, seme, quanti=1, tipi=("screenshot", "artwork"), evita=()):
+def scegli(elenco, seme, quanti=1, tipi=("screenshot", "artwork"), evita=(), senza_grafiche=False):
     """File ufficiali a caso (ma riproducibili), evitando quelli usati di recente se possibile."""
     tutti = [dict(v, tipo=t) for t in tipi for v in elenco.get(t, []) if (RADICE / v["file"]).exists()]
+    if senza_grafiche:
+        tutti = [v for v in tutti if not re.search(GRAFICHE, Path(v["file"]).name)] or tutti
     if not tutti:
         return []
     freschi = [v for v in tutti if v["file"] not in set(evita)] or tutti

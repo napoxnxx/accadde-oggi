@@ -91,8 +91,8 @@ def aggiorna_stato(storico, problemi, oggi, elenco_media=None, prova=None):
 
 # ---------------------------------------------------------------- contenuti
 
-def _media(elenco, storico, seme, quanti, tipi=media.TIPI_FOTO):
-    scelti = media.scegli(elenco, seme, quanti, tipi, evita=storico["media_usati"][-30:])
+def _media(elenco, storico, seme, quanti, tipi=("screenshot", "artwork"), senza_grafiche=False):
+    scelti = media.scegli(elenco, seme, quanti, tipi, evita=storico["media_usati"][-30:], senza_grafiche=senza_grafiche)
     storico["media_usati"] = (storico["media_usati"] + [m["file"] for m in scelti])[-60:]
     return scelti
 
@@ -101,9 +101,9 @@ def contenuto_countdown(giorno, elenco, storico):
     g = giorni_mancanti(giorno)
     fatto = testi.FATTI[max(g, 0) % len(testi.FATTI)]
     domanda = testi.scegli(testi.DOMANDE, f"c{giorno}")
-    tipi = ("clip", "screenshot") if g % 3 == 0 else ("screenshot", "artwork")
+    tipi = ("clip",) if g % 3 == 0 and elenco.get("clip") else ("screenshot", "artwork")
     return {"formato": "countdown", "giorni": g, "fatto": fatto, "domanda": domanda,
-            "media": _media(elenco, storico, f"c{giorno}", 1, tipi)}
+            "media": _media(elenco, storico, f"c{giorno}", 1, tipi, senza_grafiche=True)}
 
 
 def contenuto_montaggio(giorno, elenco, storico, con_contatore=True):
@@ -127,7 +127,7 @@ def contenuto_chicca(giorno, elenco, storico):
     seme = f"k{giorno}{c['id']}"
     scelti = media.scegli_per(elenco, c["media"], seme, 1, storico["media_usati"][-30:]) if c["media"] else []
     if not scelti and not c["media"]:
-        scelti = _media(elenco, storico, seme, 1, ("screenshot", "artwork"))
+        scelti = _media(elenco, storico, seme, 1, senza_grafiche=True)
     elif not scelti:  # nessuna immagine del soggetto: meglio un luogo che il personaggio sbagliato
         scelti = media.scegli_per(elenco, ["VICE CITY", "LEONIDA"], seme, 1)
     else:
@@ -146,7 +146,7 @@ def contenuto_notizia(oggi, elenco, storico):
     if not n:
         return None, motivo
     n["domanda"] = (n.get("domanda") or "TU COSA NE PENSI?").upper()[:40]
-    return {"formato": "notizia", "notizia": n, "media": _media(elenco, storico, f"n{oggi}{n['titolo']}", 1)}, None
+    return {"formato": "notizia", "notizia": n, "media": _media(elenco, storico, f"n{oggi}{n['titolo']}", 1, senza_grafiche=True)}, None
 
 
 # ---------------------------------------------------------------- video e pubblicazione
