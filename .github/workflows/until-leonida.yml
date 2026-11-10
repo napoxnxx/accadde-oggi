@@ -1,0 +1,96 @@
+name: Until Leonida
+
+on:
+  # Un giro ogni ora: tiene pronti i video delle 19:00 dei prossimi giorni e la mattina
+  # prepara la notizia delle 13:00. Se non manca niente, si chiude in meno di un minuto.
+  schedule:
+    - cron: "17 * * * *"
+  repository_dispatch:
+    types: [giro-giornaliero]
+  workflow_dispatch:
+    inputs:
+      prova:
+        description: "Solo prova (crea i video di prova, non vanno su YouTube)"
+        type: boolean
+        default: true
+      formato:
+        description: "Quali formati provare"
+        type: choice
+        options: [tutti, notizia, countdown, chicca, montaggio]
+        default: tutti
+
+permissions:
+  contents: write
+
+concurrency:
+  group: until-leonida
+  cancel-in-progress: false
+
+jobs:
+  video:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 55
+    continue-on-error: true   # niente giri rossi né email: il giro dopo recupera
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Data di oggi (per la cache delle immagini)
+        id: giorno
+        run: echo "giorno=$(date -u +%F)" >> "$GITHUB_OUTPUT"
+
+      - name: Immagini e clip ufficiali Rockstar (in cache, aggiornate se Rockstar ne pubblica di nuove)
+        uses: actions/cache@v4
+        with:
+          path: media_rockstar
+          key: media-rockstar-${{ steps.giorno.outputs.giorno }}
+          restore-keys: media-rockstar-
+
+      - name: Installa ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: Installa dipendenze
+        run: pip install -r requirements_leonida.txt
+
+      - name: Installa Claude Code (scrive e controlla le notizie)
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Prepara i video
+        env:
+          PROVA: ${{ inputs.prova && '1' || '0' }}
+          FORMATO: ${{ inputs.formato }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          RUN_ID: ${{ github.run_id }}
+          GH_TOKEN: ${{ github.token }}
+        run: python -m leonida
+
+      - name: Salva i video come allegato del giro
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: video-${{ github.run_number }}
+          path: |
+            output/*.mp4
+            output/ultimo-video.txt
+          if-no-files-found: ignore
+          retention-days: 7
+
+      - name: Aggiorna storico e stato
+        if: always()
+        run: |
+          git config user.name "until-leonida-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for f in storico_leonida.json stato_leonida.json feed_leonida.xml; do
+            if [ -e "$f" ]; then git add "$f"; fi
+          done
+          if ! git diff --cached --quiet; then
+            git commit -m "Until Leonida: $(date -u +%F)"
+            for i in 1 2 3 4 5; do git pull --rebase origin main && git push origin HEAD:main && break; sleep 10; done
+          fi
+          true
