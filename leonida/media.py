@@ -191,6 +191,7 @@ def scegli_per(elenco, parole, seme, quanti=1, evita=()):
               and any(k in _compatto(v.get("didascalia", "")) or k in _compatto(Path(v["file"]).stem) for k in chiavi)]
     if not adatti:
         return []
+    adatti = [v for v in adatti if not re.search(GRAFICHE, Path(v["file"]).name)] or adatti  # meglio senza scritte
     freschi = [v for v in adatti if v["file"] not in set(evita)] or adatti
     random.Random(seme).shuffle(freschi)
     return [dict(v, percorso=str(RADICE / v["file"])) for v in freschi[:quanti]]
