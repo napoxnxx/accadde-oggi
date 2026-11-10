@@ -36,12 +36,21 @@ USCITA_GTA = dt.date(2026, 11, 19)
 ORARI = {"notizia": dt.time(13, 0), "sera": dt.time(19, 0)}
 GIORNI_DI_SCORTA = 3
 VIDEO_DI_RISERVA = 2
-FINESTRA_NOTIZIE = range(8, 12)
+# Il video di mezzogiorno si prepara in giornata (serve la notizia del giorno). GitHub a volte salta
+# dei giri: per non perdere l'uscita, se la mattina non c'è stato nessun giro si recupera nel
+# pomeriggio con un'uscita più tardi (mai prima di 1 ora e mezza dal montaggio, per dare tempo a Zapier).
+FINESTRA_NOTIZIE = range(6, 16)  # l'ultimo recupero (giro alle 15:xx) esce entro le 17:30
 TENTATIVI_NOTIZIA = 2
 
 
-def ora_di_uscita(giorno, slot):
-    return dt.datetime.combine(giorno, ORARI[slot], tzinfo=ROMA)
+def ora_di_uscita(giorno, slot, adesso=None):
+    uscita = dt.datetime.combine(giorno, ORARI[slot], tzinfo=ROMA)
+    if slot == "notizia" and adesso is not None:
+        prima_possibile = adesso + dt.timedelta(minutes=90)
+        if prima_possibile > uscita:  # giro arrivato tardi: si esce alla prima mezz'ora utile
+            minuti = 30 - prima_possibile.minute % 30 if prima_possibile.minute % 30 else 0
+            uscita = (prima_possibile + dt.timedelta(minutes=minuti)).replace(second=0, microsecond=0)
+    return uscita
 
 
 def giorni_mancanti(giorno):
@@ -75,7 +84,7 @@ def leggi_storico():
 def aggiorna_stato(storico, problemi, oggi, elenco_media=None, prova=None):
     vecchio = _leggi(STATO, {})
     nuovo = {
-        "scorta": [{"data": v["data"], "ora": ORARI[v["slot"]].strftime("%H:%M"), "formato": v["formato"],
+        "scorta": [{"data": v["data"], "ora": (v.get("uscita") or "T" + ORARI[v["slot"]].strftime("%H:%M"))[11:16], "formato": v["formato"],
                     "titolo": v["titolo"]} for v in sorted(storico["video"], key=lambda v: (v["data"], v["slot"]))
                    if v["data"] >= oggi.isoformat()],
         "riserva": len(storico["riserva"]),
@@ -202,8 +211,8 @@ def produci(c, nome_file, tag, giorno, prerelease=False):
     return voce
 
 
-def programma(giorno, slot, voce, storico):
-    uscita = ora_di_uscita(giorno, slot)
+def programma(giorno, slot, voce, storico, adesso=None):
+    uscita = ora_di_uscita(giorno, slot, adesso)
     feed.aggiungi(RADICE / "feed_leonida.xml", voce["titolo"], voce["descrizione"], voce["url"], voce["tag"],
                   voce["dimensione"], uscita)
     storico["video"].append({**voce, "data": giorno.isoformat(), "slot": slot, "uscita": uscita.isoformat()})
@@ -214,8 +223,8 @@ def programma(giorno, slot, voce, storico):
 def usa_riserva(giorno, slot, storico):
     if not storico["riserva"]:
         return False
-    print(f"Uso un video di riserva per il {giorno} alle {ORARI[slot]:%H:%M}.")
-    programma(giorno, slot, storico["riserva"].pop(0), storico)
+    print(f"Uso un video di riserva per il {giorno} ({slot}).")
+    programma(giorno, slot, storico["riserva"].pop(0), storico, dt.datetime.now(ROMA))
     return True
 
 
@@ -244,7 +253,7 @@ def notizia_di_oggi(oggi, adesso, elenco, storico, problemi):
         print("Riprovo la notizia al prossimo giro.")
         return
     voce = produci(contenuto, f"notizia-{oggi}", f"notizia-{oggi}", oggi)
-    programma(oggi, "notizia", voce, storico)
+    programma(oggi, "notizia", voce, storico, dt.datetime.now(ROMA))
 
 
 def giro_completo():

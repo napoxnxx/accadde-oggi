@@ -36,16 +36,50 @@ jobs:
         with:
           ref: main
 
+      - name: C'è qualcosa da preparare? (se no, il giro finisce qui in pochi secondi)
+        id: serve
+        env:
+          PROVA: ${{ inputs.prova && '1' || '0' }}
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import datetime as dt, json, os
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+          adesso = dt.datetime.now(ZoneInfo("Europe/Rome")); oggi = adesso.date()
+          def risposta(si):
+              print("fare=" + ("1" if si else "0"))
+          if os.environ.get("PROVA") == "1":
+              risposta(True)
+          elif not Path("via_libera_leonida.txt").exists():
+              risposta(False)
+          else:
+              try:
+                  s = json.loads(Path("storico_leonida.json").read_text())
+              except (OSError, ValueError):
+                  s = {}
+              pronti = {(v["data"], v["slot"]) for v in s.get("video", [])}
+              primo = 0 if adesso.hour < 16 else 1
+              sere = [(oggi + dt.timedelta(days=k)).isoformat() for k in range(primo, 4)]
+              manca_sera = any((g, "sera") not in pronti for g in sere)
+              manca_notizia = 6 <= adesso.hour < 16 and (oggi.isoformat(), "notizia") not in pronti
+              manca_riserva = len(s.get("riserva", [])) < 2
+              risposta(manca_sera or manca_notizia or manca_riserva)
+          PY
+          cat "$GITHUB_OUTPUT"
+
       - uses: actions/setup-python@v5
+        if: steps.serve.outputs.fare == '1'
         with:
           python-version: "3.12"
           cache: pip
 
       - name: Data di oggi (per la cache delle immagini)
+        if: steps.serve.outputs.fare == '1'
         id: giorno
         run: echo "giorno=$(date -u +%F)" >> "$GITHUB_OUTPUT"
 
       - name: Immagini e clip ufficiali Rockstar (in cache, aggiornate se Rockstar ne pubblica di nuove)
+        if: steps.serve.outputs.fare == '1'
         uses: actions/cache@v4
         with:
           path: media_rockstar
@@ -53,15 +87,19 @@ jobs:
           restore-keys: media-rockstar-
 
       - name: Installa ffmpeg
+        if: steps.serve.outputs.fare == '1'
         run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
 
       - name: Installa dipendenze
+        if: steps.serve.outputs.fare == '1'
         run: pip install -r requirements_leonida.txt
 
       - name: Installa Claude Code (scrive e controlla le notizie)
+        if: steps.serve.outputs.fare == '1'
         run: npm install -g @anthropic-ai/claude-code
 
       - name: Prepara i video
+        if: steps.serve.outputs.fare == '1'
         env:
           PROVA: ${{ inputs.prova && '1' || '0' }}
           FORMATO: ${{ inputs.formato }}
