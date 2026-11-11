@@ -25,7 +25,8 @@
    "preparato": "2026-11-10 13:48",
    "data": "2026-11-11",
    "slot": "sera",
-   "uscita": "2026-11-11T19:00:00+01:00"
+   "uscita": "2026-11-11T19:00:00+01:00",
+   "online": true
   },
   {
    "formato": "countdown",
@@ -106,7 +107,8 @@
    "chiave": "soggetti:gta 6|ps5|rockstar games|xbox series x s",
    "data": "2026-11-11",
    "slot": "notizia",
-   "uscita": "2026-11-11T16:00:00+01:00"
+   "uscita": "2026-11-11T16:00:00+01:00",
+   "online": true
   }
  ],
  "riserva": [
