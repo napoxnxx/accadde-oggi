@@ -41,6 +41,7 @@ VIDEO_DI_RISERVA = 2
 # pomeriggio con un'uscita più tardi (mai prima di 1 ora e mezza dal montaggio, per dare tempo a Zapier).
 FINESTRA_NOTIZIE = range(6, 16)  # l'ultimo recupero (giro alle 15:xx) esce entro le 17:30
 TENTATIVI_NOTIZIA = 2
+MAX_CARICAMENTI_24H = 4
 
 
 def ora_di_uscita(giorno, slot, adesso=None):
@@ -88,6 +89,7 @@ def aggiorna_stato(storico, problemi, oggi, elenco_media=None, prova=None):
                     "titolo": v["titolo"]} for v in sorted(storico["video"], key=lambda v: (v["data"], v["slot"]))
                    if v["data"] >= oggi.isoformat()],
         "riserva": len(storico["riserva"]),
+        "avvisi": storico.get("avvisi", []),
         "media_ufficiali": ({k: len(v) for k, v in elenco_media.items() if not k.startswith("_")}
                             if elenco_media is not None else vecchio.get("media_ufficiali")),
         "problemi": (vecchio.get("problemi", []) + [f"{oggi}: {p}" for p in problemi])[-12:],
@@ -272,6 +274,10 @@ def giro_completo():
     primo = 0 if adesso.hour < 16 else 1
     giorni = [oggi + dt.timedelta(days=k) for k in range(primo, GIORNI_DI_SCORTA + 1)]
     sere_da_fare = [g for g in giorni if (g.isoformat(), "sera") not in pronti]
+    # mai troppi caricamenti in 24 ore (YouTube li limita): le sere lontane aspettano il giro dopo
+    margine = MAX_CARICAMENTI_24H - feed.recenti(RADICE / "feed_leonida.xml")
+    urgenti = [g for g in sere_da_fare if g <= oggi + dt.timedelta(days=1)]
+    sere_da_fare = urgenti + [g for g in sere_da_fare if g not in urgenti][:max(0, margine - len(urgenti))]
     serve_notizia = adesso.hour in FINESTRA_NOTIZIE and (oggi.isoformat(), "notizia") not in pronti
     riserva_mancante = VIDEO_DI_RISERVA - len(storico["riserva"])
     problemi = []

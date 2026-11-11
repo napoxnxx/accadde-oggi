@@ -46,3 +46,14 @@ def aggiungi(percorso_feed, titolo, descrizione, url_video, guid, dimensione, us
         "<description>Short su GTA VI pronti da pubblicare su YouTube</description>\n"
         f"<lastBuildDate>{adesso}</lastBuildDate>\n"
         f"{elementi}\n</channel>\n</rss>\n", encoding="utf-8")
+
+
+def recenti(percorso_feed, ore=24):
+    """Quanti video sono stati messi nel feed nelle ultime ore (cioè caricati da Zapier su YouTube)."""
+    from email.utils import parsedate_to_datetime
+    percorso_feed = Path(percorso_feed)
+    if not percorso_feed.exists():
+        return 0
+    limite = dt.datetime.now(dt.timezone.utc) - dt.timedelta(hours=ore)
+    date = re.findall(r"<item>.*?<pubDate>(.*?)</pubDate>", percorso_feed.read_text(encoding="utf-8"), flags=re.S)
+    return sum(1 for d in date if parsedate_to_datetime(d) > limite)

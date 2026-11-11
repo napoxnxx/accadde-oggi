@@ -36,6 +36,10 @@ jobs:
         with:
           ref: main
 
+      - name: I video sono usciti davvero? (se uno è saltato, lo ripropone a Zapier)
+        if: ${{ !inputs.prova }}
+        run: python3 -m leonida.controllo
+
       - name: C'è qualcosa da preparare? (se no, il giro finisce qui in pochi secondi)
         id: serve
         env:
