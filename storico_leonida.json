@@ -85,6 +85,26 @@
    "data": "2026-11-14",
    "slot": "sera",
    "uscita": "2026-11-14T19:00:00+01:00"
+  },
+  {
+   "formato": "notizia",
+   "titolo": "GTA 6, nuovo trailer di Rockstar: parte il preload con scene inedite",
+   "descrizione": "Rockstar Games ha pubblicato un nuovo trailer di GTA 6.\nIl video annuncia l'avvio del preload del gioco.\nNel montaggio compaiono scene inedite.\n\nTu cosa ne pensi? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nNotizia confermata da almeno 3 testate diverse e raccontata con parole nostre. Fonti:\n- Multiplayer.it: https://multiplayer.it/notizie/gta-6-annuncia-lavvio-del-preload-con-un-nuovo-trailer-ufficiale.html\n- IGN: https://www.ign.com/articles/gta-6-preload-now-trailer-includes-nearly-30-seconds-of-new-footage-swat-team-nightclub-dancing-and-more\n- IGN: https://www.ign.com/articles/gta-6-preloads-are-now-available-ps5-xbox\n- Everyeye.it: https://www.everyeye.it/notizie/gta-6-trailer-preload-ricco-scene-inedite-910812.html\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Fonti: Multiplayer.it, IGN, Everyeye.it",
+   "tag": "notizia-2026-11-11",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notizia-2026-11-11/notizia-2026-11-11.mp4",
+   "dimensione": 1815607,
+   "preparato": "2026-11-11 08:47",
+   "link": [
+    "https://multiplayer.it/notizie/gta-6-annuncia-lavvio-del-preload-con-un-nuovo-trailer-ufficiale.html",
+    "https://www.ign.com/articles/gta-6-preload-now-trailer-includes-nearly-30-seconds-of-new-footage-swat-team-nightclub-dancing-and-more",
+    "https://www.ign.com/articles/gta-6-preloads-are-now-available-ps5-xbox",
+    "https://www.everyeye.it/notizie/gta-6-trailer-preload-ricco-scene-inedite-910812.html"
+   ],
+   "chiave": "soggetti:gta 6|ps5|rockstar games|xbox series x s",
+   "data": "2026-11-11",
+   "slot": "notizia",
+   "uscita": "2026-11-11T13:00:00+01:00"
   }
  ],
  "riserva": [
@@ -123,10 +143,11 @@
   "media_rockstar/artwork/Jason_Lucia_Lock_And_Load_With_Logos_landscape.jpg",
   "media_rockstar/screenshot/Jason_Duval_04.jpg",
   "media_rockstar/screenshot/Brian_Heder_03.jpg",
-  "media_rockstar/artwork/Jason_and_Lucia_02_tablet.jpg"
+  "media_rockstar/artwork/Jason_and_Lucia_02_tablet.jpg",
+  "media_rockstar/screenshot/Leonida_Keys_07.jpg"
  ],
  "tentativi_notizia": {
-  "data": "2026-11-10",
+  "data": "2026-11-11",
   "n": 1
  },
  "chicche_usate": []

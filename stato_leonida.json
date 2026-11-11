@@ -2,6 +2,12 @@
  "scorta": [
   {
    "data": "2026-11-11",
+   "ora": "13:00",
+   "formato": "notizia",
+   "titolo": "GTA 6, nuovo trailer di Rockstar: parte il preload con scene inedite"
+  },
+  {
+   "data": "2026-11-11",
    "ora": "19:00",
    "formato": "countdown",
    "titolo": "Mancano 8 giorni a GTA 6 ⏳"
@@ -30,7 +36,8 @@
   "screenshot": 138,
   "edizioni": 51,
   "vintage": 12,
-  "artwork": 53
+  "artwork": 53,
+  "clip": 9
  },
  "problemi": [],
  "prova": {
@@ -45,5 +52,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-11 01:43"
+ "aggiornato": "2026-11-11 08:47"
 }
