@@ -183,7 +183,7 @@ def controlli_automatici(scritto, citati):
     return problemi
 
 
-def valida_storia(storia, citati, gia_usati):
+def valida_storia(storia, citati, gia_usati, titoli_recenti=()):
     testate = {a["fonte"] for a in citati}
     if len(testate) < MIN_TESTATE:
         return f"solo {len(testate)} testate"
@@ -196,9 +196,30 @@ def valida_storia(storia, citati, gia_usati):
             return f"l'articolo {a['n']} ({a['fonte']}) non parla dei protagonisti"
         if ESCLUSI.search(testo):
             return "argomento escluso (morti, violenza, inchieste, scommesse…)"
-    if len({a["link"] for a in citati} & set(gia_usati)) >= 2 or chiave_storia(storia) in set(gia_usati):
+    if len({a["link"] for a in citati} & set(gia_usati)) >= 2:
         return "notizia già pubblicata"
+    # protagonisti molto specifici (3 o più) uguali a una notizia recente = stessa notizia
+    if len(soggetti) >= 3 and chiave_storia(storia) in set(gia_usati):
+        return "notizia già pubblicata"
+    testo_storia = " ".join([storia.get("fatto", "")] + [a["titolo"] for a in citati])
+    for vecchio in titoli_recenti:
+        if somiglianza(vecchio, testo_storia) >= 0.6:
+            return f"notizia già pubblicata ({vecchio[:40]})"
     return None
+
+
+_COMUNI = set("gta grand theft auto rockstar games take two della dello delle degli nella nelle sono come anche "
+              "nuovo nuova nuovi nuove with from that this have will the and per con una uno gli che del dei".split())
+
+
+def _parole(testo):
+    return {p for p in norma(testo).replace("-", " ").replace(":", " ").split() if len(p) > 3 and p not in _COMUNI}
+
+
+def somiglianza(titolo_vecchio, testo_nuovo):
+    """Quanta parte delle parole importanti di un titolo già pubblicato ricompare nella nuova notizia (0-1)."""
+    vecchie = _parole(titolo_vecchio)
+    return len(vecchie & _parole(testo_nuovo)) / len(vecchie) if len(vecchie) >= 3 else 0.0
 
 
 def chiave_storia(storia):
@@ -316,19 +337,22 @@ def scrivi_e_controlla(citati, chiedi=None):
     return None, f"non supera i controlli: {problemi[:3]}"
 
 
-def notizia_del_giorno(gia_usati=(), chiedi=None, adesso=None):
+def notizia_del_giorno(gia_usati=(), chiedi=None, adesso=None, titoli_recenti=()):
     """Restituisce (notizia, None) oppure (None, motivo)."""
     articoli, esiti = raccogli(adesso)
     testate = {a["fonte"] for a in articoli}
-    if len(articoli) < 6 or len(testate) < MIN_TESTATE:
+    if len(articoli) < MIN_TESTATE or len(testate) < MIN_TESTATE:
         return None, f"troppe poche notizie lette ({len(articoli)} da {len(testate)} testate): {esiti}"
     per_numero = {a["n"]: a for a in articoli}
-    scelta = chiedi_json(SCEGLI + "\n\nARTICOLI:\n" + _elenco(articoli, 150), chiedi)
+    gia_fatte = ("\n\nNOTIZIE CHE ABBIAMO GIÀ PUBBLICATO NEI GIORNI SCORSI (non riproporle, nemmeno con "
+                 "articoli nuovi, a meno che ci sia un fatto nuovo):\n" + "\n".join(f"- {t}" for t in titoli_recenti)
+                 ) if titoli_recenti else ""
+    scelta = chiedi_json(SCEGLI + gia_fatte + "\n\nARTICOLI:\n" + _elenco(articoli, 150), chiedi)
     motivi = []
     for storia in (scelta.get("notizie") or [])[:4]:
         numeri = [n for n in storia.get("articoli", []) if isinstance(n, int) and n in per_numero]
         citati = [per_numero[n] for n in dict.fromkeys(numeri)]
-        motivo = valida_storia(storia, citati, gia_usati)
+        motivo = valida_storia(storia, citati, gia_usati, titoli_recenti)
         if motivo:
             motivi.append(f"{storia.get('fatto', '?')[:60]}: {motivo}")
             print(f"  Scartata: {motivi[-1]}")

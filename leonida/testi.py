@@ -64,7 +64,8 @@ def notizia(n):
     titolo = (n.get("titolo_youtube") or n["titolo"]).strip()
     righe = [*n["frasi"], "", "Tu cosa ne pensi? Scrivilo nei commenti 👇", "", INVITO, "",
              "Notizia confermata da almeno 3 testate diverse e raccontata con parole nostre. Fonti:"]
-    righe += [f"- {a['fonte']}: {a['link']}" for a in n.get("articoli", [])[:5]]
+    una_per_testata = list({a["fonte"]: a for a in reversed(n.get("articoli", []))}.values())[::-1]
+    righe += [f"- {a['fonte']}: {a['link']}" for a in una_per_testata[:5]]
     righe += ["", CREDITI, "", HASHTAG]
     return titolo[:100], "\n".join(righe)
 

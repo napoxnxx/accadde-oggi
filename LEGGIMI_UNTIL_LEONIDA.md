@@ -49,3 +49,11 @@ Il file `stato_leonida.json` contiene i video programmati, quante immagini uffic
 - **Token di Claude:** va rinnovato tra un anno con `claude setup-token`.
 - **Stesso repository di Accadde Oggi, ma separato:** Until Leonida ha i suoi file (`leonida/`, `feed_leonida.xml`, `storico_leonida.json`, `stato_leonida.json`, `requirements_leonida.txt`) e il suo workflow (`until-leonida.yml`). Accadde Oggi non viene toccato.
 - **Fatti del conto alla rovescia:** si trovano in `leonida/testi.py`, con le fonti indicate.
+
+## Protezioni automatiche (aggiunte l'11/11/2026)
+
+- **Controllo delle uscite**: a ogni giro si legge l'elenco pubblico dei video del canale. Se un video doveva essere uscito da più di 75 minuti e non c'è, viene riproposto a Zapier una volta, con un nuovo orario.
+- **Avviso**: se anche il secondo tentativo non esce, il sistema apre una Issue in questo repository (GitHub ti manda una email). Vuol dire che va guardata la Zap history su Zapier.
+- **Tetto ai caricamenti**: al massimo 4 video nuovi in 24 ore, perché YouTube limita i caricamenti dalle app esterne.
+- **Orari elastici**: se GitHub fa partire il giro in ritardo, il video di mezzogiorno esce più tardi (entro le 17:30) e quello della sera entro le 22:30, invece di saltare.
+- **Niente notizie doppie**: una notizia già pubblicata negli ultimi 7 giorni non viene riproposta, anche se ne parlano articoli nuovi.

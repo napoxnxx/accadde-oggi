@@ -21,6 +21,7 @@ on:
 
 permissions:
   contents: write
+  issues: write   # per avvisare con una Issue (e quindi una email) se un video non esce
 
 concurrency:
   group: until-leonida
@@ -38,7 +39,14 @@ jobs:
 
       - name: I video sono usciti davvero? (se uno è saltato, lo ripropone a Zapier)
         if: ${{ !inputs.prova }}
-        run: python3 -m leonida.controllo
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 -m leonida.controllo
+          if [ -s avviso_leonida.txt ]; then
+            gh issue create --title "Until Leonida: un video non è uscito su YouTube" --body-file avviso_leonida.txt || true
+            rm -f avviso_leonida.txt
+          fi
 
       - name: C'è qualcosa da preparare? (se no, il giro finisce qui in pochi secondi)
         id: serve
@@ -62,7 +70,7 @@ jobs:
               except (OSError, ValueError):
                   s = {}
               pronti = {(v["data"], v["slot"]) for v in s.get("video", [])}
-              primo = 0 if adesso.hour < 16 else 1
+              primo = 0 if adesso.hour < 21 else 1
               sere = [(oggi + dt.timedelta(days=k)).isoformat() for k in range(primo, 4)]
               manca_sera = any((g, "sera") not in pronti for g in sere)
               manca_notizia = 6 <= adesso.hour < 16 and (oggi.isoformat(), "notizia") not in pronti

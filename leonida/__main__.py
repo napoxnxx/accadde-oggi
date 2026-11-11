@@ -42,11 +42,12 @@ VIDEO_DI_RISERVA = 2
 FINESTRA_NOTIZIE = range(6, 16)  # l'ultimo recupero (giro alle 15:xx) esce entro le 17:30
 TENTATIVI_NOTIZIA = 2
 MAX_CARICAMENTI_24H = 4
+ULTIMA_ORA_SERA = 21  # un giro entro le 20:59 fa ancora uscire la sera di oggi (al più tardi alle 22:30)
 
 
 def ora_di_uscita(giorno, slot, adesso=None):
     uscita = dt.datetime.combine(giorno, ORARI[slot], tzinfo=ROMA)
-    if slot == "notizia" and adesso is not None:
+    if adesso is not None:
         prima_possibile = adesso + dt.timedelta(minutes=90)
         if prima_possibile > uscita:  # giro arrivato tardi: si esce alla prima mezz'ora utile
             minuti = 30 - prima_possibile.minute % 30 if prima_possibile.minute % 30 else 0
@@ -153,7 +154,7 @@ def contenuto_notizia(oggi, elenco, storico):
     recenti = [v for v in storico["video"] if v.get("formato") == "notizia" and v["data"] >= limite]
     gia_usati = [link for v in recenti for link in v.get("link", [])]
     gia_usati += [v["chiave"] for v in recenti if v.get("chiave") and v["data"] >= (oggi - dt.timedelta(days=2)).isoformat()]
-    n, motivo = notizie.notizia_del_giorno(gia_usati)
+    n, motivo = notizie.notizia_del_giorno(gia_usati, titoli_recenti=[v["titolo"] for v in recenti])
     if not n:
         return None, motivo
     n["domanda"] = (n.get("domanda") or "TU COSA NE PENSI?").upper()[:40]
@@ -271,12 +272,12 @@ def giro_completo():
     storico = leggi_storico()
     pronti = {(v["data"], v["slot"]) for v in storico["video"]}
     # se è presto, si prepara anche la sera di oggi (Zapier ha tutto il tempo di programmarla)
-    primo = 0 if adesso.hour < 16 else 1
+    primo = 0 if adesso.hour < ULTIMA_ORA_SERA else 1  # sera di oggi saltata: si recupera, uscendo più tardi
     giorni = [oggi + dt.timedelta(days=k) for k in range(primo, GIORNI_DI_SCORTA + 1)]
     sere_da_fare = [g for g in giorni if (g.isoformat(), "sera") not in pronti]
     # mai troppi caricamenti in 24 ore (YouTube li limita): le sere lontane aspettano il giro dopo
     margine = MAX_CARICAMENTI_24H - feed.recenti(RADICE / "feed_leonida.xml")
-    urgenti = [g for g in sere_da_fare if g <= oggi + dt.timedelta(days=1)]
+    urgenti = [g for g in sere_da_fare if g <= oggi + dt.timedelta(days=1)]  # oggi e domani: sempre
     sere_da_fare = urgenti + [g for g in sere_da_fare if g not in urgenti][:max(0, margine - len(urgenti))]
     serve_notizia = adesso.hour in FINESTRA_NOTIZIE and (oggi.isoformat(), "notizia") not in pronti
     riserva_mancante = VIDEO_DI_RISERVA - len(storico["riserva"])
@@ -313,11 +314,11 @@ def giro_completo():
             else:
                 c = contenuto_montaggio(giorno, elenco, storico)
             voce = produci(c, f"sera-{giorno}", f"sera-{giorno}", giorno)
-            programma(giorno, "sera", voce, storico)
+            programma(giorno, "sera", voce, storico, dt.datetime.now(ROMA))
         except Exception as errore:  # noqa: BLE001
             traceback.print_exc()
             problemi.append(f"sera del {giorno}: {errore!r}"[:300])
-            if giorno == oggi + dt.timedelta(days=1) and adesso.hour >= 12:
+            if giorno == oggi or (giorno == oggi + dt.timedelta(days=1) and adesso.hour >= 12):
                 usa_riserva(giorno, "sera", storico)
         finally:
             _scrivi(STORICO, storico)

@@ -59,6 +59,15 @@ def controlla(adesso=None, online=None):
     # prova che il confronto dei titoli funziona: almeno un nostro video deve risultare online
     if not any(_norma(v["titolo"]) in online for v in video):
         print("Controllo uscite: nessun nostro video riconosciuto nell'elenco, non tocco niente.")
+        attesi = [v for v in video if v.get("uscita") and
+                  adesso - dt.timedelta(days=3) < dt.datetime.fromisoformat(v["uscita"]) < adesso - ATTESA]
+        if len(attesi) >= 3 and storico.get("ultimo_allarme") != adesso.date().isoformat():
+            storico["ultimo_allarme"] = adesso.date().isoformat()
+            percorso.write_text(json.dumps(storico, ensure_ascii=False, indent=1), encoding="utf-8")
+            (RADICE / "avviso_leonida.txt").write_text(
+                "Negli ultimi 3 giorni dovevano uscire %d video ma sul canale non ne risulta nessuno.\n\n"
+                "Controlla su Zapier che lo Zap di Until Leonida sia acceso (On) e guarda la Zap history.\n" % len(attesi),
+                encoding="utf-8")
         return []
     avvisi = []
     for v in video:
@@ -82,6 +91,11 @@ def controlla(adesso=None, online=None):
         feed.aggiungi(RADICE / "feed_leonida.xml", v["titolo"], v["descrizione"], v["url"],
                       f"{v['tag']}-r1", v["dimensione"], nuova)
         avvisi.append(f"{adesso:%d/%m %H:%M} non era uscito, riproposto per le {nuova:%H:%M}: {v['titolo']}")
+    persi = [a for a in avvisi if "NON USCITO" in a]
+    if persi:
+        (RADICE / "avviso_leonida.txt").write_text(
+            "\n".join(persi) + "\n\nIl sistema ha già riprovato una volta da solo. Controlla su Zapier che lo Zap "
+            "di Until Leonida sia acceso (On) e guarda la Zap history per vedere l'errore.\n", encoding="utf-8")
     if avvisi:
         print("\n".join(avvisi))
         storico["avvisi"] = (storico.get("avvisi", []) + avvisi)[-10:]
