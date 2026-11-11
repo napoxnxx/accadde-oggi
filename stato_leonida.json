@@ -1,18 +1,6 @@
 {
  "scorta": [
   {
-   "data": "2026-11-10",
-   "ora": "16:00",
-   "formato": "notizia",
-   "titolo": "GTA 6, Rockstar annuncia un festival a Miami il 21 novembre con Cardi B e Travis Scott"
-  },
-  {
-   "data": "2026-11-10",
-   "ora": "19:00",
-   "formato": "countdown",
-   "titolo": "Mancano 9 giorni a GTA 6 ⏳"
-  },
-  {
    "data": "2026-11-11",
    "ora": "19:00",
    "formato": "countdown",
@@ -29,6 +17,12 @@
    "ora": "19:00",
    "formato": "countdown",
    "titolo": "Mancano 6 giorni a GTA 6 ⏳"
+  },
+  {
+   "data": "2026-11-14",
+   "ora": "19:00",
+   "formato": "countdown",
+   "titolo": "Mancano 5 giorni a GTA 6 ⏳"
   }
  ],
  "riserva": 2,
@@ -36,8 +30,7 @@
   "screenshot": 138,
   "edizioni": 51,
   "vintage": 12,
-  "artwork": 49,
-  "clip": 9
+  "artwork": 53
  },
  "problemi": [],
  "prova": {
@@ -52,5 +45,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-10 14:27"
+ "aggiornato": "2026-11-11 01:43"
 }

@@ -72,6 +72,19 @@
    "data": "2026-11-10",
    "slot": "notizia",
    "uscita": "2026-11-10T16:00:00+01:00"
+  },
+  {
+   "formato": "countdown",
+   "titolo": "Mancano 5 giorni a GTA 6 ⏳",
+   "descrizione": "Mancano 5 giorni all'uscita di GTA 6! ⏳\n\nLo sapevi? Per la versione PC non c'è ancora una data: per ora esce solo su console.\n\nCosa fai appena arrivi a Vice City? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Jason_and_Lucia_02_tablet.jpg",
+   "tag": "sera-2026-11-14",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/sera-2026-11-14/sera-2026-11-14.mp4",
+   "dimensione": 4115122,
+   "preparato": "2026-11-11 01:43",
+   "data": "2026-11-14",
+   "slot": "sera",
+   "uscita": "2026-11-14T19:00:00+01:00"
   }
  ],
  "riserva": [
@@ -109,7 +122,8 @@
   "media_rockstar/artwork/Cal_Hampton_tablet.jpg",
   "media_rockstar/artwork/Jason_Lucia_Lock_And_Load_With_Logos_landscape.jpg",
   "media_rockstar/screenshot/Jason_Duval_04.jpg",
-  "media_rockstar/screenshot/Brian_Heder_03.jpg"
+  "media_rockstar/screenshot/Brian_Heder_03.jpg",
+  "media_rockstar/artwork/Jason_and_Lucia_02_tablet.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-10",
