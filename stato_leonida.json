@@ -1,18 +1,6 @@
 {
  "scorta": [
   {
-   "data": "2026-11-11",
-   "ora": "16:00",
-   "formato": "notizia",
-   "titolo": "GTA 6, nuovo trailer di Rockstar: parte il preload con scene inedite"
-  },
-  {
-   "data": "2026-11-11",
-   "ora": "19:00",
-   "formato": "countdown",
-   "titolo": "Mancano 8 giorni a GTA 6 ⏳"
-  },
-  {
    "data": "2026-11-12",
    "ora": "19:00",
    "formato": "countdown",
@@ -29,6 +17,12 @@
    "ora": "19:00",
    "formato": "countdown",
    "titolo": "Mancano 5 giorni a GTA 6 ⏳"
+  },
+  {
+   "data": "2026-11-15",
+   "ora": "19:00",
+   "formato": "countdown",
+   "titolo": "Mancano 4 giorni a GTA 6 ⏳"
   }
  ],
  "riserva": 2,
@@ -53,5 +47,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-11 14:30"
+ "aggiornato": "2026-11-12 04:50"
 }

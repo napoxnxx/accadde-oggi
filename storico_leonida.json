@@ -109,6 +109,19 @@
    "slot": "notizia",
    "uscita": "2026-11-11T16:00:00+01:00",
    "online": true
+  },
+  {
+   "formato": "countdown",
+   "titolo": "Mancano 4 giorni a GTA 6 ⏳",
+   "descrizione": "Mancano 4 giorni all'uscita di GTA 6! ⏳\n\nLo sapevi? Il Trailer 2 è uscito il 6 maggio 2025.\n\nSu quale console lo giochi? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Grassrivers_04.jpg",
+   "tag": "sera-2026-11-15",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/sera-2026-11-15/sera-2026-11-15.mp4",
+   "dimensione": 4526275,
+   "preparato": "2026-11-12 04:50",
+   "data": "2026-11-15",
+   "slot": "sera",
+   "uscita": "2026-11-15T19:00:00+01:00"
   }
  ],
  "riserva": [
@@ -148,7 +161,8 @@
   "media_rockstar/screenshot/Jason_Duval_04.jpg",
   "media_rockstar/screenshot/Brian_Heder_03.jpg",
   "media_rockstar/artwork/Jason_and_Lucia_02_tablet.jpg",
-  "media_rockstar/screenshot/Leonida_Keys_07.jpg"
+  "media_rockstar/screenshot/Leonida_Keys_07.jpg",
+  "media_rockstar/screenshot/Grassrivers_04.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-11",
