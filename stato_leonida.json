@@ -2,6 +2,12 @@
  "scorta": [
   {
    "data": "2026-11-12",
+   "ora": "15:30",
+   "formato": "notizia",
+   "titolo": "GTA 6: Rockstar punta a 30 fps su PS5, PS5 Pro e Xbox"
+  },
+  {
+   "data": "2026-11-12",
    "ora": "19:00",
    "formato": "countdown",
    "titolo": "Mancano 7 giorni a GTA 6 ⏳"
@@ -47,5 +53,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-12 04:50"
+ "aggiornato": "2026-11-12 13:45"
 }
