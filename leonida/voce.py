@@ -19,7 +19,7 @@ from pathlib import Path
 import numpy as np
 
 RADICE = Path(__file__).resolve().parent.parent
-VOCI_EDGE = ["it-IT-GiuseppeMultilingualNeural", "it-IT-DiegoNeural"]
+VOCI_EDGE = ["it-IT-IsabellaMultilingualNeural", "it-IT-IsabellaNeural", "it-IT-ElsaNeural"]   # voci femminili
 VELOCITA_EDGE = "+8%"
 VOCE_PIPER = "it_IT-paola-medium"
 CARTELLA_PIPER = RADICE / "media_rockstar" / "voci"   # dentro la cache, così il modello si scarica una volta sola
