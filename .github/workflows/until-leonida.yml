@@ -97,7 +97,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: python -m leonida
 
-      - name: Controllo del parlato (solo nelle prove: trascrive la voce dei video)
+      - name: Controllo del parlato (solo nelle prove, trascrive la voce dei video)
         if: ${{ inputs.prova && steps.serve.outputs.fare == '1' }}
         continue-on-error: true
         run: |
