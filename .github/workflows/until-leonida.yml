@@ -18,6 +18,10 @@ on:
         type: choice
         options: [tutti, notizia, countdown, chicca, montaggio]
         default: tutti
+      voce:
+        description: "Voce (1 = normale, piper = prova la voce di riserva, 0 = senza parlato)"
+        type: string
+        default: "1"
 
 permissions:
   contents: write
@@ -92,6 +96,7 @@ jobs:
         env:
           PROVA: ${{ inputs.prova && '1' || '0' }}
           FORMATO: ${{ inputs.formato }}
+          VOCE: ${{ inputs.voce || '1' }}
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           RUN_ID: ${{ github.run_id }}
           GH_TOKEN: ${{ github.token }}

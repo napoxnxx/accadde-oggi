@@ -89,6 +89,8 @@ def parla(testi, sr):
         return None, "voce spenta"
     testi = [per_voce(t) for t in testi]
     motori = [(v, lambda t, u, v=v: _edge(t, u, v), ".mp3") for v in VOCI_EDGE] + [(f"piper {VOCE_PIPER}", _piper, ".wav")]
+    if os.environ.get("VOCE") == "piper":   # per provare la voce di riserva
+        motori = motori[-1:]
     errori = []
     for nome, motore, estensione in motori:
         try:
