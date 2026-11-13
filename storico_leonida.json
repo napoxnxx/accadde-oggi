@@ -143,6 +143,19 @@
    "slot": "notizia",
    "uscita": "2026-11-12T15:30:00+01:00",
    "online": true
+  },
+  {
+   "formato": "countdown",
+   "titolo": "Mancano 3 giorni a GTA 6 ⏳",
+   "descrizione": "Mancano 3 giorni all'uscita di GTA 6! ⏳\n\nLo sapevi? Doveva uscire nell'autunno 2025: è stato rinviato due volte, prima al 26 maggio e poi al 19 novembre 2026.\n\nJason o Lucia? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Lucia_Caminos_Video_Clip.mp4",
+   "tag": "sera-2026-11-16",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/sera-2026-11-16/sera-2026-11-16.mp4",
+   "dimensione": 6769415,
+   "preparato": "2026-11-13 02:51",
+   "data": "2026-11-16",
+   "slot": "sera",
+   "uscita": "2026-11-16T19:00:00+01:00"
   }
  ],
  "riserva": [
@@ -184,7 +197,8 @@
   "media_rockstar/artwork/Jason_and_Lucia_02_tablet.jpg",
   "media_rockstar/screenshot/Leonida_Keys_07.jpg",
   "media_rockstar/screenshot/Grassrivers_04.jpg",
-  "media_rockstar/screenshot/Vice_City_03.jpg"
+  "media_rockstar/screenshot/Vice_City_03.jpg",
+  "media_rockstar/clip/Lucia_Caminos_Video_Clip.mp4"
  ],
  "tentativi_notizia": {
   "data": "2026-11-12",
