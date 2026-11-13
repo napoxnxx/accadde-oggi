@@ -225,5 +225,8 @@
   "data": "2026-11-13",
   "n": 1
  },
- "chicche_usate": []
+ "chicche_usate": [],
+ "caricamenti": {
+  "2026-11-01": 30
+ }
 }

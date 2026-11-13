@@ -13,7 +13,7 @@ import urllib.request
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from . import feed
+from . import feed, piano
 
 RADICE = Path(__file__).resolve().parent.parent
 CANALE = "UCE96_mB4hgibQ2I9W7AfHJw"
@@ -86,7 +86,10 @@ def controlla(adesso=None, online=None):
                 v["perso"] = True
                 avvisi.append(f"{adesso:%d/%m %H:%M} NON USCITO su YouTube: {v['titolo']} — controllare Zap history")
             continue  # di notte si riprova al mattino
+        if piano.usati(storico, adesso.date()) >= 99:
+            continue  # Zapier non ne caricherebbe altri questo mese
         v["riproposto"] = 1
+        piano.registra_caricamento(storico, adesso.date())
         v["uscita"] = nuova.isoformat()
         feed.aggiungi(RADICE / "feed_leonida.xml", v["titolo"], v["descrizione"], v["url"],
                       f"{v['tag']}-r1", v["dimensione"], nuova)

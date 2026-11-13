@@ -1,10 +1,10 @@
 name: Until Leonida
 
 on:
-  # Un giro ogni ora: tiene pronti i video delle 19:00 dei prossimi giorni e la mattina
-  # prepara la notizia delle 13:00. Se non manca niente, si chiude in meno di un minuto.
+  # Tre tentativi all'ora (GitHub ne salta molti): tiene pronti i video dei prossimi giorni e
+  # prepara le notizie del giorno. Se non manca niente, il giro si chiude in pochi secondi.
   schedule:
-    - cron: "17 * * * *"
+    - cron: "7,27,47 * * * *"
   repository_dispatch:
     types: [giro-giornaliero]
   workflow_dispatch:
@@ -53,30 +53,7 @@ jobs:
         env:
           PROVA: ${{ inputs.prova && '1' || '0' }}
         run: |
-          python3 - <<'PY' >> "$GITHUB_OUTPUT"
-          import datetime as dt, json, os
-          from pathlib import Path
-          from zoneinfo import ZoneInfo
-          adesso = dt.datetime.now(ZoneInfo("Europe/Rome")); oggi = adesso.date()
-          def risposta(si):
-              print("fare=" + ("1" if si else "0"))
-          if os.environ.get("PROVA") == "1":
-              risposta(True)
-          elif not Path("via_libera_leonida.txt").exists():
-              risposta(False)
-          else:
-              try:
-                  s = json.loads(Path("storico_leonida.json").read_text())
-              except (OSError, ValueError):
-                  s = {}
-              pronti = {(v["data"], v["slot"]) for v in s.get("video", [])}
-              primo = 0 if adesso.hour < 21 else 1
-              sere = [(oggi + dt.timedelta(days=k)).isoformat() for k in range(primo, 4)]
-              manca_sera = any((g, "sera") not in pronti for g in sere)
-              manca_notizia = 6 <= adesso.hour < 16 and (oggi.isoformat(), "notizia") not in pronti
-              manca_riserva = len(s.get("riserva", [])) < 2
-              risposta(manca_sera or manca_notizia or manca_riserva)
-          PY
+          python3 -m leonida.piano >> "$GITHUB_OUTPUT"
           cat "$GITHUB_OUTPUT"
 
       - uses: actions/setup-python@v5

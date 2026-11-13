@@ -57,3 +57,13 @@ Il file `stato_leonida.json` contiene i video programmati, quante immagini uffic
 - **Tetto ai caricamenti**: al massimo 4 video nuovi in 24 ore, perché YouTube limita i caricamenti dalle app esterne.
 - **Orari elastici**: se GitHub fa partire il giro in ritardo, il video di mezzogiorno esce più tardi (entro le 17:30) e quello della sera entro le 22:30, invece di saltare.
 - **Niente notizie doppie**: una notizia già pubblicata negli ultimi 7 giorni non viene riproposta, anche se ne parlano articoli nuovi.
+
+## Piano delle uscite (dal 13/11/2026)
+
+Accadde Oggi è stato fermato (workflow disattivato, niente è stato cancellato): tutti i 100 caricamenti al mese di Zapier vanno a Until Leonida.
+
+- **Giorni normali: 3 video** — 13:00 notizia, 19:00 sera, 21:30 notte.
+- **Giorni forti (17–22 novembre, attorno all'uscita): 5 video** — in più 09:00 mattina e 16:00 pomeriggio.
+- Il sistema conta i caricamenti del mese (`caricamenti_del_mese` in `stato_leonida.json`) e si ferma a 96; se stanno finendo, i giorni normali scendono a 2.
+
+Per cambiare il piano basta modificare le prime righe di `leonida/piano.py`: `VIDEO_AL_GIORNO`, `VIDEO_GIORNI_FORTI`, `GIORNI_FORTI` e `GIORNO_RINNOVO` (il giorno del mese in cui Zapier azzera il conteggio).

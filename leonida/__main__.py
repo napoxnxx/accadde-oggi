@@ -1,10 +1,11 @@
 """UNTIL LEONIDA — Short su GTA VI automatici, verificati e programmati su YouTube.
 
-Due uscite al giorno:
-- 13:00 NOTIZIA: il fatto del giorno su GTA VI, confermato da almeno 3 siti di videogiochi;
-  se non c'è niente di confermato, una chicca ufficiale (personaggi, luoghi, dettagli);
-- 19:00 SERA: il conto alla rovescia fino all'uscita (19 novembre 2026); dopo, a giorni
-  alterni, chicche ufficiali e montaggi di immagini di gioco ufficiali.
+Uscite al giorno (vedi piano.py): 3 nei giorni normali, 5 nei giorni forti attorno all'uscita.
+- 09:00 MATTINA (giorni forti): la notizia della notte, altrimenti una curiosità;
+- 13:00 NOTIZIA: il fatto del giorno, confermato da almeno 3 siti di videogiochi; altrimenti una curiosità;
+- 16:00 POMERIGGIO (giorni forti): una curiosità;
+- 19:00 SERA: il conto alla rovescia fino all'uscita (19 novembre 2026); dopo, curiosità o immagini di gioco;
+- 21:30 NOTTE: montaggio di immagini di gioco ufficiali (o curiosità, se la sera c'è già il montaggio).
 
 Uso:
     python -m leonida            un giro: prepara quello che manca
@@ -24,7 +25,7 @@ import traceback
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from . import feed, grafica, media, notizie, testi
+from . import feed, grafica, media, notizie, piano, testi
 
 RADICE = Path(__file__).resolve().parent.parent
 STORICO = RADICE / "storico_leonida.json"
@@ -32,17 +33,9 @@ STATO = RADICE / "stato_leonida.json"
 USCITA = RADICE / "output"
 ROMA = ZoneInfo("Europe/Rome")
 
-USCITA_GTA = dt.date(2026, 11, 19)
-ORARI = {"notizia": dt.time(13, 0), "sera": dt.time(19, 0)}
-GIORNI_DI_SCORTA = 3
-VIDEO_DI_RISERVA = 2
-# Il video di mezzogiorno si prepara in giornata (serve la notizia del giorno). GitHub a volte salta
-# dei giri: per non perdere l'uscita, se la mattina non c'è stato nessun giro si recupera nel
-# pomeriggio con un'uscita più tardi (mai prima di 1 ora e mezza dal montaggio, per dare tempo a Zapier).
-FINESTRA_NOTIZIE = range(6, 16)  # l'ultimo recupero (giro alle 15:xx) esce entro le 17:30
-TENTATIVI_NOTIZIA = 2
-MAX_CARICAMENTI_24H = 4
-ULTIMA_ORA_SERA = 21  # un giro entro le 20:59 fa ancora uscire la sera di oggi (al più tardi alle 22:30)
+USCITA_GTA = piano.USCITA_GTA
+ORARI = piano.ORARI
+VIDEO_DI_RISERVA = piano.VIDEO_DI_RISERVA
 
 
 def ora_di_uscita(giorno, slot, adesso=None):
@@ -52,6 +45,7 @@ def ora_di_uscita(giorno, slot, adesso=None):
         if prima_possibile > uscita:  # giro arrivato tardi: si esce alla prima mezz'ora utile
             minuti = 30 - prima_possibile.minute % 30 if prima_possibile.minute % 30 else 0
             uscita = (prima_possibile + dt.timedelta(minutes=minuti)).replace(second=0, microsecond=0)
+            uscita = min(uscita, dt.datetime.combine(giorno, dt.time(23, 30), tzinfo=ROMA))
     return uscita
 
 
@@ -90,6 +84,7 @@ def aggiorna_stato(storico, problemi, oggi, elenco_media=None, prova=None):
                     "titolo": v["titolo"]} for v in sorted(storico["video"], key=lambda v: (v["data"], v["slot"]))
                    if v["data"] >= oggi.isoformat()],
         "riserva": len(storico["riserva"]),
+        "caricamenti_del_mese": f"{piano.usati(storico, oggi)} su {piano.LIMITE_MESE}",
         "avvisi": storico.get("avvisi", []),
         "media_ufficiali": ({k: len(v) for k, v in elenco_media.items() if not k.startswith("_")}
                             if elenco_media is not None else vecchio.get("media_ufficiali")),
@@ -118,9 +113,9 @@ def contenuto_countdown(giorno, elenco, storico):
             "media": _media(elenco, storico, f"c{giorno}", 1, tipi, senza_grafiche=True)}
 
 
-def contenuto_montaggio(giorno, elenco, storico, con_contatore=True):
+def contenuto_montaggio(giorno, elenco, storico, con_contatore=True, variante=""):
     g = giorni_mancanti(giorno)
-    variante = f"m{giorno}{time.time() if not con_contatore else ''}"
+    variante = f"m{giorno}{variante}{time.time() if not con_contatore else ''}"
     scelti = _media(elenco, storico, variante, 4)
     for m in scelti:
         m["didascalia"] = media.didascalia_mostrabile(m.get("didascalia", ""))
@@ -219,6 +214,7 @@ def programma(giorno, slot, voce, storico, adesso=None):
     feed.aggiungi(RADICE / "feed_leonida.xml", voce["titolo"], voce["descrizione"], voce["url"], voce["tag"],
                   voce["dimensione"], uscita)
     storico["video"].append({**voce, "data": giorno.isoformat(), "slot": slot, "uscita": uscita.isoformat()})
+    piano.registra_caricamento(storico, dt.datetime.now(ROMA).date())
     _scrivi(STORICO, storico)
     print(f"Programmato per il {giorno} alle {uscita:%H:%M}: {voce['titolo']}")
 
@@ -233,30 +229,48 @@ def usa_riserva(giorno, slot, storico):
 
 # ---------------------------------------------------------------- il giro
 
-def notizia_di_oggi(oggi, adesso, elenco, storico, problemi):
+def contenuto_preparabile(slot, giorno, elenco, storico):
+    """Il contenuto degli slot che non dipendono dalle notizie (si possono preparare giorni prima)."""
+    prima_dell_uscita = giorni_mancanti(giorno) >= 0
+    sera_con_curiosita = not prima_dell_uscita and giorno.toordinal() % 3 != 0
+    if slot == "sera":
+        if prima_dell_uscita:
+            return contenuto_countdown(giorno, elenco, storico)
+        return contenuto_chicca(giorno, elenco, storico) if sera_con_curiosita else contenuto_montaggio(giorno, elenco, storico)
+    if slot == "notte":  # ogni giorno una curiosità e un montaggio, mai due uguali
+        if prima_dell_uscita or sera_con_curiosita:
+            return contenuto_montaggio(giorno, elenco, storico, variante="notte")
+        return contenuto_chicca(giorno, elenco, storico)
+    return contenuto_chicca(giorno, elenco, storico)  # pomeriggio
+
+
+def notizia_di_oggi(slot, oggi, adesso, elenco, storico, problemi):
     tentativi = storico["tentativi_notizia"]
     if tentativi.get("data") != oggi.isoformat():
         tentativi.clear()
-        tentativi.update({"data": oggi.isoformat(), "n": 0})
+        tentativi["data"] = oggi.isoformat()
+    fatti = tentativi.get(slot, tentativi.get("n", 0) if slot == "notizia" else 0)
+    massimo = piano.TENTATIVI[slot]
     contenuto = None
-    if tentativi["n"] < TENTATIVI_NOTIZIA:
-        tentativi["n"] += 1
-        print(f"\n=== Notizia del giorno (tentativo {tentativi['n']} di {TENTATIVI_NOTIZIA}) ===")
+    if fatti < massimo:
+        fatti += 1
+        tentativi[slot] = fatti
+        print(f"\n=== {slot}: notizia del giorno (tentativo {fatti} di {massimo}) ===")
         try:
             contenuto, motivo = contenuto_notizia(oggi, elenco, storico)
             if not contenuto:
                 print(f"Nessuna notizia pubblicabile: {motivo}")
-                problemi.append(f"notizia non pubblicata: {motivo}"[:300])
+                problemi.append(f"{slot}, notizia non pubblicata: {motivo}"[:300])
         except notizie.IANonDisponibile as errore:
-            problemi.append(f"notizia: {errore}"[:300])
-    if contenuto is None and (tentativi["n"] >= TENTATIVI_NOTIZIA or adesso.hour >= 10):
-        print("\n=== Al posto della notizia: una chicca ufficiale ===")
+            problemi.append(f"{slot}, notizia: {errore}"[:300])
+    if contenuto is None and (fatti >= massimo or adesso.hour >= 10):
+        print("\n=== Al posto della notizia: una curiosità ===")
         contenuto = contenuto_chicca(oggi, elenco, storico)
     if contenuto is None:
         print("Riprovo la notizia al prossimo giro.")
         return
-    voce = produci(contenuto, f"notizia-{oggi}", f"notizia-{oggi}", oggi)
-    programma(oggi, "notizia", voce, storico, dt.datetime.now(ROMA))
+    voce = produci(contenuto, f"{slot}-{oggi}", f"{slot}-{oggi}", oggi)
+    programma(oggi, slot, voce, storico, dt.datetime.now(ROMA))
 
 
 def giro_completo():
@@ -270,22 +284,14 @@ def giro_completo():
               "Fai una prova da Actions e, se va bene, crea il file via_libera_leonida.txt.")
         return 0
     storico = leggi_storico()
-    pronti = {(v["data"], v["slot"]) for v in storico["video"]}
-    # se è presto, si prepara anche la sera di oggi (Zapier ha tutto il tempo di programmarla)
-    primo = 0 if adesso.hour < ULTIMA_ORA_SERA else 1  # sera di oggi saltata: si recupera, uscendo più tardi
-    giorni = [oggi + dt.timedelta(days=k) for k in range(primo, GIORNI_DI_SCORTA + 1)]
-    sere_da_fare = [g for g in giorni if (g.isoformat(), "sera") not in pronti]
-    # mai troppi caricamenti in 24 ore (YouTube li limita): le sere lontane aspettano il giro dopo
-    margine = MAX_CARICAMENTI_24H - feed.recenti(RADICE / "feed_leonida.xml")
-    urgenti = [g for g in sere_da_fare if g <= oggi + dt.timedelta(days=1)]  # oggi e domani: sempre
-    sere_da_fare = urgenti + [g for g in sere_da_fare if g not in urgenti][:max(0, margine - len(urgenti))]
-    serve_notizia = adesso.hour in FINESTRA_NOTIZIE and (oggi.isoformat(), "notizia") not in pronti
+    da_fare = piano.da_fare(storico, adesso)
     riserva_mancante = VIDEO_DI_RISERVA - len(storico["riserva"])
     problemi = []
-    if not sere_da_fare and not serve_notizia and riserva_mancante <= 0:
+    if not da_fare and riserva_mancante <= 0:
         print("Tutto pronto. Niente da fare.")
         aggiorna_stato(storico, problemi, oggi)
         return 0
+    print("Da preparare:", ", ".join(f"{g} {s}" for g, s in da_fare) or "solo la riserva")
     try:
         elenco = media.prepara()
     except Exception as errore:  # noqa: BLE001 — senza immagini ufficiali si usa il tramonto disegnato
@@ -293,33 +299,22 @@ def giro_completo():
         elenco = {}
         problemi.append(f"immagini ufficiali non disponibili: {errore!r}"[:300])
 
-    if serve_notizia:
+    for giorno, slot in da_fare:
         try:
-            notizia_di_oggi(oggi, adesso, elenco, storico, problemi)
-        except Exception as errore:  # noqa: BLE001
-            traceback.print_exc()
-            problemi.append(f"notizia di oggi: {errore!r}"[:300])
-            if adesso.hour >= 10:
-                usa_riserva(oggi, "notizia", storico)
-        finally:
-            _scrivi(STORICO, storico)
-
-    for giorno in sere_da_fare:
-        print(f"\n=== Sera del {giorno} ===")
-        try:
-            if giorni_mancanti(giorno) >= 0:
-                c = contenuto_countdown(giorno, elenco, storico)
-            elif giorno.toordinal() % 3 != 0:  # dopo l'uscita: 2 sere su 3 pillole, 1 su 3 montaggio di immagini
-                c = contenuto_chicca(giorno, elenco, storico)
+            if slot in piano.DEL_GIORNO:
+                notizia_di_oggi(slot, oggi, adesso, elenco, storico, problemi)
             else:
-                c = contenuto_montaggio(giorno, elenco, storico)
-            voce = produci(c, f"sera-{giorno}", f"sera-{giorno}", giorno)
-            programma(giorno, "sera", voce, storico, dt.datetime.now(ROMA))
+                print(f"\n=== {slot} del {giorno} ===")
+                c = contenuto_preparabile(slot, giorno, elenco, storico)
+                voce = produci(c, f"{slot}-{giorno}", f"{slot}-{giorno}", giorno)
+                programma(giorno, slot, voce, storico, dt.datetime.now(ROMA))
         except Exception as errore:  # noqa: BLE001
             traceback.print_exc()
-            problemi.append(f"sera del {giorno}: {errore!r}"[:300])
-            if giorno == oggi or (giorno == oggi + dt.timedelta(days=1) and adesso.hour >= 12):
-                usa_riserva(giorno, "sera", storico)
+            problemi.append(f"{slot} del {giorno}: {errore!r}"[:300])
+            # la riserva copre solo i due appuntamenti principali, e solo se sono vicini
+            if slot in ("notizia", "sera") and (giorno == oggi and adesso.hour >= 10
+                                                 or giorno == oggi + dt.timedelta(days=1) and adesso.hour >= 12):
+                usa_riserva(giorno, slot, storico)
         finally:
             _scrivi(STORICO, storico)
 
