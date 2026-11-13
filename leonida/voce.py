@@ -19,7 +19,10 @@ from pathlib import Path
 import numpy as np
 
 RADICE = Path(__file__).resolve().parent.parent
-VOCI_EDGE = ["it-IT-IsabellaMultilingualNeural", "it-IT-IsabellaNeural", "it-IT-ElsaNeural"]   # voci femminili
+VOCI_EDGE = ["it-IT-IsabellaNeural", "it-IT-ElsaNeural"]   # voci femminili
+# Queste voci leggono tutto all'italiana: i nomi inglesi vanno scritti come si dicono.
+ALL_ITALIANA = [("Jason", "Géison"), ("Vice City", "Vais Siti"), ("Liberty City", "Liberti Siti"),
+                ("Take-Two", "Teic Tu"), ("Grand Theft Auto", "Grend Teft Oto"), ("Rockstar", "Rocstar")]
 VELOCITA_EDGE = "+8%"
 VOCE_PIPER = "it_IT-paola-medium"
 CARTELLA_PIPER = RADICE / "media_rockstar" / "voci"   # dentro la cache, così il modello si scarica una volta sola
@@ -71,8 +74,6 @@ def _edge(testo, uscita, voce):
 
 
 def _piper(testo, uscita):
-    for inglese, come_si_dice in (("Jason", "Géison"), ("Duval", "Duvàl"), ("Rockstar", "Rocstar"), ("Vice City", "Vais Siti")):
-        testo = testo.replace(inglese, come_si_dice)   # Piper legge all'italiana: i nomi inglesi vanno scritti come si dicono
     CARTELLA_PIPER.mkdir(parents=True, exist_ok=True)
     if not (CARTELLA_PIPER / f"{VOCE_PIPER}.onnx").exists():
         subprocess.run([sys.executable, "-m", "piper.download_voices", VOCE_PIPER, "--data-dir", str(CARTELLA_PIPER)],
@@ -90,6 +91,8 @@ def parla(testi, sr):
     if os.environ.get("VOCE", "1") == "0":
         return None, "voce spenta"
     testi = [per_voce(t) for t in testi]
+    for inglese, come_si_dice in ALL_ITALIANA:
+        testi = [re.sub(re.escape(inglese), come_si_dice, t, flags=re.I) for t in testi]
     motori = [(v, lambda t, u, v=v: _edge(t, u, v), ".mp3") for v in VOCI_EDGE] + [(f"piper {VOCE_PIPER}", _piper, ".wav")]
     if os.environ.get("VOCE") == "piper":   # per provare la voce di riserva
         motori = motori[-1:]
