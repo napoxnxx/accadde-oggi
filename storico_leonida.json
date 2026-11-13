@@ -156,6 +156,25 @@
    "data": "2026-11-16",
    "slot": "sera",
    "uscita": "2026-11-16T19:00:00+01:00"
+  },
+  {
+   "formato": "notizia",
+   "titolo": "GTA 6 ha rischiato il rifiuto della classificazione in Corea del Sud",
+   "descrizione": "GTA 6 ha rischiato di non ottenere la classificazione in Corea del Sud.\nIl problema erano le scene di nudo presenti nel gioco.\nIl comitato di valutazione ha faticato a trovare un accordo sull'approvazione.\n\nTu cosa ne pensi? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nNotizia confermata da almeno 3 testate diverse e raccontata con parole nostre. Fonti:\n- Everyeye.it: https://www.everyeye.it/notizie/gta-6-rischiato-non-arrivare-corea-sud-scene-nudo-911248.html\n- Multiplayer.it: https://multiplayer.it/notizie/gta-6-ha-rischiato-la-censura-in-sud-corea-per-le-scene-di-nudo.html\n- IGN: https://www.ign.com/articles/gta-6-was-almost-refused-rating-in-south-korea\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Fonti: Everyeye.it, Multiplayer.it, IGN",
+   "tag": "notizia-2026-11-13",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notizia-2026-11-13/notizia-2026-11-13.mp4",
+   "dimensione": 2179704,
+   "preparato": "2026-11-13 10:33",
+   "link": [
+    "https://www.everyeye.it/notizie/gta-6-rischiato-non-arrivare-corea-sud-scene-nudo-911248.html",
+    "https://multiplayer.it/notizie/gta-6-ha-rischiato-la-censura-in-sud-corea-per-le-scene-di-nudo.html",
+    "https://www.ign.com/articles/gta-6-was-almost-refused-rating-in-south-korea"
+   ],
+   "chiave": "soggetti:corea del sud|gta 6",
+   "data": "2026-11-13",
+   "slot": "notizia",
+   "uscita": "2026-11-13T13:00:00+01:00"
   }
  ],
  "riserva": [
@@ -198,10 +217,11 @@
   "media_rockstar/screenshot/Leonida_Keys_07.jpg",
   "media_rockstar/screenshot/Grassrivers_04.jpg",
   "media_rockstar/screenshot/Vice_City_03.jpg",
-  "media_rockstar/clip/Lucia_Caminos_Video_Clip.mp4"
+  "media_rockstar/clip/Lucia_Caminos_Video_Clip.mp4",
+  "media_rockstar/screenshot/Ambrosia_02.jpg"
  ],
  "tentativi_notizia": {
-  "data": "2026-11-12",
+  "data": "2026-11-13",
   "n": 1
  },
  "chicche_usate": []

@@ -2,6 +2,12 @@
  "scorta": [
   {
    "data": "2026-11-13",
+   "ora": "13:00",
+   "formato": "notizia",
+   "titolo": "GTA 6 ha rischiato il rifiuto della classificazione in Corea del Sud"
+  },
+  {
+   "data": "2026-11-13",
    "ora": "19:00",
    "formato": "countdown",
    "titolo": "Mancano 6 giorni a GTA 6 ⏳"
@@ -47,5 +53,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-13 02:51"
+ "aggiornato": "2026-11-13 10:33"
 }
