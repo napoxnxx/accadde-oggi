@@ -53,7 +53,8 @@
    "preparato": "2026-11-10 13:49",
    "data": "2026-11-13",
    "slot": "sera",
-   "uscita": "2026-11-13T19:00:00+01:00"
+   "uscita": "2026-11-13T19:00:00+01:00",
+   "online": true
   },
   {
    "formato": "notizia",
@@ -176,6 +177,45 @@
    "slot": "notizia",
    "uscita": "2026-11-13T13:00:00+01:00",
    "online": true
+  },
+  {
+   "formato": "montaggio",
+   "titolo": "Vice City tra 6 giorni 🌴 GTA 6",
+   "descrizione": "Immagini ufficiali di GTA 6 con musica originale in stile anni '80. 🌴\n\nSpiaggia o città? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Lucia_Caminos_10.jpg, Boobie_Ike_01.jpg, Brian_Heder_04.jpg, Mount_Kalaga_National_Park_02.jpg",
+   "tag": "notte-2026-11-13",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notte-2026-11-13/notte-2026-11-13.mp4",
+   "dimensione": 4362059,
+   "preparato": "2026-11-13 20:38",
+   "data": "2026-11-13",
+   "slot": "notte",
+   "uscita": "2026-11-13T22:30:00+01:00"
+  },
+  {
+   "formato": "montaggio",
+   "titolo": "Leonida ti aspetta: -5 giorni a GTA 6 🌴",
+   "descrizione": "Immagini ufficiali di GTA 6 con musica originale in stile anni '80. 🌴\n\nDove vai per prima cosa? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: DreQuan_Priest_phone.jpg, Vice_City_07.jpg, Real_Dimez_04.jpg, Jason_and_Lucia_15.jpg",
+   "tag": "notte-2026-11-14",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notte-2026-11-14/notte-2026-11-14.mp4",
+   "dimensione": 3977196,
+   "preparato": "2026-11-13 20:38",
+   "data": "2026-11-14",
+   "slot": "notte",
+   "uscita": "2026-11-14T21:30:00+01:00"
+  },
+  {
+   "formato": "montaggio",
+   "titolo": "Leonida ti aspetta: -4 giorni a GTA 6 🌴",
+   "descrizione": "Immagini ufficiali di GTA 6 con musica originale in stile anni '80. 🌴\n\nQuale posto vuoi visitare? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Grassrivers_02.jpg, The_Album_Cover_Art_landscape.jpg, Vice_City_Postcard_ultrawide.jpg, Jason_and_Lucia_12.jpg",
+   "tag": "notte-2026-11-15",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notte-2026-11-15/notte-2026-11-15.mp4",
+   "dimensione": 4604408,
+   "preparato": "2026-11-13 20:39",
+   "data": "2026-11-15",
+   "slot": "notte",
+   "uscita": "2026-11-15T21:30:00+01:00"
   }
  ],
  "riserva": [
@@ -219,7 +259,19 @@
   "media_rockstar/screenshot/Grassrivers_04.jpg",
   "media_rockstar/screenshot/Vice_City_03.jpg",
   "media_rockstar/clip/Lucia_Caminos_Video_Clip.mp4",
-  "media_rockstar/screenshot/Ambrosia_02.jpg"
+  "media_rockstar/screenshot/Ambrosia_02.jpg",
+  "media_rockstar/screenshot/Lucia_Caminos_10.jpg",
+  "media_rockstar/screenshot/Boobie_Ike_01.jpg",
+  "media_rockstar/screenshot/Brian_Heder_04.jpg",
+  "media_rockstar/screenshot/Mount_Kalaga_National_Park_02.jpg",
+  "media_rockstar/artwork/DreQuan_Priest_phone.jpg",
+  "media_rockstar/screenshot/Vice_City_07.jpg",
+  "media_rockstar/screenshot/Real_Dimez_04.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_15.jpg",
+  "media_rockstar/screenshot/Grassrivers_02.jpg",
+  "media_rockstar/artwork/The_Album_Cover_Art_landscape.jpg",
+  "media_rockstar/artwork/Vice_City_Postcard_ultrawide.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_12.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-13",
@@ -227,6 +279,6 @@
  },
  "chicche_usate": [],
  "caricamenti": {
-  "2026-11-01": 30
+  "2026-11-01": 33
  }
 }
