@@ -402,6 +402,19 @@
       "inizio": 0.0,
       "durata": 79.968,
       "youtube_id": "zapier:short-2026-11-15"
+    },
+    {
+      "data": "2026-11-16",
+      "data_uscita": "1941-11-24",
+      "titolo": "Il sindaco Samuels di Filadelfia parla",
+      "testo": "Il sindaco di Filadelfia, Samuels, prende la parola in questo cinegiornale del novembre 1941.",
+      "fonte": "Internet Archive",
+      "id_filmato": "1941-11-24_Mayor_Samuels_Proclaims_City_Defense_Week",
+      "pagina_filmato": "https://archive.org/details/1941-11-24_Mayor_Samuels_Proclaims_City_Defense_Week",
+      "verifica": "verificato sulla scheda: 0 affermazioni non supportate",
+      "inizio": 0.0,
+      "durata": 33.864,
+      "youtube_id": "zapier:short-2026-11-16"
     }
   ],
   "scartati": {
@@ -457,6 +470,11 @@
     "1960-11-17_Nuclear_Navy": "troppo lungo (177s): non si potrebbe mostrare intero",
     "1963-11-18_Washington": "scartato: controllo non leggibile",
     "1963-11-18_Space_Tour": "troppo lungo (174s): non si potrebbe mostrare intero",
-    "1933-11-20_US_Recognizes_Soviet_Russia": "scartato: controllo non leggibile"
+    "1933-11-20_US_Recognizes_Soviet_Russia": "scartato: controllo non leggibile",
+    "1944-11-22_RAF_Sinks_Tirpitz": "troppo lungo (449s): non si potrebbe mostrare intero",
+    "1933-11-22_Commander_Settle_Makes_Record": "troppo lungo (125s): non si potrebbe mostrare intero",
+    "1948-11-22_Navy_Tests_Twin_Jet_Fighter": "scartato: controllo non leggibile",
+    "1942-11-23_Loretta_Young_Trailer": "troppo lungo (142s): non si potrebbe mostrare intero",
+    "1960-11-24_Tiros_II_Weatherman_Satellite": "troppo lungo (143s): non si potrebbe mostrare intero"
   }
 }
