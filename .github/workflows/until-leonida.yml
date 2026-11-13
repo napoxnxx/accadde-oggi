@@ -97,6 +97,13 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: python -m leonida
 
+      - name: Controllo del parlato (solo nelle prove: trascrive la voce dei video)
+        if: ${{ inputs.prova && steps.serve.outputs.fare == '1' }}
+        continue-on-error: true
+        run: |
+          pip install -q faster-whisper
+          python -m leonida.ascolta output/*.mp4
+
       - name: Salva i video come allegato del giro
         if: always()
         uses: actions/upload-artifact@v4

@@ -4,3 +4,5 @@ numpy>=1.26
 scipy>=1.11
 fonttools>=4.40
 mwparserfromhell>=0.6
+edge-tts>=6.1
+piper-tts>=1.2

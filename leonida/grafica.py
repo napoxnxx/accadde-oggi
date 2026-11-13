@@ -16,7 +16,7 @@ from pathlib import Path
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
 
-from . import musica
+from . import musica, voce as voce_
 
 RADICE = Path(__file__).resolve().parent.parent
 CARATTERI = RADICE / "caratteri"
@@ -385,6 +385,7 @@ class Video:
         self.seme = seme
         self.n = 0
         self.eventi = []
+        self.parlato = []   # (secondo di inizio, campioni)
         self.processo = subprocess.Popen(
             ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{L}x{A}",
              "-r", str(FPS), "-i", "-", "-c:v", "libx264", "-preset", "medium", "-crf", "20",
@@ -427,7 +428,20 @@ class Video:
             if i < effetti.size:
                 fine = min(effetti.size, i + s.size)
                 effetti[i:fine] += s[: fine - i]
-        totale = 0.62 * brano + 0.75 * effetti
+        if self.parlato:
+            voce = np.zeros_like(brano)
+            for quando, campioni in self.parlato:
+                i = int(SR * quando)
+                fine = min(voce.size, i + campioni.size)
+                if i < voce.size:
+                    voce[i:fine] += campioni[: fine - i]
+            # la musica si abbassa mentre la voce parla e risale nelle pause
+            presenza = np.convolve((np.abs(voce) > 0.02).astype(np.float64), np.ones(SR // 3) / (SR // 3), "same")
+            sotto = 1.0 - 0.72 * np.clip(presenza * 4, 0, 1)
+            brano = brano / (np.max(np.abs(brano)) or 1)
+            totale = 0.42 * brano * sotto + 0.22 * effetti + 0.95 * voce
+        else:
+            totale = 0.62 * brano + 0.75 * effetti
         totale = totale / (np.max(np.abs(totale)) or 1) * 0.9
         audio = Path(self.lavoro.name) / "audio.wav"
         with wave.open(str(audio), "wb") as w:
@@ -571,14 +585,33 @@ def video_notizia(notizia, uscita, media_scelti=(), seme=0):
         spazio = Y_MAX - 50 - (320 + titolo.height + 20) - sum(f.height for f in frasi) - 16 * len(frasi)
         if not foto_possibile or spazio >= 330:
             break
-    tempi, t = [], 1.5
-    for testo in notizia["frasi"]:
-        tempi.append(t)
-        t += _tempo_lettura(testo)
-    t_domanda = t + 0.3
-    durata = t_domanda + 2.8
+    testo_domanda = notizia.get("domanda") or "TU COSA NE PENSI?"
+    domanda_detta = testo_domanda[:1] + testo_domanda[1:].lower()
+    pezzi, motore = voce_.parla([notizia["titolo"], *notizia["frasi"], domanda_detta + " Scrivilo nei commenti."], SR)
+    print(f"  Voce: {motore}")
+    parlato = []
+    if pezzi:   # i testi compaiono quando la voce li legge
+        t = 0.35
+        parlato.append((t, pezzi[0]))
+        t += pezzi[0].size / SR + 0.35
+        tempi = []
+        for pezzo in pezzi[1:-1]:
+            tempi.append(t)
+            parlato.append((t + 0.1, pezzo))
+            t += pezzo.size / SR + 0.3
+        t_domanda = t + 0.1
+        parlato.append((t_domanda + 0.15, pezzi[-1]))
+        durata = t_domanda + max(2.8, pezzi[-1].size / SR + 0.9)
+    else:
+        tempi, t = [], 1.5
+        for testo in notizia["frasi"]:
+            tempi.append(t)
+            t += _tempo_lettura(testo)
+        t_domanda = t + 0.3
+        durata = t_domanda + 2.8
     fondale = _fondale_per(media_scelti, durata, seme, scuro=0.58, sfocato=True)
     video = Video(uscita, fondale, seme)
+    video.parlato = parlato
     pill = etichetta(notizia.get("etichetta", "NEWS GTA VI"), ROSA)
     y_titolo = 320
     y = y_titolo + titolo.height + 20
@@ -598,7 +631,7 @@ def video_notizia(notizia, uscita, media_scelti=(), seme=0):
         y_frasi += f.height + 16
     fonti = riga_piccola("Fonti: " + ", ".join(notizia["fonti"]), 28)
     credito = riga_piccola("Immagini: Rockstar Games", 24) if media_scelti else None
-    domanda = scheda_domanda(notizia.get("domanda") or "TU COSA NE PENSI?")
+    domanda = scheda_domanda(testo_domanda)
     video.suono("pop")
     if riquadro:
         video.suono("fruscio", 0.7)
