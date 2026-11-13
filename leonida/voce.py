@@ -71,6 +71,8 @@ def _edge(testo, uscita, voce):
 
 
 def _piper(testo, uscita):
+    for inglese, come_si_dice in (("Jason", "Géison"), ("Duval", "Duvàl"), ("Rockstar", "Rocstar"), ("Vice City", "Vais Siti")):
+        testo = testo.replace(inglese, come_si_dice)   # Piper legge all'italiana: i nomi inglesi vanno scritti come si dicono
     CARTELLA_PIPER.mkdir(parents=True, exist_ok=True)
     if not (CARTELLA_PIPER / f"{VOCE_PIPER}.onnx").exists():
         subprocess.run([sys.executable, "-m", "piper.download_voices", VOCE_PIPER, "--data-dir", str(CARTELLA_PIPER)],
