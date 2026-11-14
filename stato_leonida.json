@@ -32,13 +32,19 @@
   },
   {
    "data": "2026-11-16",
+   "ora": "21:30",
+   "formato": "montaggio",
+   "titolo": "Vice City tra 3 giorni 🌴 GTA 6"
+  },
+  {
+   "data": "2026-11-16",
    "ora": "19:00",
    "formato": "countdown",
    "titolo": "Mancano 3 giorni a GTA 6 ⏳"
   }
  ],
  "riserva": 2,
- "caricamenti_del_mese": "34 su 96",
+ "caricamenti_del_mese": "35 su 96",
  "avvisi": [],
  "media_ufficiali": {
   "screenshot": 138,
@@ -60,5 +66,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-14 08:03"
+ "aggiornato": "2026-11-14 15:04"
 }

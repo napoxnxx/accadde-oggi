@@ -189,7 +189,8 @@
    "preparato": "2026-11-13 20:38",
    "data": "2026-11-13",
    "slot": "notte",
-   "uscita": "2026-11-13T22:30:00+01:00"
+   "uscita": "2026-11-13T22:30:00+01:00",
+   "online": true
   },
   {
    "formato": "montaggio",
@@ -234,7 +235,21 @@
    "chiave": "soggetti:gta 6|macca friends|rockstar games",
    "data": "2026-11-14",
    "slot": "notizia",
-   "uscita": "2026-11-14T13:00:00+01:00"
+   "uscita": "2026-11-14T13:00:00+01:00",
+   "online": true
+  },
+  {
+   "formato": "montaggio",
+   "titolo": "Vice City tra 3 giorni 🌴 GTA 6",
+   "descrizione": "Immagini ufficiali di GTA 6 con musica originale in stile anni '80. 🌴\n\nChe auto rubi per prima? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Vice_City_18.jpg, Port_Gellhorn_02.jpg, Jason_Duval_16.jpg, Lucia_Caminos_13.jpg",
+   "tag": "notte-2026-11-16",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notte-2026-11-16/notte-2026-11-16.mp4",
+   "dimensione": 4477241,
+   "preparato": "2026-11-14 15:04",
+   "data": "2026-11-16",
+   "slot": "notte",
+   "uscita": "2026-11-16T21:30:00+01:00"
   }
  ],
  "riserva": [
@@ -291,7 +306,11 @@
   "media_rockstar/artwork/The_Album_Cover_Art_landscape.jpg",
   "media_rockstar/artwork/Vice_City_Postcard_ultrawide.jpg",
   "media_rockstar/screenshot/Jason_and_Lucia_12.jpg",
-  "media_rockstar/screenshot/DreQuan_Priest_03.jpg"
+  "media_rockstar/screenshot/DreQuan_Priest_03.jpg",
+  "media_rockstar/screenshot/Vice_City_18.jpg",
+  "media_rockstar/screenshot/Port_Gellhorn_02.jpg",
+  "media_rockstar/screenshot/Jason_Duval_16.jpg",
+  "media_rockstar/screenshot/Lucia_Caminos_13.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-14",
@@ -299,6 +318,6 @@
  },
  "chicche_usate": [],
  "caricamenti": {
-  "2026-11-01": 34
+  "2026-11-01": 35
  }
 }
