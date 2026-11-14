@@ -89,7 +89,8 @@
    "preparato": "2026-11-11 01:43",
    "data": "2026-11-14",
    "slot": "sera",
-   "uscita": "2026-11-14T19:00:00+01:00"
+   "uscita": "2026-11-14T19:00:00+01:00",
+   "online": true
   },
   {
    "formato": "notizia",
@@ -203,7 +204,8 @@
    "preparato": "2026-11-13 20:38",
    "data": "2026-11-14",
    "slot": "notte",
-   "uscita": "2026-11-14T21:30:00+01:00"
+   "uscita": "2026-11-14T21:30:00+01:00",
+   "online": true
   },
   {
    "formato": "montaggio",
@@ -250,6 +252,45 @@
    "data": "2026-11-16",
    "slot": "notte",
    "uscita": "2026-11-16T21:30:00+01:00"
+  },
+  {
+   "formato": "countdown",
+   "titolo": "Mancano 2 giorni a GTA 6 ⏳",
+   "descrizione": "Mancano 2 giorni all'uscita di GTA 6! ⏳\n\nLo sapevi? I protagonisti sono Jason Duval e Lucia Caminos.\n\nSu quale console lo giochi? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: DreQuan_Priest_02.jpg",
+   "tag": "sera-2026-11-17",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/sera-2026-11-17/sera-2026-11-17.mp4",
+   "dimensione": 2968384,
+   "preparato": "2026-11-14 23:56",
+   "data": "2026-11-17",
+   "slot": "sera",
+   "uscita": "2026-11-17T19:00:00+01:00"
+  },
+  {
+   "formato": "montaggio",
+   "titolo": "Vice City tra 2 giorni 🌴 GTA 6",
+   "descrizione": "Immagini ufficiali di GTA 6 con musica originale in stile anni '80. 🌴\n\nDove vai per prima cosa? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Jason_and_Lucia_09.jpg, Vice_City_17.jpg, Raul_Bautista_02.jpg, Jason_Lucia_Lock_And_Load_phone.jpg",
+   "tag": "notte-2026-11-17",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notte-2026-11-17/notte-2026-11-17.mp4",
+   "dimensione": 3624223,
+   "preparato": "2026-11-14 23:56",
+   "data": "2026-11-17",
+   "slot": "notte",
+   "uscita": "2026-11-17T21:30:00+01:00"
+  },
+  {
+   "formato": "chicca",
+   "titolo": "Jason o Lucia? Cambi quando vuoi 🎮 GTA 6",
+   "descrizione": "Si può passare da Jason a Lucia in qualsiasi momento.\nPuoi giocare in coppia o mandarli ognuno per conto suo.\nMentre uno guida, l'altro può sparare dal finestrino.\n\nChi userai di più? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nRaccontato con parole nostre. Fonti:\n- Dazed (intervista a Rockstar): https://www.techradar.com/gaming/new-gta-6-details-reveal-a-bonnie-and-clyde-type-narrative-life-sim-systems-and-the-ability-to-seamlessly-swap-between-jason-and-lucia-during-gameplay\n- IGN (intervista a Rockstar): https://www.vice.com/en/article/rockstar-reveals-35-new-gta-6-features-ign/\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Jason_Duval_17.jpg",
+   "tag": "pomeriggio-2026-11-17",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/pomeriggio-2026-11-17/pomeriggio-2026-11-17.mp4",
+   "dimensione": 3172460,
+   "preparato": "2026-11-14 23:57",
+   "data": "2026-11-17",
+   "slot": "pomeriggio",
+   "uscita": "2026-11-17T16:00:00+01:00"
   }
  ],
  "riserva": [
@@ -310,14 +351,25 @@
   "media_rockstar/screenshot/Vice_City_18.jpg",
   "media_rockstar/screenshot/Port_Gellhorn_02.jpg",
   "media_rockstar/screenshot/Jason_Duval_16.jpg",
-  "media_rockstar/screenshot/Lucia_Caminos_13.jpg"
+  "media_rockstar/screenshot/Lucia_Caminos_13.jpg",
+  "media_rockstar/screenshot/DreQuan_Priest_02.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_09.jpg",
+  "media_rockstar/screenshot/Vice_City_17.jpg",
+  "media_rockstar/screenshot/Raul_Bautista_02.jpg",
+  "media_rockstar/artwork/Jason_Lucia_Lock_And_Load_phone.jpg",
+  "media_rockstar/screenshot/Jason_Duval_17.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-14",
   "notizia": 1
  },
- "chicche_usate": [],
+ "chicche_usate": [
+  {
+   "id": "g-cambio",
+   "data": "2026-11-17"
+  }
+ ],
  "caricamenti": {
-  "2026-11-01": 35
+  "2026-11-01": 38
  }
 }

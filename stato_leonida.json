@@ -41,10 +41,28 @@
    "ora": "19:00",
    "formato": "countdown",
    "titolo": "Mancano 3 giorni a GTA 6 ⏳"
+  },
+  {
+   "data": "2026-11-17",
+   "ora": "21:30",
+   "formato": "montaggio",
+   "titolo": "Vice City tra 2 giorni 🌴 GTA 6"
+  },
+  {
+   "data": "2026-11-17",
+   "ora": "16:00",
+   "formato": "chicca",
+   "titolo": "Jason o Lucia? Cambi quando vuoi 🎮 GTA 6"
+  },
+  {
+   "data": "2026-11-17",
+   "ora": "19:00",
+   "formato": "countdown",
+   "titolo": "Mancano 2 giorni a GTA 6 ⏳"
   }
  ],
  "riserva": 2,
- "caricamenti_del_mese": "35 su 96",
+ "caricamenti_del_mese": "38 su 96",
  "avvisi": [],
  "media_ufficiali": {
   "screenshot": 138,
@@ -66,5 +84,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-14 15:04"
+ "aggiornato": "2026-11-14 23:57"
 }
