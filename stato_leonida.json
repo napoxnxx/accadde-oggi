@@ -1,22 +1,10 @@
 {
  "scorta": [
   {
-   "data": "2026-11-13",
+   "data": "2026-11-14",
    "ora": "13:00",
    "formato": "notizia",
-   "titolo": "GTA 6 ha rischiato il rifiuto della classificazione in Corea del Sud"
-  },
-  {
-   "data": "2026-11-13",
-   "ora": "22:30",
-   "formato": "montaggio",
-   "titolo": "Vice City tra 6 giorni 🌴 GTA 6"
-  },
-  {
-   "data": "2026-11-13",
-   "ora": "19:00",
-   "formato": "countdown",
-   "titolo": "Mancano 6 giorni a GTA 6 ⏳"
+   "titolo": "GTA 6: Rockstar mostra Macca & Friends, la serie animata nel gioco"
   },
   {
    "data": "2026-11-14",
@@ -50,7 +38,7 @@
   }
  ],
  "riserva": 2,
- "caricamenti_del_mese": "33 su 96",
+ "caricamenti_del_mese": "34 su 96",
  "avvisi": [],
  "media_ufficiali": {
   "screenshot": 138,
@@ -72,5 +60,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-13 21:09"
+ "aggiornato": "2026-11-14 08:03"
 }

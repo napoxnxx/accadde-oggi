@@ -216,6 +216,25 @@
    "data": "2026-11-15",
    "slot": "notte",
    "uscita": "2026-11-15T21:30:00+01:00"
+  },
+  {
+   "formato": "notizia",
+   "titolo": "GTA 6: Rockstar mostra Macca & Friends, la serie animata nel gioco",
+   "descrizione": "Rockstar ha mostrato le prime immagini di Macca & Friends, una serie animata di GTA 6.\nSarà un programma TV che si potrà guardare all'interno del gioco.\nLa serie è ambientata a Leonida.\n\nTu cosa ne pensi? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nNotizia confermata da almeno 3 testate diverse e raccontata con parole nostre. Fonti:\n- Multiplayer.it: https://multiplayer.it/notizie/macca-friends-e-una-serie-animata-visibile-dentro-gta-6-ambientata-a-leonida.html\n- GameSpot: https://www.gamespot.com/articles/gta-6-in-game-tv-show-macca-friends-looks-ridiculous-in-the-best-way/\n- IGN: https://www.ign.com/articles/gta-6-has-a-whole-animated-tv-series-you-can-watch-in-game\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Fonti: Multiplayer.it, GameSpot, IGN",
+   "tag": "notizia-2026-11-14",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notizia-2026-11-14/notizia-2026-11-14.mp4",
+   "dimensione": 2815990,
+   "preparato": "2026-11-14 08:03",
+   "link": [
+    "https://multiplayer.it/notizie/macca-friends-e-una-serie-animata-visibile-dentro-gta-6-ambientata-a-leonida.html",
+    "https://www.gamespot.com/articles/gta-6-in-game-tv-show-macca-friends-looks-ridiculous-in-the-best-way/",
+    "https://www.ign.com/articles/gta-6-has-a-whole-animated-tv-series-you-can-watch-in-game"
+   ],
+   "chiave": "soggetti:gta 6|macca friends|rockstar games",
+   "data": "2026-11-14",
+   "slot": "notizia",
+   "uscita": "2026-11-14T13:00:00+01:00"
   }
  ],
  "riserva": [
@@ -271,14 +290,15 @@
   "media_rockstar/screenshot/Grassrivers_02.jpg",
   "media_rockstar/artwork/The_Album_Cover_Art_landscape.jpg",
   "media_rockstar/artwork/Vice_City_Postcard_ultrawide.jpg",
-  "media_rockstar/screenshot/Jason_and_Lucia_12.jpg"
+  "media_rockstar/screenshot/Jason_and_Lucia_12.jpg",
+  "media_rockstar/screenshot/DreQuan_Priest_03.jpg"
  ],
  "tentativi_notizia": {
-  "data": "2026-11-13",
-  "n": 1
+  "data": "2026-11-14",
+  "notizia": 1
  },
  "chicche_usate": [],
  "caricamenti": {
-  "2026-11-01": 33
+  "2026-11-01": 34
  }
 }
