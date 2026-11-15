@@ -303,7 +303,21 @@
    "preparato": "2026-11-15 10:56",
    "data": "2026-11-15",
    "slot": "notizia",
-   "uscita": "2026-11-15T13:00:00+01:00"
+   "uscita": "2026-11-15T13:00:00+01:00",
+   "online": true
+  },
+  {
+   "formato": "countdown",
+   "titolo": "Manca 1 giorno a GTA 6! ⏳",
+   "descrizione": "Manca un solo giorno all'uscita di GTA 6! ⏳\n\nLo sapevi? È ambientato nello stato di Leonida, con la sua Vice City.\n\nQuante ore ci giochi il primo giorno? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Grassrivers_07.jpg",
+   "tag": "sera-2026-11-18",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/sera-2026-11-18/sera-2026-11-18.mp4",
+   "dimensione": 3069953,
+   "preparato": "2026-11-15 17:57",
+   "data": "2026-11-18",
+   "slot": "sera",
+   "uscita": "2026-11-18T19:00:00+01:00"
   }
  ],
  "riserva": [
@@ -371,7 +385,8 @@
   "media_rockstar/screenshot/Raul_Bautista_02.jpg",
   "media_rockstar/artwork/Jason_Lucia_Lock_And_Load_phone.jpg",
   "media_rockstar/screenshot/Jason_Duval_17.jpg",
-  "media_rockstar/artwork/Jason_Lucia_Rooftop_phone.jpg"
+  "media_rockstar/artwork/Jason_Lucia_Rooftop_phone.jpg",
+  "media_rockstar/screenshot/Grassrivers_07.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
@@ -388,6 +403,6 @@
   }
  ],
  "caricamenti": {
-  "2026-11-01": 39
+  "2026-11-01": 40
  }
 }

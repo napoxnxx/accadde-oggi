@@ -47,10 +47,16 @@
    "ora": "19:00",
    "formato": "countdown",
    "titolo": "Mancano 2 giorni a GTA 6 ⏳"
+  },
+  {
+   "data": "2026-11-18",
+   "ora": "19:00",
+   "formato": "countdown",
+   "titolo": "Manca 1 giorno a GTA 6! ⏳"
   }
  ],
  "riserva": 2,
- "caricamenti_del_mese": "39 su 96",
+ "caricamenti_del_mese": "40 su 96",
  "avvisi": [],
  "media_ufficiali": {
   "screenshot": 138,
@@ -74,5 +80,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-15 10:56"
+ "aggiornato": "2026-11-15 17:57"
 }
