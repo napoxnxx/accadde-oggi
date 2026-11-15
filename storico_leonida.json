@@ -291,6 +291,19 @@
    "data": "2026-11-17",
    "slot": "pomeriggio",
    "uscita": "2026-11-17T16:00:00+01:00"
+  },
+  {
+   "formato": "chicca",
+   "titolo": "La cavigliera di Lucia 👀 GTA 6",
+   "descrizione": "Lucia porta un braccialetto elettronico alla caviglia.\nSecondo Rockstar ha un ruolo importante nella storia.\nAnche in come lei e Jason si mettono insieme.\n\nCome se lo toglierà? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nRaccontato con parole nostre. Fonti:\n- IGN (intervista a Rockstar): https://www.vice.com/en/article/rockstar-reveals-35-new-gta-6-features-ign/\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Jason_Lucia_Rooftop_phone.jpg",
+   "tag": "notizia-2026-11-15",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notizia-2026-11-15/notizia-2026-11-15.mp4",
+   "dimensione": 1013092,
+   "preparato": "2026-11-15 10:56",
+   "data": "2026-11-15",
+   "slot": "notizia",
+   "uscita": "2026-11-15T13:00:00+01:00"
   }
  ],
  "riserva": [
@@ -357,19 +370,24 @@
   "media_rockstar/screenshot/Vice_City_17.jpg",
   "media_rockstar/screenshot/Raul_Bautista_02.jpg",
   "media_rockstar/artwork/Jason_Lucia_Lock_And_Load_phone.jpg",
-  "media_rockstar/screenshot/Jason_Duval_17.jpg"
+  "media_rockstar/screenshot/Jason_Duval_17.jpg",
+  "media_rockstar/artwork/Jason_Lucia_Rooftop_phone.jpg"
  ],
  "tentativi_notizia": {
-  "data": "2026-11-14",
+  "data": "2026-11-15",
   "notizia": 1
  },
  "chicche_usate": [
   {
    "id": "g-cambio",
    "data": "2026-11-17"
+  },
+  {
+   "id": "g-cavigliera",
+   "data": "2026-11-15"
   }
  ],
  "caricamenti": {
-  "2026-11-01": 38
+  "2026-11-01": 39
  }
 }

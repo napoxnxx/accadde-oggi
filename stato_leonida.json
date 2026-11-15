@@ -1,22 +1,10 @@
 {
  "scorta": [
   {
-   "data": "2026-11-14",
+   "data": "2026-11-15",
    "ora": "13:00",
-   "formato": "notizia",
-   "titolo": "GTA 6: Rockstar mostra Macca & Friends, la serie animata nel gioco"
-  },
-  {
-   "data": "2026-11-14",
-   "ora": "21:30",
-   "formato": "montaggio",
-   "titolo": "Leonida ti aspetta: -5 giorni a GTA 6 🌴"
-  },
-  {
-   "data": "2026-11-14",
-   "ora": "19:00",
-   "formato": "countdown",
-   "titolo": "Mancano 5 giorni a GTA 6 ⏳"
+   "formato": "chicca",
+   "titolo": "La cavigliera di Lucia 👀 GTA 6"
   },
   {
    "data": "2026-11-15",
@@ -62,7 +50,7 @@
   }
  ],
  "riserva": 2,
- "caricamenti_del_mese": "38 su 96",
+ "caricamenti_del_mese": "39 su 96",
  "avvisi": [],
  "media_ufficiali": {
   "screenshot": 138,
@@ -71,7 +59,9 @@
   "artwork": 53,
   "clip": 9
  },
- "problemi": [],
+ "problemi": [
+  "2026-11-15: notizia, notizia non pubblicata: nessuna notizia confermata da almeno 3 testate"
+ ],
  "prova": {
   "quando": "2026-11-13 21:08",
   "release": "prova-43498603681",
@@ -84,5 +74,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-14 23:57"
+ "aggiornato": "2026-11-15 10:56"
 }
