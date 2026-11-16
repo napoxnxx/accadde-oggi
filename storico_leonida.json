@@ -388,6 +388,25 @@
    "data": "2026-11-17",
    "slot": "notizia",
    "uscita": "2026-11-17T13:00:00+01:00"
+  },
+  {
+   "formato": "notizia",
+   "titolo": "GTA 6 arriva in NBA 2K27: Vice City ed edizione speciale",
+   "descrizione": "NBA 2K27 annuncia una collaborazione con GTA 6.\nVice City arriva dentro NBA 2K27.\nIl gioco avrà una edizione speciale a tema Vice City e oggetti ispirati a GTA 6.\n\nTu cosa ne pensi? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nNotizia confermata da almeno 3 testate diverse e raccontata con parole nostre. Fonti:\n- VGC: https://www.videogameschronicle.com/news/nba-2k27-is-getting-a-vice-city-edition-as-well-as-numerous-gta-6-themed-items-in-season-3/\n- IGN: https://www.ign.com/articles/nba-2k27-is-adding-vice-city-gta-6-themed-cosmetics-and-much-more-as-part-of-massive-rockstar-games-collaboration\n- GameSpot: https://www.gamespot.com/articles/nba-2k27-gta-6-crossover-includes-a-whole-gta-inspired-limited-edition-of-the-game/\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Fonti: VGC, IGN, GameSpot",
+   "tag": "mattina-2026-11-17",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/mattina-2026-11-17/mattina-2026-11-17.mp4",
+   "dimensione": 11446512,
+   "preparato": "2026-11-17 00:03",
+   "link": [
+    "https://www.videogameschronicle.com/news/nba-2k27-is-getting-a-vice-city-edition-as-well-as-numerous-gta-6-themed-items-in-season-3/",
+    "https://www.ign.com/articles/nba-2k27-is-adding-vice-city-gta-6-themed-cosmetics-and-much-more-as-part-of-massive-rockstar-games-collaboration",
+    "https://www.gamespot.com/articles/nba-2k27-gta-6-crossover-includes-a-whole-gta-inspired-limited-edition-of-the-game/"
+   ],
+   "chiave": "soggetti:2k sports|gta 6|nba 2k27|take-two|vice city",
+   "data": "2026-11-17",
+   "slot": "mattina",
+   "uscita": "2026-11-17T09:00:00+01:00"
   }
  ],
  "riserva": [
@@ -413,13 +432,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/screenshot/Ambrosia_02.jpg",
-  "media_rockstar/screenshot/Lucia_Caminos_10.jpg",
-  "media_rockstar/screenshot/Boobie_Ike_01.jpg",
-  "media_rockstar/screenshot/Brian_Heder_04.jpg",
-  "media_rockstar/screenshot/Mount_Kalaga_National_Park_02.jpg",
-  "media_rockstar/artwork/DreQuan_Priest_phone.jpg",
-  "media_rockstar/screenshot/Vice_City_07.jpg",
   "media_rockstar/screenshot/Real_Dimez_04.jpg",
   "media_rockstar/screenshot/Jason_and_Lucia_15.jpg",
   "media_rockstar/screenshot/Grassrivers_02.jpg",
@@ -472,13 +484,20 @@
   "media_rockstar/screenshot/Ambrosia_05.jpg",
   "media_rockstar/screenshot/Jason_and_Lucia_04.jpg",
   "media_rockstar/screenshot/Vice_City_13.jpg",
-  "media_rockstar/screenshot/Vice_City_05.jpg"
+  "media_rockstar/screenshot/Vice_City_05.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_08.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_20.jpg",
+  "media_rockstar/screenshot/Port_Gellhorn_02.jpg",
+  "media_rockstar/screenshot/Cal_Hampton_01.jpg",
+  "media_rockstar/screenshot/Mount_Kalaga_National_Park_05.jpg",
+  "media_rockstar/screenshot/Raul_Bautista_01.jpg",
+  "media_rockstar/artwork/Jason_and_Lucia_Beach_ultrawide.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
   "notizia": 1,
-  "2026-11-16:notizia": 1,
-  "2026-11-17:notizia": 2
+  "2026-11-17:notizia": 2,
+  "2026-11-17:mattina": 1
  },
  "chicche_usate": [
   {
@@ -511,6 +530,6 @@
   }
  ],
  "caricamenti": {
-  "2026-11-01": 45
+  "2026-11-01": 46
  }
 }
