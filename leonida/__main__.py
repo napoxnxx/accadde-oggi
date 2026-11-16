@@ -25,7 +25,7 @@ import traceback
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from . import feed, grafica, media, notizie, piano, testi
+from . import feed, grafica, media, notizie, piano, testi, vetro
 
 RADICE = Path(__file__).resolve().parent.parent
 STORICO = RADICE / "storico_leonida.json"
@@ -104,6 +104,25 @@ def _media(elenco, storico, seme, quanti, tipi=("screenshot", "artwork"), senza_
     return scelti
 
 
+LUOGHI = ["VICE CITY", "LEONIDA", "KEYS", "GRASSRIVERS", "AMBROSIA", "GELLHORN", "KALAGA"]
+FOTO_PER_VIDEO = 7   # montaggio veloce: una foto ufficiale nuova ogni 2-3 secondi
+
+
+def _galleria(elenco, storico, parole, seme):
+    """Le foto per un video parlato: prima quelle del soggetto, poi luoghi (mai il personaggio sbagliato)."""
+    recenti = storico["media_usati"][-30:]
+    scelti = media.scegli_per(elenco, parole, seme, 3, recenti) if parole else []
+    if parole:
+        altri = media.scegli_per(elenco, LUOGHI, seme + "l", FOTO_PER_VIDEO, recenti)
+    else:
+        altri = media.scegli(elenco, seme, FOTO_PER_VIDEO, evita=recenti, senza_grafiche=True)
+    for m in altri:
+        if len(scelti) < FOTO_PER_VIDEO and m["file"] not in {x["file"] for x in scelti}:
+            scelti.append(m)
+    storico["media_usati"] = (storico["media_usati"] + [m["file"] for m in scelti])[-60:]
+    return scelti
+
+
 def contenuto_countdown(giorno, elenco, storico):
     g = giorni_mancanti(giorno)
     fatto = testi.FATTI[max(g, 0) % len(testi.FATTI)]
@@ -132,13 +151,7 @@ def contenuto_chicca(giorno, elenco, storico):
     c = min(valide, key=lambda c: (ultima_volta(c), testi.CHICCHE.index(c)))
     storico["chicche_usate"] = (storico["chicche_usate"] + [{"id": c["id"], "data": giorno.isoformat()}])[-100:]
     seme = f"k{giorno}{c['id']}"
-    scelti = media.scegli_per(elenco, c["media"], seme, 1, storico["media_usati"][-30:]) if c["media"] else []
-    if not scelti and not c["media"]:
-        scelti = _media(elenco, storico, seme, 1, senza_grafiche=True)
-    elif not scelti:  # nessuna immagine del soggetto: meglio un luogo che il personaggio sbagliato
-        scelti = media.scegli_per(elenco, ["VICE CITY", "LEONIDA"], seme, 1)
-    else:
-        storico["media_usati"] = (storico["media_usati"] + [m["file"] for m in scelti])[-60:]
+    scelti = _galleria(elenco, storico, c["media"], seme)
     dati = {"titolo": c["titolo"], "frasi": c["frasi"], "domanda": c["domanda"], "etichetta": c["etichetta"],
             "fonti": testi.fonti_brevi(c)}
     return {"formato": "chicca", "chicca": c, "notizia": dati, "media": scelti}
@@ -153,7 +166,7 @@ def contenuto_notizia(oggi, elenco, storico):
     if not n:
         return None, motivo
     n["domanda"] = (n.get("domanda") or "TU COSA NE PENSI?").upper()[:40]
-    return {"formato": "notizia", "notizia": n, "media": _media(elenco, storico, f"n{oggi}{n['titolo']}", 1, senza_grafiche=True)}, None
+    return {"formato": "notizia", "notizia": n, "media": _galleria(elenco, storico, [], f"n{oggi}{n['titolo']}")}, None
 
 
 # ---------------------------------------------------------------- video e pubblicazione
@@ -163,10 +176,10 @@ def monta(c, percorso, giorno, seme):
         durata = grafica.video_countdown(c, percorso, c["media"], seme)
         titolo, descrizione = testi.countdown(c["giorni"], c["fatto"], c["domanda"])
     elif c["formato"] == "notizia":
-        durata = grafica.video_notizia(c["notizia"], percorso, c["media"], seme)
+        durata = vetro.video_parlato(c["notizia"], percorso, c["media"], seme)
         titolo, descrizione = testi.notizia(c["notizia"])
     elif c["formato"] == "chicca":
-        durata = grafica.video_notizia(c["notizia"], percorso, c["media"], seme)
+        durata = vetro.video_parlato(c["notizia"], percorso, c["media"], seme)
         titolo, descrizione = testi.chicca(c["chicca"], seme)
     else:
         contatore = f"- {c['giorni']} {'GIORNO' if c['giorni'] == 1 else 'GIORNI'}" if c.get("giorni") else None
@@ -232,16 +245,9 @@ def usa_riserva(giorno, slot, storico):
 def contenuto_preparabile(slot, giorno, elenco, storico):
     """Il contenuto degli slot che non dipendono dalle notizie (si possono preparare giorni prima)."""
     prima_dell_uscita = giorni_mancanti(giorno) >= 0
-    sera_con_curiosita = not prima_dell_uscita and giorno.toordinal() % 3 != 0
-    if slot == "sera":
-        if prima_dell_uscita:
-            return contenuto_countdown(giorno, elenco, storico)
-        return contenuto_chicca(giorno, elenco, storico) if sera_con_curiosita else contenuto_montaggio(giorno, elenco, storico)
-    if slot == "notte":  # ogni giorno una curiosità e un montaggio, mai due uguali
-        if prima_dell_uscita or sera_con_curiosita:
-            return contenuto_montaggio(giorno, elenco, storico, variante="notte")
-        return contenuto_chicca(giorno, elenco, storico)
-    return contenuto_chicca(giorno, elenco, storico)  # pomeriggio
+    if slot == "sera" and prima_dell_uscita:
+        return contenuto_countdown(giorno, elenco, storico)
+    return contenuto_chicca(giorno, elenco, storico)   # tutto il resto: curiosità parlate
 
 
 def notizia_di_oggi(slot, oggi, adesso, elenco, storico, problemi):
@@ -321,7 +327,7 @@ def giro_completo():
     for k in range(max(0, riserva_mancante)):
         print("\n=== Video di riserva ===")
         try:
-            c = contenuto_montaggio(oggi, elenco, storico, con_contatore=False)
+            c = contenuto_chicca(oggi, elenco, storico)
             tag = f"riserva-{int(time.time())}-{k}"
             storico["riserva"].append(produci(c, tag, tag, oggi))
         except Exception as errore:  # noqa: BLE001
