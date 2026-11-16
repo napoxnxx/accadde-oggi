@@ -319,6 +319,45 @@
    "data": "2026-11-18",
    "slot": "sera",
    "uscita": "2026-11-18T19:00:00+01:00"
+  },
+  {
+   "formato": "montaggio",
+   "titolo": "Leonida ti aspetta: -1 giorno a GTA 6 🌴",
+   "descrizione": "Immagini ufficiali di GTA 6 con musica originale in stile anni '80. 🌴\n\nQuale posto vuoi visitare? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Jason_and_Lucia_01_ultrawide.jpg, Lucia_Caminos_08.jpg, Jason_and_Lucia_05.jpg, Cal_Hampton_tablet.jpg",
+   "tag": "notte-2026-11-18",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notte-2026-11-18/notte-2026-11-18.mp4",
+   "dimensione": 4974213,
+   "preparato": "2026-11-16 02:25",
+   "data": "2026-11-18",
+   "slot": "notte",
+   "uscita": "2026-11-18T21:30:00+01:00"
+  },
+  {
+   "formato": "chicca",
+   "titolo": "Dove è nato tutto 📼 GTA 6",
+   "descrizione": "Il primo Grand Theft Auto è uscito nel 1997, con la visuale dall'alto.\nL'aveva creato DMA Design, uno studio scozzese.\nQuello studio oggi si chiama Rockstar North.\n\nQual è stato il tuo primo GTA? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nRaccontato con parole nostre. Fonti:\n- Rockstar Games: https://www.rockstargames.com\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Vice_City_04.jpg",
+   "tag": "pomeriggio-2026-11-18",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/pomeriggio-2026-11-18/pomeriggio-2026-11-18.mp4",
+   "dimensione": 3221359,
+   "preparato": "2026-11-16 02:25",
+   "data": "2026-11-18",
+   "slot": "pomeriggio",
+   "uscita": "2026-11-18T16:00:00+01:00"
+  },
+  {
+   "formato": "countdown",
+   "titolo": "GTA 6 esce OGGI! 🔥 Sei pronto?",
+   "descrizione": "È il giorno: GTA 6 esce oggi su PS5 e Xbox Series X|S! 🔥\n\nLo sapevi? Esce giovedì 19 novembre 2026 su PS5 e Xbox Series X|S.\n\nL'hai già preordinato? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Real_Dimez_Video_Clip.mp4",
+   "tag": "sera-2026-11-19",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/sera-2026-11-19/sera-2026-11-19.mp4",
+   "dimensione": 10502498,
+   "preparato": "2026-11-16 02:26",
+   "data": "2026-11-19",
+   "slot": "sera",
+   "uscita": "2026-11-19T19:00:00+01:00"
   }
  ],
  "riserva": [
@@ -387,7 +426,13 @@
   "media_rockstar/artwork/Jason_Lucia_Lock_And_Load_phone.jpg",
   "media_rockstar/screenshot/Jason_Duval_17.jpg",
   "media_rockstar/artwork/Jason_Lucia_Rooftop_phone.jpg",
-  "media_rockstar/screenshot/Grassrivers_07.jpg"
+  "media_rockstar/screenshot/Grassrivers_07.jpg",
+  "media_rockstar/artwork/Jason_and_Lucia_01_ultrawide.jpg",
+  "media_rockstar/screenshot/Lucia_Caminos_08.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_05.jpg",
+  "media_rockstar/artwork/Cal_Hampton_tablet.jpg",
+  "media_rockstar/screenshot/Vice_City_04.jpg",
+  "media_rockstar/clip/Real_Dimez_Video_Clip.mp4"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
@@ -401,9 +446,13 @@
   {
    "id": "g-cavigliera",
    "data": "2026-11-15"
+  },
+  {
+   "id": "s-gta1",
+   "data": "2026-11-18"
   }
  ],
  "caricamenti": {
-  "2026-11-01": 40
+  "2026-11-01": 43
  }
 }

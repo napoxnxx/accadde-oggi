@@ -1,24 +1,6 @@
 {
  "scorta": [
   {
-   "data": "2026-11-15",
-   "ora": "13:00",
-   "formato": "chicca",
-   "titolo": "La cavigliera di Lucia 👀 GTA 6"
-  },
-  {
-   "data": "2026-11-15",
-   "ora": "21:30",
-   "formato": "montaggio",
-   "titolo": "Leonida ti aspetta: -4 giorni a GTA 6 🌴"
-  },
-  {
-   "data": "2026-11-15",
-   "ora": "19:00",
-   "formato": "countdown",
-   "titolo": "Mancano 4 giorni a GTA 6 ⏳"
-  },
-  {
    "data": "2026-11-16",
    "ora": "21:30",
    "formato": "montaggio",
@@ -50,13 +32,31 @@
   },
   {
    "data": "2026-11-18",
+   "ora": "21:30",
+   "formato": "montaggio",
+   "titolo": "Leonida ti aspetta: -1 giorno a GTA 6 🌴"
+  },
+  {
+   "data": "2026-11-18",
+   "ora": "16:00",
+   "formato": "chicca",
+   "titolo": "Dove è nato tutto 📼 GTA 6"
+  },
+  {
+   "data": "2026-11-18",
    "ora": "19:00",
    "formato": "countdown",
    "titolo": "Manca 1 giorno a GTA 6! ⏳"
+  },
+  {
+   "data": "2026-11-19",
+   "ora": "19:00",
+   "formato": "countdown",
+   "titolo": "GTA 6 esce OGGI! 🔥 Sei pronto?"
   }
  ],
  "riserva": 2,
- "caricamenti_del_mese": "40 su 96",
+ "caricamenti_del_mese": "43 su 96",
  "avvisi": [],
  "media_ufficiali": {
   "screenshot": 138,
@@ -80,5 +80,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-15 17:57"
+ "aggiornato": "2026-11-16 02:26"
 }
