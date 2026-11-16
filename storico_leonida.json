@@ -219,7 +219,8 @@
    "preparato": "2026-11-13 20:39",
    "data": "2026-11-15",
    "slot": "notte",
-   "uscita": "2026-11-15T21:30:00+01:00"
+   "uscita": "2026-11-15T21:30:00+01:00",
+   "online": true
   },
   {
    "formato": "notizia",
