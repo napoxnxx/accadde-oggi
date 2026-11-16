@@ -25,7 +25,9 @@ ORARI = {"mattina": dt.time(9, 0), "notizia": dt.time(13, 0), "pomeriggio": dt.t
 # in ordine di importanza: i primi sono quelli che restano quando i video al giorno sono pochi
 IMPORTANZA = ["notizia", "sera", "notte", "mattina", "pomeriggio"]
 # slot con la notizia fresca: si preparano il giorno stesso, solo in queste ore (ora di Roma)
-DEL_GIORNO = {"mattina": range(0, 10), "notizia": range(6, 16)}
+# La notizia delle 13 si prepara già dal giro della notte: così esce alle 13:00 precise anche se
+# GitHub la mattina salta dei giri (le notizie su GTA arrivano di sera/notte, ora italiana).
+DEL_GIORNO = {"mattina": range(0, 10), "notizia": range(0, 16)}
 TENTATIVI = {"mattina": 1, "notizia": 2}   # quante volte si cerca la notizia prima di ripiegare su una curiosità
 
 VIDEO_AL_GIORNO = 3
@@ -35,6 +37,7 @@ GIORNI_FORTI = (dt.date(2026, 11, 17), dt.date(2026, 11, 22))   # dal - al, comp
 LIMITE_MESE = 96            # Zapier gratis: 100 al mese; 4 di margine per i recuperi
 GIORNO_RINNOVO = 1          # giorno del mese in cui Zapier azzera il conteggio
 GIORNI_DI_SCORTA = 3        # gli slot non legati alle notizie si preparano fino a 3 giorni prima
+ORA_NOTIZIE_DI_DOMANI = 16  # da quest'ora (di Roma) si preparano le notizie del giorno dopo
 MAX_CARICAMENTI_24H = 5     # YouTube limita i caricamenti dalle app esterne
 VIDEO_DI_RISERVA = 2
 
@@ -112,7 +115,9 @@ def mancanti(storico, adesso):
             if (giorno.isoformat(), slot) in pronti:
                 continue
             if slot in DEL_GIORNO:
-                if k == 0 and adesso.hour in DEL_GIORNO[slot]:
+                # le notizie si preparano la sera prima (così l'orario di uscita è garantito);
+                # il giorno stesso solo per recuperare, se la sera prima non c'è stato nessun giro
+                if (k == 1 and adesso.hour >= ORA_NOTIZIE_DI_DOMANI) or (k == 0 and adesso.hour in DEL_GIORNO[slot]):
                     elenco.append((giorno, slot))
             elif k > 0 or adesso.hour < ultima_ora(slot):
                 elenco.append((giorno, slot))
@@ -120,19 +125,38 @@ def mancanti(storico, adesso):
 
 
 def da_fare(storico, adesso):
-    """Come mancanti(), ma rispettando il tetto di YouTube (24 ore) e quello di Zapier (mese)."""
+    """Come mancanti(), ma rispettando il tetto di YouTube (24 ore) e quello di Zapier (mese).
+
+    I video di OGGI passano sempre: il tetto delle 24 ore frena solo quelli dei giorni dopo, e
+    lascia sempre il posto per le notizie di oggi non ancora preparate. (Il 16/11 la notizia
+    era saltata proprio perché i video dei giorni dopo avevano occupato tutti i posti.)
+    """
     oggi = adesso.date()
-    margine_giorno = MAX_CARICAMENTI_24H - feed.recenti(RADICE / "feed_leonida.xml")
     margine_mese = LIMITE_MESE - usati(storico, oggi)
+    pronti = {(v["data"], v["slot"]) for v in storico.get("video", [])}
+    notizie_di_oggi = sum(1 for slot in slot_previsti(oggi, storico, oggi)
+                          if slot in DEL_GIORNO and (oggi.isoformat(), slot) not in pronti
+                          and adesso.hour <= max(DEL_GIORNO[slot]))
+    posti_futuri = MAX_CARICAMENTI_24H - feed.recenti(RADICE / "feed_leonida.xml") - notizie_di_oggi
     servono = ancora_da_caricare(storico, oggi)   # i video di questo mese hanno la precedenza
     scelti = []
     for giorno, slot in mancanti(storico, adesso):
-        if len(scelti) >= min(margine_giorno, margine_mese):
+        if len(scelti) >= margine_mese:
             break
+        if giorno == oggi:
+            scelti.append((giorno, slot))
+            if slot in DEL_GIORNO:
+                posti_futuri += 1   # il posto tenuto da parte viene usato adesso
+            posti_futuri -= 1
+            servono -= 1
+            continue
+        if posti_futuri <= 0:
+            continue
         del_mese_dopo = giorno > fine_ciclo(oggi)
         if del_mese_dopo and margine_mese - len(scelti) <= servono:
             continue   # si preparerà dopo il rinnovo di Zapier
         scelti.append((giorno, slot))
+        posti_futuri -= 1
         servono -= 0 if del_mese_dopo else 1
     return scelti
 

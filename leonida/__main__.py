@@ -250,18 +250,19 @@ def contenuto_preparabile(slot, giorno, elenco, storico):
     return contenuto_chicca(giorno, elenco, storico)   # tutto il resto: curiosità parlate
 
 
-def notizia_di_oggi(slot, oggi, adesso, elenco, storico, problemi):
+def notizia_del(giorno, slot, oggi, adesso, elenco, storico, problemi):
+    """Lo slot delle notizie di quel giorno (oggi o domani): la notizia, altrimenti una curiosità."""
     tentativi = storico["tentativi_notizia"]
-    if tentativi.get("data") != oggi.isoformat():
-        tentativi.clear()
-        tentativi["data"] = oggi.isoformat()
-    fatti = tentativi.get(slot, tentativi.get("n", 0) if slot == "notizia" else 0)
+    for vecchia in [k for k in tentativi if k[:10] < oggi.isoformat()]:
+        del tentativi[vecchia]
+    chiave = f"{giorno}:{slot}"
+    fatti = tentativi.get(chiave, 0)
     massimo = piano.TENTATIVI[slot]
     contenuto = None
     if fatti < massimo:
         fatti += 1
-        tentativi[slot] = fatti
-        print(f"\n=== {slot}: notizia del giorno (tentativo {fatti} di {massimo}) ===")
+        tentativi[chiave] = fatti
+        print(f"\n=== {slot} del {giorno}: notizia (tentativo {fatti} di {massimo}) ===")
         try:
             contenuto, motivo = contenuto_notizia(oggi, elenco, storico)
             if not contenuto:
@@ -269,14 +270,14 @@ def notizia_di_oggi(slot, oggi, adesso, elenco, storico, problemi):
                 problemi.append(f"{slot}, notizia non pubblicata: {motivo}"[:300])
         except notizie.IANonDisponibile as errore:
             problemi.append(f"{slot}, notizia: {errore}"[:300])
-    if contenuto is None and (fatti >= massimo or adesso.hour >= 10):
+    if contenuto is None and (fatti >= massimo or (giorno == oggi and adesso.hour >= 9)):
         print("\n=== Al posto della notizia: una curiosità ===")
-        contenuto = contenuto_chicca(oggi, elenco, storico)
+        contenuto = contenuto_chicca(giorno, elenco, storico)
     if contenuto is None:
         print("Riprovo la notizia al prossimo giro.")
         return
-    voce = produci(contenuto, f"{slot}-{oggi}", f"{slot}-{oggi}", oggi)
-    programma(oggi, slot, voce, storico, dt.datetime.now(ROMA))
+    voce = produci(contenuto, f"{slot}-{giorno}", f"{slot}-{giorno}", giorno)
+    programma(giorno, slot, voce, storico, dt.datetime.now(ROMA))
 
 
 def giro_completo():
@@ -308,7 +309,7 @@ def giro_completo():
     for giorno, slot in da_fare:
         try:
             if slot in piano.DEL_GIORNO:
-                notizia_di_oggi(slot, oggi, adesso, elenco, storico, problemi)
+                notizia_del(giorno, slot, oggi, adesso, elenco, storico, problemi)
             else:
                 print(f"\n=== {slot} del {giorno} ===")
                 c = contenuto_preparabile(slot, giorno, elenco, storico)
