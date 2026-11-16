@@ -2,6 +2,12 @@
  "scorta": [
   {
    "data": "2026-11-16",
+   "ora": "15:30",
+   "formato": "chicca",
+   "titolo": "Leonida è la Florida? 🌴 GTA 6"
+  },
+  {
+   "data": "2026-11-16",
    "ora": "21:30",
    "formato": "montaggio",
    "titolo": "Vice City tra 3 giorni 🌴 GTA 6"
@@ -55,8 +61,8 @@
    "titolo": "GTA 6 esce OGGI! 🔥 Sei pronto?"
   }
  ],
- "riserva": 0,
- "caricamenti_del_mese": "43 su 96",
+ "riserva": 2,
+ "caricamenti_del_mese": "44 su 96",
  "avvisi": [],
  "media_ufficiali": {
   "screenshot": 138,
@@ -66,7 +72,8 @@
   "clip": 9
  },
  "problemi": [
-  "2026-11-15: notizia, notizia non pubblicata: nessuna notizia confermata da almeno 3 testate"
+  "2026-11-15: notizia, notizia non pubblicata: nessuna notizia confermata da almeno 3 testate",
+  "2026-11-16: notizia, notizia non pubblicata: nessuna notizia confermata da almeno 3 testate"
  ],
  "prova": {
   "quando": "2026-11-16 13:45",
@@ -80,5 +87,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-16 13:46"
+ "aggiornato": "2026-11-16 13:53"
 }

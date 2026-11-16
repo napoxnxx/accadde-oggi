@@ -359,21 +359,44 @@
    "data": "2026-11-19",
    "slot": "sera",
    "uscita": "2026-11-19T19:00:00+01:00"
+  },
+  {
+   "formato": "chicca",
+   "titolo": "Leonida è la Florida? 🌴 GTA 6",
+   "descrizione": "Leonida è lo stato inventato di GTA 6, ispirato alla Florida.\nVice City è la sua versione di Miami.\nE le Leonida Keys ricordano le Florida Keys.\n\nCi andresti in vacanza? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nRaccontato con parole nostre. Fonti:\n- Rockstar Games: https://www.rockstargames.com/VI\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Vice_City_27.jpg, Vice_City_20.jpg, Vice_City_08.jpg, Vice_City_25.jpg, Grassrivers_08.jpg, Ambrosia_04.jpg, Leonida_Keys_04.jpg",
+   "tag": "notizia-2026-11-16",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notizia-2026-11-16/notizia-2026-11-16.mp4",
+   "dimensione": 9159426,
+   "preparato": "2026-11-16 13:51",
+   "data": "2026-11-16",
+   "slot": "notizia",
+   "uscita": "2026-11-16T15:30:00+01:00"
   }
  ],
- "riserva": [],
+ "riserva": [
+  {
+   "formato": "chicca",
+   "titolo": "Il trailer dei record 🏆 GTA 6",
+   "descrizione": "Il primo trailer di GTA 6 è uscito il 5 dicembre 2023.\nIn 24 ore ha superato i 90 milioni di visualizzazioni su YouTube.\nNessun video non musicale aveva mai fatto tanto in un giorno.\n\nL'hai visto quel giorno? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nRaccontato con parole nostre. Fonti:\n- TechCrunch: https://techcrunch.com/2023/12/05/grand-theft-auto-vi-trailer-breaks-mrbeasts-record-for-most-youtube-views-in-24-hours/\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Vice_City_11.jpg, Brian_Heder_tablet.jpg, Cal_Hampton_03.jpg, Vice_City_21.jpg, Jason_and_Lucia_07.jpg, Boobie_Ike_portrait.jpg, Lucia_Caminos_03.jpg",
+   "tag": "riserva-1794833496-0",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/riserva-1794833496-0/riserva-1794833496-0.mp4",
+   "dimensione": 9762511,
+   "preparato": "2026-11-16 13:52"
+  },
+  {
+   "formato": "chicca",
+   "titolo": "Il trailer uscito in anticipo 🕵️ GTA 6",
+   "descrizione": "Il primo trailer di GTA 6 è finito online prima del tempo, in bassa qualità.\nRockstar ha deciso di pubblicarlo subito, ore prima del previsto.\n\nTe lo ricordi? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nRaccontato con parole nostre. Fonti:\n- PC Gamer: https://pcgamer.com/gta-6-trailer\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Mount_Kalaga_National_Park_03.jpg, Vice_City_12.jpg, Raul_Bautista_ultrawide.jpg, Raul_Bautista_03.jpg, Leonida_Keys_03.jpg, Lucia_Caminos_14.jpg, Jason_and_Lucia_17.jpg",
+   "tag": "riserva-1794833547-1",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/riserva-1794833547-1/riserva-1794833547-1.mp4",
+   "dimensione": 8913141,
+   "preparato": "2026-11-16 13:53"
+  }
+ ],
  "media_usati": [
-  "media_rockstar/clip/Raul_Bautista_Video_Clip.mp4",
-  "media_rockstar/screenshot/Jason_and_Lucia_20.jpg",
-  "media_rockstar/screenshot/Boobie_Ike_04.jpg",
-  "media_rockstar/clip/Brian_Heder_Video_Clip.mp4",
-  "media_rockstar/artwork/Boobie_Ike_tablet.jpg",
-  "media_rockstar/artwork/Jason_and_Lucia_Beach_phone.jpg",
-  "media_rockstar/screenshot/Cal_Hampton_01.jpg",
-  "media_rockstar/artwork/Ambrosia_Postcard_phone.jpg",
-  "media_rockstar/artwork/Jason_and_Lucia_Beach_ultrawide.jpg",
-  "media_rockstar/artwork/Cal_Hampton_tablet.jpg",
-  "media_rockstar/artwork/Jason_Lucia_Lock_And_Load_With_Logos_landscape.jpg",
   "media_rockstar/screenshot/Jason_Duval_04.jpg",
   "media_rockstar/screenshot/Brian_Heder_03.jpg",
   "media_rockstar/artwork/Jason_and_Lucia_02_tablet.jpg",
@@ -412,11 +435,33 @@
   "media_rockstar/screenshot/Jason_and_Lucia_05.jpg",
   "media_rockstar/artwork/Cal_Hampton_tablet.jpg",
   "media_rockstar/screenshot/Vice_City_04.jpg",
-  "media_rockstar/clip/Real_Dimez_Video_Clip.mp4"
+  "media_rockstar/clip/Real_Dimez_Video_Clip.mp4",
+  "media_rockstar/screenshot/Vice_City_27.jpg",
+  "media_rockstar/screenshot/Vice_City_20.jpg",
+  "media_rockstar/screenshot/Vice_City_08.jpg",
+  "media_rockstar/screenshot/Vice_City_25.jpg",
+  "media_rockstar/screenshot/Grassrivers_08.jpg",
+  "media_rockstar/screenshot/Ambrosia_04.jpg",
+  "media_rockstar/screenshot/Leonida_Keys_04.jpg",
+  "media_rockstar/screenshot/Vice_City_11.jpg",
+  "media_rockstar/artwork/Brian_Heder_tablet.jpg",
+  "media_rockstar/screenshot/Cal_Hampton_03.jpg",
+  "media_rockstar/screenshot/Vice_City_21.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_07.jpg",
+  "media_rockstar/artwork/Boobie_Ike_portrait.jpg",
+  "media_rockstar/screenshot/Lucia_Caminos_03.jpg",
+  "media_rockstar/screenshot/Mount_Kalaga_National_Park_03.jpg",
+  "media_rockstar/screenshot/Vice_City_12.jpg",
+  "media_rockstar/artwork/Raul_Bautista_ultrawide.jpg",
+  "media_rockstar/screenshot/Raul_Bautista_03.jpg",
+  "media_rockstar/screenshot/Leonida_Keys_03.jpg",
+  "media_rockstar/screenshot/Lucia_Caminos_14.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_17.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
-  "notizia": 1
+  "notizia": 1,
+  "2026-11-16:notizia": 1
  },
  "chicche_usate": [
   {
@@ -430,9 +475,21 @@
   {
    "id": "s-gta1",
    "data": "2026-11-18"
+  },
+  {
+   "id": "s-florida",
+   "data": "2026-11-16"
+  },
+  {
+   "id": "r-trailer1",
+   "data": "2026-11-16"
+  },
+  {
+   "id": "x-anticipo",
+   "data": "2026-11-16"
   }
  ],
  "caricamenti": {
-  "2026-11-01": 43
+  "2026-11-01": 44
  }
 }
