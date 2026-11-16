@@ -373,6 +373,19 @@
    "slot": "notizia",
    "uscita": "2026-11-16T15:30:00+01:00",
    "online": true
+  },
+  {
+   "formato": "chicca",
+   "titolo": "Il grande furto del 2022 ⚠️ GTA 6",
+   "descrizione": "A settembre 2022 un hacker è entrato nei sistemi di Rockstar.\nDecine di video di una versione in sviluppo di GTA 6 sono finiti online.\nRockstar ha confermato il furto e ha detto che lo sviluppo andava avanti.\n\nTi ha rovinato la sorpresa? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nRaccontato con parole nostre. Fonti:\n- VGC: https://videogameschronicle.com/news/gta-6-hacker-sentenced-to-an-indefinite-hospital-order\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Jason_Duval_08.jpg, Jason_and_Lucia_Robbery_phone.jpg, Vice_City_06.jpg, Ambrosia_05.jpg, Jason_and_Lucia_04.jpg, Vice_City_13.jpg, Vice_City_05.jpg",
+   "tag": "notizia-2026-11-17",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notizia-2026-11-17/notizia-2026-11-17.mp4",
+   "dimensione": 10491429,
+   "preparato": "2026-11-16 18:18",
+   "data": "2026-11-17",
+   "slot": "notizia",
+   "uscita": "2026-11-17T13:00:00+01:00"
   }
  ],
  "riserva": [
@@ -398,13 +411,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/screenshot/Jason_Duval_04.jpg",
-  "media_rockstar/screenshot/Brian_Heder_03.jpg",
-  "media_rockstar/artwork/Jason_and_Lucia_02_tablet.jpg",
-  "media_rockstar/screenshot/Leonida_Keys_07.jpg",
-  "media_rockstar/screenshot/Grassrivers_04.jpg",
-  "media_rockstar/screenshot/Vice_City_03.jpg",
-  "media_rockstar/clip/Lucia_Caminos_Video_Clip.mp4",
   "media_rockstar/screenshot/Ambrosia_02.jpg",
   "media_rockstar/screenshot/Lucia_Caminos_10.jpg",
   "media_rockstar/screenshot/Boobie_Ike_01.jpg",
@@ -457,13 +463,20 @@
   "media_rockstar/screenshot/Raul_Bautista_03.jpg",
   "media_rockstar/screenshot/Leonida_Keys_03.jpg",
   "media_rockstar/screenshot/Lucia_Caminos_14.jpg",
-  "media_rockstar/screenshot/Jason_and_Lucia_17.jpg"
+  "media_rockstar/screenshot/Jason_and_Lucia_17.jpg",
+  "media_rockstar/screenshot/Jason_Duval_08.jpg",
+  "media_rockstar/artwork/Jason_and_Lucia_Robbery_phone.jpg",
+  "media_rockstar/screenshot/Vice_City_06.jpg",
+  "media_rockstar/screenshot/Ambrosia_05.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_04.jpg",
+  "media_rockstar/screenshot/Vice_City_13.jpg",
+  "media_rockstar/screenshot/Vice_City_05.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
   "notizia": 1,
   "2026-11-16:notizia": 1,
-  "2026-11-17:notizia": 1
+  "2026-11-17:notizia": 2
  },
  "chicche_usate": [
   {
@@ -489,9 +502,13 @@
   {
    "id": "x-anticipo",
    "data": "2026-11-16"
+  },
+  {
+   "id": "x-furto",
+   "data": "2026-11-17"
   }
  ],
  "caricamenti": {
-  "2026-11-01": 44
+  "2026-11-01": 45
  }
 }
