@@ -1,34 +1,10 @@
 {
  "scorta": [
   {
-   "data": "2026-11-17",
+   "data": "2026-11-18",
    "ora": "09:00",
    "formato": "notizia",
-   "titolo": "GTA 6 arriva in NBA 2K27: Vice City ed edizione speciale"
-  },
-  {
-   "data": "2026-11-17",
-   "ora": "13:00",
-   "formato": "chicca",
-   "titolo": "Il grande furto del 2022 ⚠️ GTA 6"
-  },
-  {
-   "data": "2026-11-17",
-   "ora": "21:30",
-   "formato": "montaggio",
-   "titolo": "Vice City tra 2 giorni 🌴 GTA 6"
-  },
-  {
-   "data": "2026-11-17",
-   "ora": "16:00",
-   "formato": "chicca",
-   "titolo": "Jason o Lucia? Cambi quando vuoi 🎮 GTA 6"
-  },
-  {
-   "data": "2026-11-17",
-   "ora": "19:00",
-   "formato": "countdown",
-   "titolo": "Mancano 2 giorni a GTA 6 ⏳"
+   "titolo": "GTA 6 guida le nomination ai The Game Awards 2026 con otto candidature"
   },
   {
    "data": "2026-11-18",
@@ -80,7 +56,7 @@
   }
  ],
  "riserva": 2,
- "caricamenti_del_mese": "50 su 96",
+ "caricamenti_del_mese": "51 su 96",
  "avvisi": [],
  "media_ufficiali": {
   "screenshot": 138,
@@ -107,5 +83,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-17 18:33"
+ "aggiornato": "2026-11-18 00:03"
 }

@@ -471,6 +471,28 @@
    "data": "2026-11-18",
    "slot": "notizia",
    "uscita": "2026-11-18T13:00:00+01:00"
+  },
+  {
+   "formato": "notizia",
+   "titolo": "GTA 6 guida le nomination ai The Game Awards 2026 con otto candidature",
+   "descrizione": "GTA 6 ha ottenuto otto nomination ai The Game Awards 2026, più di ogni altro gioco.\nIl titolo di Rockstar Games è tra i sei candidati al premio di Gioco dell'Anno.\nLa cerimonia si terrà il 10 dicembre e il gioco non è ancora uscito.\n\nTu cosa ne pensi? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nNotizia confermata da almeno 3 testate diverse e raccontata con parole nostre. Fonti:\n- Multiplayer.it: https://multiplayer.it/articoli/nomination-the-game-awards-2026-gta-6-in-pole-control-resonant-resident-evil-requiem.html\n- Eurogamer: https://www.eurogamer.net/game-awards-2026-nominees-full-list-gta-6\n- GameSpot: https://www.gamespot.com/articles/gta-6-leads-tga-nominations-and-reviews-arent-even-live-yet/\n- Everyeye.it: https://www.everyeye.it/notizie/videogiochi-candidati-the-game-awards-2026-912170.html\n- IGN: https://www.ign.com/articles/the-game-awards-2026-nominations-revealed-gta-6-dominates\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Fonti: Multiplayer.it, Eurogamer, GameSpot, Everyeye.it",
+   "tag": "mattina-2026-11-18",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/mattina-2026-11-18/mattina-2026-11-18.mp4",
+   "dimensione": 12658316,
+   "preparato": "2026-11-18 00:03",
+   "link": [
+    "https://multiplayer.it/articoli/nomination-the-game-awards-2026-gta-6-in-pole-control-resonant-resident-evil-requiem.html",
+    "https://www.eurogamer.net/game-awards-2026-nominees-full-list-gta-6",
+    "https://www.gamespot.com/articles/gta-6-leads-tga-nominations-and-reviews-arent-even-live-yet/",
+    "https://www.everyeye.it/notizie/videogiochi-candidati-the-game-awards-2026-912170.html",
+    "https://www.ign.com/articles/the-game-awards-2026-nominations-revealed-gta-6-dominates",
+    "https://www.spaziogames.it/notizie/the-game-awards-2026-i-candidati-al-goty-ce-anche-gta-6"
+   ],
+   "chiave": "soggetti:geoff keighley|gta 6|the game awards",
+   "data": "2026-11-18",
+   "slot": "mattina",
+   "uscita": "2026-11-18T09:00:00+01:00"
   }
  ],
  "riserva": [
@@ -496,13 +518,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/screenshot/Vice_City_25.jpg",
-  "media_rockstar/screenshot/Grassrivers_08.jpg",
-  "media_rockstar/screenshot/Ambrosia_04.jpg",
-  "media_rockstar/screenshot/Leonida_Keys_04.jpg",
-  "media_rockstar/screenshot/Vice_City_11.jpg",
-  "media_rockstar/artwork/Brian_Heder_tablet.jpg",
-  "media_rockstar/screenshot/Cal_Hampton_03.jpg",
   "media_rockstar/screenshot/Vice_City_21.jpg",
   "media_rockstar/screenshot/Jason_and_Lucia_07.jpg",
   "media_rockstar/artwork/Boobie_Ike_portrait.jpg",
@@ -555,14 +570,20 @@
   "media_rockstar/artwork/Brian_Heder_tablet.jpg",
   "media_rockstar/screenshot/Vice_City_07.jpg",
   "media_rockstar/screenshot/Cal_Hampton_03.jpg",
-  "media_rockstar/artwork/Jason_and_Lucia_Robbery_landscape.jpg"
+  "media_rockstar/artwork/Jason_and_Lucia_Robbery_landscape.jpg",
+  "media_rockstar/screenshot/Real_Dimez_01.jpg",
+  "media_rockstar/artwork/Cal_Hampton_portrait.jpg",
+  "media_rockstar/screenshot/Jason_Duval_04.jpg",
+  "media_rockstar/screenshot/Leonida_Keys_05.jpg",
+  "media_rockstar/artwork/Boobie_Ike_tablet.jpg",
+  "media_rockstar/screenshot/Lucia_Caminos_14.jpg",
+  "media_rockstar/screenshot/DreQuan_Priest_03.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
   "notizia": 1,
-  "2026-11-17:notizia": 2,
-  "2026-11-17:mattina": 1,
-  "2026-11-18:notizia": 1
+  "2026-11-18:notizia": 1,
+  "2026-11-18:mattina": 1
  },
  "chicche_usate": [
   {
@@ -607,6 +628,6 @@
   }
  ],
  "caricamenti": {
-  "2026-11-01": 50
+  "2026-11-01": 51
  }
 }
