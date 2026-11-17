@@ -32,6 +32,12 @@
   },
   {
    "data": "2026-11-18",
+   "ora": "13:00",
+   "formato": "notizia",
+   "titolo": "GTA 6: come giocare in anticipo con il trucco della Nuova Zelanda"
+  },
+  {
+   "data": "2026-11-18",
    "ora": "21:30",
    "formato": "montaggio",
    "titolo": "Leonida ti aspetta: -1 giorno a GTA 6 🌴"
@@ -74,7 +80,7 @@
   }
  ],
  "riserva": 2,
- "caricamenti_del_mese": "49 su 96",
+ "caricamenti_del_mese": "50 su 96",
  "avvisi": [],
  "media_ufficiali": {
   "screenshot": 138,
@@ -101,5 +107,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-17 14:03"
+ "aggiornato": "2026-11-17 18:33"
 }

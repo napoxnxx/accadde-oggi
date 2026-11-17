@@ -449,6 +449,26 @@
    "data": "2026-11-20",
    "slot": "sera",
    "uscita": "2026-11-20T19:00:00+01:00"
+  },
+  {
+   "formato": "notizia",
+   "titolo": "GTA 6: come giocare in anticipo con il trucco della Nuova Zelanda",
+   "descrizione": "GTA 6 esce il 19 novembre, a mezzanotte secondo l'orario locale di ogni territorio.\nIl lancio è regionale, quindi alcuni giocatori potrebbero iniziare prima di altri.\nSi parla del trucco della Nuova Zelanda per giocare in anticipo.\n\nTu cosa ne pensi? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nNotizia confermata da almeno 3 testate diverse e raccontata con parole nostre. Fonti:\n- IGN: https://www.ign.com/articles/gta-6-new-zealand-trick-xbox-ps5-early-release-time\n- Everyeye.it: https://www.everyeye.it/notizie/quando-sblocca-gta-6-quando-possiamo-iniziare-giocare-italia-912006.html\n- Multiplayer.it: https://multiplayer.it/notizie/gta-6-si-potra-giocare-in-anticipo-con-il-trucco-della-nuova-zelanda-ecco-come-funziona.html\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Fonti: IGN, Everyeye.it, Multiplayer.it",
+   "tag": "notizia-2026-11-18",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notizia-2026-11-18/notizia-2026-11-18.mp4",
+   "dimensione": 15087796,
+   "preparato": "2026-11-17 18:33",
+   "link": [
+    "https://www.ign.com/articles/gta-6-new-zealand-trick-xbox-ps5-early-release-time",
+    "https://www.everyeye.it/notizie/quando-sblocca-gta-6-quando-possiamo-iniziare-giocare-italia-912006.html",
+    "https://www.everyeye.it/notizie/gta-6-come-giocare-lancio-usando-trucco-zelanda-899157.html",
+    "https://multiplayer.it/notizie/gta-6-si-potra-giocare-in-anticipo-con-il-trucco-della-nuova-zelanda-ecco-come-funziona.html"
+   ],
+   "chiave": "soggetti:gta 6|rockstar",
+   "data": "2026-11-18",
+   "slot": "notizia",
+   "uscita": "2026-11-18T13:00:00+01:00"
   }
  ],
  "riserva": [
@@ -474,13 +494,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/screenshot/Jason_and_Lucia_05.jpg",
-  "media_rockstar/artwork/Cal_Hampton_tablet.jpg",
-  "media_rockstar/screenshot/Vice_City_04.jpg",
-  "media_rockstar/clip/Real_Dimez_Video_Clip.mp4",
-  "media_rockstar/screenshot/Vice_City_27.jpg",
-  "media_rockstar/screenshot/Vice_City_20.jpg",
-  "media_rockstar/screenshot/Vice_City_08.jpg",
   "media_rockstar/screenshot/Vice_City_25.jpg",
   "media_rockstar/screenshot/Grassrivers_08.jpg",
   "media_rockstar/screenshot/Ambrosia_04.jpg",
@@ -533,13 +546,21 @@
   "media_rockstar/screenshot/Vice_City_26.jpg",
   "media_rockstar/screenshot/Vice_City_24.jpg",
   "media_rockstar/screenshot/Vice_City_17.jpg",
-  "media_rockstar/screenshot/Mount_Kalaga_National_Park_02.jpg"
+  "media_rockstar/screenshot/Mount_Kalaga_National_Park_02.jpg",
+  "media_rockstar/screenshot/Leonida_Keys_01.jpg",
+  "media_rockstar/screenshot/Real_Dimez_04.jpg",
+  "media_rockstar/screenshot/Mount_Kalaga_National_Park_04.jpg",
+  "media_rockstar/artwork/Brian_Heder_tablet.jpg",
+  "media_rockstar/screenshot/Vice_City_07.jpg",
+  "media_rockstar/screenshot/Cal_Hampton_03.jpg",
+  "media_rockstar/artwork/Jason_and_Lucia_Robbery_landscape.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
   "notizia": 1,
   "2026-11-17:notizia": 2,
-  "2026-11-17:mattina": 1
+  "2026-11-17:mattina": 1,
+  "2026-11-18:notizia": 1
  },
  "chicche_usate": [
   {
@@ -584,6 +605,6 @@
   }
  ],
  "caricamenti": {
-  "2026-11-01": 49
+  "2026-11-01": 50
  }
 }
