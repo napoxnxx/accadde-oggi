@@ -407,6 +407,32 @@
    "data": "2026-11-17",
    "slot": "mattina",
    "uscita": "2026-11-17T09:00:00+01:00"
+  },
+  {
+   "formato": "chicca",
+   "titolo": "Le canzoni dei trailer 🎵 GTA 6",
+   "descrizione": "Nel primo trailer c'era Love Is a Long Road di Tom Petty.\nNel secondo Hot Together delle Pointer Sisters.\nE la colonna sonora originale del gioco è dei Justice.\n\nQuale preferisci? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nRaccontato con parole nostre. Fonti:\n- Louder: https://www.loudersound.com/news/gta-6-trailer-tom-petty\n- NME: https://www.nme.com/news/gaming-news/what-song-grand-theft-auto-6-trailer-2-3860654\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: DreQuan_Priest_01.jpg, Vice_City_01.jpg, Vice_City_16.jpg, Mount_Kalaga_National_Park_01.jpg, Port_Gellhorn_05.jpg, Port_Gellhorn_03.jpg, Jason_and_Lucia_03.jpg",
+   "tag": "notte-2026-11-19",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notte-2026-11-19/notte-2026-11-19.mp4",
+   "dimensione": 9185022,
+   "preparato": "2026-11-17 02:32",
+   "data": "2026-11-19",
+   "slot": "notte",
+   "uscita": "2026-11-19T21:30:00+01:00"
+  },
+  {
+   "formato": "chicca",
+   "titolo": "Chi è Jason Duval? 🕶️ GTA 6",
+   "descrizione": "È cresciuto in mezzo a truffatori e criminali.\nDopo l'esercito è tornato nelle Keys a lavorare per dei trafficanti locali.\nIncontrare Lucia potrebbe essere la cosa migliore o la peggiore della sua vita.\n\nJason o Lucia? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nInformazioni ufficiali di Rockstar Games (rockstargames.com/VI), raccontate con parole nostre.\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Jason_and_Lucia_Beach_phone.jpg, Jason_Duval_11.jpg, Jason_Duval_16.jpg, Vice_City_02.jpg, Ambrosia_03.jpg, Port_Gellhorn_07.jpg, Vice_City_04.jpg",
+   "tag": "pomeriggio-2026-11-19",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/pomeriggio-2026-11-19/pomeriggio-2026-11-19.mp4",
+   "dimensione": 9205640,
+   "preparato": "2026-11-17 02:32",
+   "data": "2026-11-19",
+   "slot": "pomeriggio",
+   "uscita": "2026-11-19T16:00:00+01:00"
   }
  ],
  "riserva": [
@@ -432,20 +458,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/screenshot/Real_Dimez_04.jpg",
-  "media_rockstar/screenshot/Jason_and_Lucia_15.jpg",
-  "media_rockstar/screenshot/Grassrivers_02.jpg",
-  "media_rockstar/artwork/The_Album_Cover_Art_landscape.jpg",
-  "media_rockstar/artwork/Vice_City_Postcard_ultrawide.jpg",
-  "media_rockstar/screenshot/Jason_and_Lucia_12.jpg",
-  "media_rockstar/screenshot/DreQuan_Priest_03.jpg",
-  "media_rockstar/screenshot/Vice_City_18.jpg",
-  "media_rockstar/screenshot/Port_Gellhorn_02.jpg",
-  "media_rockstar/screenshot/Jason_Duval_16.jpg",
-  "media_rockstar/screenshot/Lucia_Caminos_13.jpg",
-  "media_rockstar/screenshot/DreQuan_Priest_02.jpg",
-  "media_rockstar/screenshot/Jason_and_Lucia_09.jpg",
-  "media_rockstar/screenshot/Vice_City_17.jpg",
   "media_rockstar/screenshot/Raul_Bautista_02.jpg",
   "media_rockstar/artwork/Jason_Lucia_Lock_And_Load_phone.jpg",
   "media_rockstar/screenshot/Jason_Duval_17.jpg",
@@ -491,7 +503,21 @@
   "media_rockstar/screenshot/Cal_Hampton_01.jpg",
   "media_rockstar/screenshot/Mount_Kalaga_National_Park_05.jpg",
   "media_rockstar/screenshot/Raul_Bautista_01.jpg",
-  "media_rockstar/artwork/Jason_and_Lucia_Beach_ultrawide.jpg"
+  "media_rockstar/artwork/Jason_and_Lucia_Beach_ultrawide.jpg",
+  "media_rockstar/screenshot/DreQuan_Priest_01.jpg",
+  "media_rockstar/screenshot/Vice_City_01.jpg",
+  "media_rockstar/screenshot/Vice_City_16.jpg",
+  "media_rockstar/screenshot/Mount_Kalaga_National_Park_01.jpg",
+  "media_rockstar/screenshot/Port_Gellhorn_05.jpg",
+  "media_rockstar/screenshot/Port_Gellhorn_03.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_03.jpg",
+  "media_rockstar/artwork/Jason_and_Lucia_Beach_phone.jpg",
+  "media_rockstar/screenshot/Jason_Duval_11.jpg",
+  "media_rockstar/screenshot/Jason_Duval_16.jpg",
+  "media_rockstar/screenshot/Vice_City_02.jpg",
+  "media_rockstar/screenshot/Ambrosia_03.jpg",
+  "media_rockstar/screenshot/Port_Gellhorn_07.jpg",
+  "media_rockstar/screenshot/Vice_City_04.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
@@ -527,9 +553,17 @@
   {
    "id": "x-furto",
    "data": "2026-11-17"
+  },
+  {
+   "id": "m-trailer",
+   "data": "2026-11-19"
+  },
+  {
+   "id": "jason",
+   "data": "2026-11-19"
   }
  ],
  "caricamenti": {
-  "2026-11-01": 46
+  "2026-11-01": 48
  }
 }
