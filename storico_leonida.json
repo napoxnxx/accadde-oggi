@@ -434,6 +434,19 @@
    "data": "2026-11-19",
    "slot": "pomeriggio",
    "uscita": "2026-11-19T16:00:00+01:00"
+  },
+  {
+   "formato": "chicca",
+   "titolo": "Cosa c'è nell'Ultimate Edition 💎 GTA 6",
+   "descrizione": "Rockstar la presenta come una raccolta esclusiva legata alla storia di Jason e Lucia.\nTra i contenuti mostrati ci sono una Grotti Cheetah del '95 e i revolver Hawk & Little Morgan.\n\nPrendi l'ultimate? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nInformazioni ufficiali di Rockstar Games (rockstargames.com/VI), raccontate con parole nostre.\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: ULTIMATE_EDITION_ELECTRIC_FANG_02.jpg, ULTIMATE_EDITION_GROTTI_CHEETAH_01.jpg, ULTIMATE_EDITION_SAFEHOUSE_VEHICLES_01.jpg, Vice_City_26.jpg, Vice_City_24.jpg, Vice_City_17.jpg, Mount_Kalaga_National_Park_02.jpg",
+   "tag": "sera-2026-11-20",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/sera-2026-11-20/sera-2026-11-20.mp4",
+   "dimensione": 10622952,
+   "preparato": "2026-11-17 14:03",
+   "data": "2026-11-20",
+   "slot": "sera",
+   "uscita": "2026-11-20T19:00:00+01:00"
   }
  ],
  "riserva": [
@@ -459,13 +472,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/screenshot/Raul_Bautista_02.jpg",
-  "media_rockstar/artwork/Jason_Lucia_Lock_And_Load_phone.jpg",
-  "media_rockstar/screenshot/Jason_Duval_17.jpg",
-  "media_rockstar/artwork/Jason_Lucia_Rooftop_phone.jpg",
-  "media_rockstar/screenshot/Grassrivers_07.jpg",
-  "media_rockstar/artwork/Jason_and_Lucia_01_ultrawide.jpg",
-  "media_rockstar/screenshot/Lucia_Caminos_08.jpg",
   "media_rockstar/screenshot/Jason_and_Lucia_05.jpg",
   "media_rockstar/artwork/Cal_Hampton_tablet.jpg",
   "media_rockstar/screenshot/Vice_City_04.jpg",
@@ -518,7 +524,14 @@
   "media_rockstar/screenshot/Vice_City_02.jpg",
   "media_rockstar/screenshot/Ambrosia_03.jpg",
   "media_rockstar/screenshot/Port_Gellhorn_07.jpg",
-  "media_rockstar/screenshot/Vice_City_04.jpg"
+  "media_rockstar/screenshot/Vice_City_04.jpg",
+  "media_rockstar/edizioni/ULTIMATE_EDITION_ELECTRIC_FANG_02.jpg",
+  "media_rockstar/edizioni/ULTIMATE_EDITION_GROTTI_CHEETAH_01.jpg",
+  "media_rockstar/edizioni/ULTIMATE_EDITION_SAFEHOUSE_VEHICLES_01.jpg",
+  "media_rockstar/screenshot/Vice_City_26.jpg",
+  "media_rockstar/screenshot/Vice_City_24.jpg",
+  "media_rockstar/screenshot/Vice_City_17.jpg",
+  "media_rockstar/screenshot/Mount_Kalaga_National_Park_02.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
@@ -562,9 +575,13 @@
   {
    "id": "jason",
    "data": "2026-11-19"
+  },
+  {
+   "id": "ultimate",
+   "data": "2026-11-20"
   }
  ],
  "caricamenti": {
-  "2026-11-01": 48
+  "2026-11-01": 49
  }
 }

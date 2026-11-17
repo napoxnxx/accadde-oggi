@@ -65,10 +65,16 @@
    "ora": "19:00",
    "formato": "countdown",
    "titolo": "GTA 6 esce OGGI! 🔥 Sei pronto?"
+  },
+  {
+   "data": "2026-11-20",
+   "ora": "19:00",
+   "formato": "chicca",
+   "titolo": "Cosa c'è nell'Ultimate Edition 💎 GTA 6"
   }
  ],
  "riserva": 2,
- "caricamenti_del_mese": "48 su 96",
+ "caricamenti_del_mese": "49 su 96",
  "avvisi": [],
  "media_ufficiali": {
   "screenshot": 138,
@@ -95,5 +101,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-17 02:32"
+ "aggiornato": "2026-11-17 14:03"
 }
