@@ -40,7 +40,7 @@ _FORMATI = r"landscape|portrait|mobile|desktop|phone|tablet|square|vertical|hori
 _RUMORE = r"(?i)\b(gtavi?|gta|vi|screenshots?|wallpapers?|video|clip|" + _FORMATI + r"|\d{3,4}x\d{3,4}|\d+k)\b"
 # immagini con scritte o grafiche sopra: belle nei montaggi, non come sfondo di numeri e testi
 GRAFICHE = r"(?i)postcard|cover|logo|badge|edition|pack|poster|key.?art|album|merch"
-VERSIONE = 6  # se cambia il modo di sistemare i file, i pacchetti si risistemano da capo
+VERSIONE = 7  # se cambia il modo di sistemare i file, i pacchetti si risistemano da capo
 _NON_DIDASCALIA = ("COVER", "ART", "LOGO", "EDITION", "PACK", "BADGE", "POSTER", "KEY", "ALBUM")
 
 
@@ -112,8 +112,8 @@ def secondi_buoni(percorso):
                              "-f", "rawvideo", "-"], capture_output=True).stdout
     quadri = np.frombuffer(grezzo, dtype=np.uint8).reshape(-1, 27 * 48).astype(np.float32)
     totale = len(quadri)
-    print(f"      {Path(percorso).name}: {totale} s, luce {[int(q.mean()) for q in quadri][:30]}, "
-          f"contrasto {[int(q.std()) for q in quadri][:30]}, nero {[round(float((q < 22).mean()), 2) for q in quadri][:30]}")
+    if 0 < totale <= 5:   # clip brevissime dei personaggi (1-2 secondi): si usano intere
+        return list(range(totale)) if quadri.mean() > 18 else []
     buoni = []
     for i, q in enumerate(quadri):
         coda = 8 if totale > 60 else 1       # i trailer lunghi finiscono col logo; le clip brevi no
@@ -184,7 +184,7 @@ def prepara():
                         meta = cartella_tipo / (Path(nome).stem + ".mp4")
                         buoni = _prepara_clip(sorgente, meta)
                         print(f"    clip {nome}: {voce.file_size / 1e6:.0f} MB, {len(buoni or [])} secondi di gioco usabili")
-                        if buoni and len(buoni) >= 4:
+                        if buoni:
                             pronti.append({"file": str(meta.relative_to(RADICE)), "didascalia": didascalia(nome),
                                            "buoni": buoni})
                             visti.add(chiave)
@@ -250,7 +250,9 @@ def tratti_di_gioco(elenco, seme, quanti, durata=2.6):
         v = rnd.choice(clip)
         buoni = set(v["buoni"])
         inizio = rnd.choice(v["buoni"])
-        if all(int(inizio + k) in buoni for k in range(int(durata) + 1)):
+        if len(buoni) <= 5:   # clip brevissima: si parte dall'inizio e gira in loop
+            inizio = 0
+        if len(buoni) <= 5 or all(int(inizio + k) in buoni for k in range(int(durata) + 1)):
             if all(abs(inizio - t["inizio"]) > 4 or t["file"] != v["file"] for t in tratti):
                 tratti.append({"file": v["file"], "percorso": str(RADICE / v["file"]), "tipo": "clip",
                                "inizio": inizio + rnd.uniform(0, 0.6)})

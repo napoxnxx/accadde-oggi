@@ -25,7 +25,7 @@ import traceback
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from . import feed, grafica, media, notizie, piano, testi, vetro
+from . import feed, gancio, grafica, media, notizie, piano, testi, vetro
 
 RADICE = Path(__file__).resolve().parent.parent
 STORICO = RADICE / "storico_leonida.json"
@@ -148,12 +148,14 @@ def contenuto_chicca(giorno, elenco, storico):
     usate = [u["id"] for u in storico["chicche_usate"]]
     def ultima_volta(c):
         return max((i for i, u in enumerate(usate) if u == c["id"]), default=-1)
-    c = min(valide, key=lambda c: (ultima_volta(c), testi.CHICCHE.index(c)))
+    ordine = sorted(valide, key=lambda c: (ultima_volta(c), testi.CHICCHE.index(c)))
+    # tra le 6 meno usate, Claude sceglie quella con più potenziale e scrive il gancio
+    c, frase_gancio, voti = gancio.scegli_curiosita(ordine[:6], giorno)
     storico["chicche_usate"] = (storico["chicche_usate"] + [{"id": c["id"], "data": giorno.isoformat()}])[-100:]
     seme = f"k{giorno}{c['id']}"
     scelti = _galleria(elenco, storico, c["media"], seme)
     dati = {"titolo": c["titolo"], "frasi": c["frasi"], "domanda": c["domanda"], "etichetta": c["etichetta"],
-            "fonti": testi.fonti_brevi(c)}
+            "fonti": testi.fonti_brevi(c), "gancio": frase_gancio}
     return {"formato": "chicca", "chicca": c, "notizia": dati, "media": scelti}
 
 
@@ -166,6 +168,9 @@ def contenuto_notizia(oggi, elenco, storico):
     if not n:
         return None, motivo
     n["domanda"] = (n.get("domanda") or "TU COSA NE PENSI?").upper()[:40]
+    voto, n["gancio"] = gancio.valuta_notizia(n, oggi)
+    if voto is not None and voto < gancio.VOTO_MINIMO_NOTIZIA:
+        return None, f"notizia poco interessante (voto {voto}/10): meglio una curiosità"
     return {"formato": "notizia", "notizia": n, "media": _galleria(elenco, storico, [], f"n{oggi}{n['titolo']}")}, None
 
 

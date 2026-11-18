@@ -66,7 +66,7 @@ class RipresaClip:
     def _apri(self):
         filtro = f"scale=-2:{self.LH},crop={self.LW}:{self.LH}:(iw-{self.LW})*{self.x:.2f}:0"
         self.processo = subprocess.Popen(
-            ["ffmpeg", "-loglevel", "error", "-ss", f"{self.tratto['inizio']:.2f}", "-i", self.tratto["percorso"],
+            ["ffmpeg", "-loglevel", "error", "-stream_loop", "-1", "-ss", f"{self.tratto['inizio']:.2f}", "-i", self.tratto["percorso"],
              "-an", "-t", "8", "-vf", filtro, "-r", str(FPS), "-f", "rawvideo", "-pix_fmt", "rgb24", "-"],
             stdout=subprocess.PIPE, stderr=subprocess.DEVNULL)
 
@@ -232,7 +232,8 @@ def video_parlato(notizia, uscita, media_scelti=(), seme=0):
     rnd = random.Random(seme)
     testo_domanda = notizia.get("domanda") or "TU COSA NE PENSI?"
     domanda_detta = testo_domanda[:1] + testo_domanda[1:].lower()
-    testi = [notizia["titolo"], *notizia["frasi"], domanda_detta + " Scrivilo nei commenti."]
+    ha_gancio = bool(notizia.get("gancio"))
+    testi = ([notizia["gancio"]] if ha_gancio else []) + [notizia["titolo"], *notizia["frasi"], domanda_detta + " Scrivilo nei commenti."]
     pezzi, motore = voce_.parla(testi, SR)
     print(f"  Voce: {motore}")
 
@@ -277,7 +278,8 @@ def video_parlato(notizia, uscita, media_scelti=(), seme=0):
     frasi = [Didascalia(f, "forte", 76, 48, 4) for f in notizia["frasi"]]
     domanda = Didascalia(testo_domanda, "titolo", 96, 56, 3, maiuscolo=True)
     invito = g.immagine_testo("SCRIVILO NEI COMMENTI", "forte", 50, g.ARANCIO)
-    didascalie = [titolo, *frasi, domanda]
+    didascalie = ([Didascalia(notizia["gancio"], "titolo", 118, 70, 3, maiuscolo=True)] if ha_gancio else []) + [titolo, *frasi, domanda]
+    centrali = 2 if ha_gancio else 1   # gancio e titolo stanno al centro, le frasi in basso
     nome_etichetta = notizia.get("etichetta", "NEWS GTA VI")
     larg_et, alt_et, f_et = _pillola_testo(nome_etichetta)
     fonti = g.riga_piccola("Fonti: " + ", ".join(notizia["fonti"]), 28)
@@ -326,7 +328,7 @@ def video_parlato(notizia, uscita, media_scelti=(), seme=0):
         esce = 1.0 if ultimo else g.ease_out((b["fine"] - t) / 0.12)
         visibile_ = max(0.0, min(1.0, g.ease_out(nel_blocco / 0.16))) * esce
         alt_p = dida.alt + 2 * MARGINE + (invito.height + 8 if ultimo else 0)
-        if i == 0:
+        if i < centrali:
             y_p = 760 - alt_p // 2          # il titolo sta al centro
         elif ultimo:
             y_p = 900 - alt_p // 2
