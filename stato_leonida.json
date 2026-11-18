@@ -87,7 +87,7 @@
   "edizioni": 51,
   "vintage": 12,
   "artwork": 53,
-  "clip": 1
+  "clip": 8
  },
  "problemi": [
   "2026-11-15: notizia, notizia non pubblicata: nessuna notizia confermata da almeno 3 testate",
@@ -96,16 +96,16 @@
   "2026-11-16: notizia, notizia non pubblicata: nessuna notizia confermata da almeno 3 testate"
  ],
  "prova": {
-  "quando": "2026-11-18 21:37",
-  "release": "prova-44389349277",
+  "quando": "2026-11-18 22:10",
+  "release": "prova-44393614647",
   "video": [
    {
     "formato": "chicca",
     "titolo": "In GTA 6 puoi ingrassare 🎮 GTA 6",
-    "video": "https://github.com/napoxnxx/accadde-oggi/releases/download/prova-44389349277/prova-44389349277-chicca.mp4",
-    "dettagli": "Immagini: Mount_Kalaga_National_Park_02.jpg, Real_Dimez_04.jpg, Brian_Heder_01.jpg, Jason_and_Lucia_Motel_portrait.jpg, Jason_and_Lucia_Robbery_landscape.jpg, Cal_Hampton_01.jpg, Brian_Heder_phone.jpg"
+    "video": "https://github.com/napoxnxx/accadde-oggi/releases/download/prova-44393614647/prova-44393614647-chicca.mp4",
+    "dettagli": "Immagini: Mount_Kalaga_National_Park_02.jpg, Real_Dimez_04.jpg, Brian_Heder_01.jpg, Jason_and_Lucia_Motel_portrait.jpg, Jason_and_Lucia_Robbery_landscape.jpg, Cal_Hampton_01.jpg, Brian_Heder_phone.jpg, Real_Dimez_Video_Clip.mp4, Brian_Heder_Video_Clip.mp4, Raul_Bautista_Video_Clip.mp4, Cal_Hampton_Video_Clip.mp4, Lucia_Caminos_Video_Clip.mp4, Boobie_Ike_Video_Clip.mp4, Jason_Duval_Video_Clip.mp4"
    }
   ]
  },
- "aggiornato": "2026-11-18 21:39"
+ "aggiornato": "2026-11-18 22:12"
 }
