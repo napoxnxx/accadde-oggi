@@ -87,7 +87,7 @@
   "edizioni": 51,
   "vintage": 12,
   "artwork": 53,
-  "clip": 9
+  "clip": 1
  },
  "problemi": [
   "2026-11-15: notizia, notizia non pubblicata: nessuna notizia confermata da almeno 3 testate",
@@ -96,16 +96,16 @@
   "2026-11-16: notizia, notizia non pubblicata: nessuna notizia confermata da almeno 3 testate"
  ],
  "prova": {
-  "quando": "2026-11-16 13:45",
-  "release": "prova-43869317316",
+  "quando": "2026-11-18 20:51",
+  "release": "prova-44380181617",
   "video": [
    {
     "formato": "chicca",
-    "titolo": "Leonida è la Florida? 🌴 GTA 6",
-    "video": "https://github.com/napoxnxx/accadde-oggi/releases/download/prova-43869317316/prova-43869317316-chicca.mp4",
-    "dettagli": "Immagini: Vice_City_13.jpg, Vice_City_11.jpg, Vice_City_02.jpg, Vice_City_25.jpg, Grassrivers_04.jpg, Leonida_Keys_05.jpg, Vice_City_24.jpg"
+    "titolo": "In GTA 6 puoi ingrassare 🎮 GTA 6",
+    "video": "https://github.com/napoxnxx/accadde-oggi/releases/download/prova-44380181617/prova-44380181617-chicca.mp4",
+    "dettagli": "Immagini: Mount_Kalaga_National_Park_02.jpg, Real_Dimez_04.jpg, Brian_Heder_01.jpg, Jason_and_Lucia_Motel_portrait.jpg, Jason_and_Lucia_Robbery_landscape.jpg, Cal_Hampton_01.jpg, Brian_Heder_phone.jpg"
    }
   ]
  },
- "aggiornato": "2026-11-18 19:09"
+ "aggiornato": "2026-11-18 20:52"
 }
