@@ -40,7 +40,7 @@ _FORMATI = r"landscape|portrait|mobile|desktop|phone|tablet|square|vertical|hori
 _RUMORE = r"(?i)\b(gtavi?|gta|vi|screenshots?|wallpapers?|video|clip|" + _FORMATI + r"|\d{3,4}x\d{3,4}|\d+k)\b"
 # immagini con scritte o grafiche sopra: belle nei montaggi, non come sfondo di numeri e testi
 GRAFICHE = r"(?i)postcard|cover|logo|badge|edition|pack|poster|key.?art|album|merch"
-VERSIONE = 5  # se cambia il modo di sistemare i file, i pacchetti si risistemano da capo
+VERSIONE = 6  # se cambia il modo di sistemare i file, i pacchetti si risistemano da capo
 _NON_DIDASCALIA = ("COVER", "ART", "LOGO", "EDITION", "PACK", "BADGE", "POSTER", "KEY", "ALBUM")
 
 
@@ -112,6 +112,8 @@ def secondi_buoni(percorso):
                              "-f", "rawvideo", "-"], capture_output=True).stdout
     quadri = np.frombuffer(grezzo, dtype=np.uint8).reshape(-1, 27 * 48).astype(np.float32)
     totale = len(quadri)
+    print(f"      {Path(percorso).name}: {totale} s, luce {[int(q.mean()) for q in quadri][:30]}, "
+          f"contrasto {[int(q.std()) for q in quadri][:30]}, nero {[round(float((q < 22).mean()), 2) for q in quadri][:30]}")
     buoni = []
     for i, q in enumerate(quadri):
         coda = 8 if totale > 60 else 1       # i trailer lunghi finiscono col logo; le clip brevi no
