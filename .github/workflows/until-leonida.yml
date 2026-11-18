@@ -79,9 +79,23 @@ jobs:
           key: media-rockstar-${{ steps.giorno.outputs.giorno }}
           restore-keys: media-rockstar-
 
+      # I pacchetti di ffmpeg (quelli ufficiali di Ubuntu) restano in cache: senza, l'installazione
+      # arrivava a 22 minuti e faceva tardare i video.
+      - name: Pacchetti di ffmpeg in cache
+        if: steps.serve.outputs.fare == '1'
+        uses: actions/cache@v4
+        with:
+          path: ~/apt-cache
+          key: apt-ffmpeg-v1
+
       - name: Installa ffmpeg
         if: steps.serve.outputs.fare == '1'
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+        run: |
+          mkdir -p ~/apt-cache/partial
+          OPZ="-o Dir::Cache::archives=$HOME/apt-cache -y -qq --no-install-recommends"
+          sudo apt-get install $OPZ ffmpeg || (sudo apt-get update -qq && sudo apt-get install $OPZ ffmpeg)
+          sudo chown -R "$USER" ~/apt-cache
+          ffmpeg -version | head -1
 
       - name: Installa dipendenze
         if: steps.serve.outputs.fare == '1'
