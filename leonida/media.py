@@ -40,7 +40,7 @@ _FORMATI = r"landscape|portrait|mobile|desktop|phone|tablet|square|vertical|hori
 _RUMORE = r"(?i)\b(gtavi?|gta|vi|screenshots?|wallpapers?|video|clip|" + _FORMATI + r"|\d{3,4}x\d{3,4}|\d+k)\b"
 # immagini con scritte o grafiche sopra: belle nei montaggi, non come sfondo di numeri e testi
 GRAFICHE = r"(?i)postcard|cover|logo|badge|edition|pack|poster|key.?art|album|merch"
-VERSIONE = 2  # se cambia il modo di sistemare i file, i pacchetti si risistemano da capo
+VERSIONE = 3  # se cambia il modo di sistemare i file, i pacchetti si risistemano da capo
 _NON_DIDASCALIA = ("COVER", "ART", "LOGO", "EDITION", "PACK", "BADGE", "POSTER", "KEY", "ALBUM")
 
 
@@ -96,11 +96,30 @@ def _prepara_foto(sorgente, destinazione):
 
 
 def _prepara_clip(sorgente, destinazione):
-    """Clip ridotta a 1080p H.264, senza audio: leggera da tenere in cache e da usare come fondale."""
-    esito = subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(sorgente), "-an", "-t", "40",
-                            "-vf", "scale=-2:1080", "-c:v", "libx264", "-crf", "22", "-preset", "veryfast",
+    """Clip intera (fino a 6 minuti) a 1080p H.264, senza audio. Restituisce i secondi utilizzabili o None."""
+    esito = subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(sorgente), "-an", "-t", "360",
+                            "-vf", "scale=-2:1080", "-c:v", "libx264", "-crf", "23", "-preset", "veryfast",
                             "-pix_fmt", "yuv420p", str(destinazione)], capture_output=True)
-    return esito.returncode == 0 and destinazione.exists()
+    if esito.returncode != 0 or not destinazione.exists():
+        return None
+    return secondi_buoni(destinazione)
+
+
+def secondi_buoni(percorso):
+    """I secondi di gioco vero: niente nero, niente cartelli con le scritte, niente logo finale."""
+    import numpy as np
+    grezzo = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", str(percorso), "-vf", "fps=1,scale=48:27,format=gray",
+                             "-f", "rawvideo", "-"], capture_output=True).stdout
+    quadri = np.frombuffer(grezzo, dtype=np.uint8).reshape(-1, 27 * 48).astype(np.float32)
+    totale = len(quadri)
+    buoni = []
+    for i, q in enumerate(quadri):
+        if i < 2 or i > totale - 9:          # apertura e logo finale
+            continue
+        scuri = (q < 22).mean()              # i cartelli sono quasi tutti neri con poche scritte
+        if q.mean() > 30 and q.std() > 16 and scuri < 0.55:
+            buoni.append(i)
+    return buoni
 
 
 def _firma(url):
@@ -158,9 +177,13 @@ def prepara():
                         with z.open(voce) as d, open(sorgente, "wb") as f:
                             shutil.copyfileobj(d, f)
                         meta = cartella_tipo / (Path(nome).stem + ".mp4")
-                        if _prepara_clip(sorgente, meta):
-                            pronti.append({"file": str(meta.relative_to(RADICE)), "didascalia": didascalia(nome)})
+                        buoni = _prepara_clip(sorgente, meta)
+                        if buoni and len(buoni) >= 4:
+                            pronti.append({"file": str(meta.relative_to(RADICE)), "didascalia": didascalia(nome),
+                                           "buoni": buoni})
                             visti.add(chiave)
+                        else:
+                            meta.unlink(missing_ok=True)
                     sorgente.unlink(missing_ok=True)
             if pronti:
                 for vecchio in elenco.get(tipo, []):  # via i file della versione precedente
@@ -207,3 +230,22 @@ def scegli(elenco, seme, quanti=1, tipi=("screenshot", "artwork"), evita=(), sen
     freschi = [v for v in tutti if v["file"] not in set(evita)] or tutti
     random.Random(seme).shuffle(freschi)
     return [dict(v, percorso=str(RADICE / v["file"])) for v in freschi[:quanti]]
+
+
+def tratti_di_gioco(elenco, seme, quanti, durata=2.6):
+    """Pezzi di clip ufficiali (gameplay dei trailer) da `durata` secondi, tutti di secondi "buoni"."""
+    rnd = random.Random(seme)
+    clip = [v for v in elenco.get("clip", []) if v.get("buoni") and (RADICE / v["file"]).exists()
+            and not re.search(GRAFICHE, Path(v["file"]).name)]
+    tratti = []
+    for _ in range(quanti * 6):
+        if len(tratti) >= quanti or not clip:
+            break
+        v = rnd.choice(clip)
+        buoni = set(v["buoni"])
+        inizio = rnd.choice(v["buoni"])
+        if all(int(inizio + k) in buoni for k in range(int(durata) + 1)):
+            if all(abs(inizio - t["inizio"]) > 4 or t["file"] != v["file"] for t in tratti):
+                tratti.append({"file": v["file"], "percorso": str(RADICE / v["file"]), "tipo": "clip",
+                               "inizio": inizio + rnd.uniform(0, 0.6)})
+    return tratti

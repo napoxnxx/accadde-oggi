@@ -6,6 +6,7 @@ si accende parola per parola insieme alla voce.
 """
 
 import random
+import subprocess
 from functools import lru_cache
 
 import numpy as np
@@ -48,6 +49,44 @@ class Ripresa:
         x = int(min(max(cx * libero_x, 0), libero_x))
         y = int((self.img.height - h) * self.y)
         return self.img.crop((x, y, x + w, y + h)).resize((L, A), Image.BILINEAR)
+
+
+class RipresaClip:
+    """Un pezzo di gioco vero (clip ufficiale, senza audio), ritagliato in verticale, sempre in movimento."""
+
+    LW, LH = int(L * 1.12) // 2 * 2, int(A * 1.12) // 2 * 2
+
+    def __init__(self, tratto, seme):
+        rnd = random.Random(seme)
+        self.tratto = tratto
+        self.x = rnd.uniform(0.3, 0.7)            # da che punto dell'immagine orizzontale si ritaglia
+        self.processo = None
+        self.ultimo = None
+
+    def _apri(self):
+        filtro = f"scale=-2:{self.LH},crop={self.LW}:{self.LH}:(iw-{self.LW})*{self.x:.2f}:0"
+        self.processo = subprocess.Popen(
+            ["ffmpeg", "-loglevel", "error", "-ss", f"{self.tratto['inizio']:.2f}", "-i", self.tratto["percorso"],
+             "-an", "-t", "8", "-vf", filtro, "-r", str(FPS), "-f", "rawvideo", "-pix_fmt", "rgb24", "-"],
+            stdout=subprocess.PIPE, stderr=subprocess.DEVNULL)
+
+    def quadro(self, p, colpo):
+        if self.processo is None:
+            self._apri()
+        dati = self.processo.stdout.read(self.LW * self.LH * 3)
+        if len(dati) == self.LW * self.LH * 3:
+            self.ultimo = Image.frombytes("RGB", (self.LW, self.LH), dati)
+        if self.ultimo is None:
+            raise RuntimeError("clip non leggibile")
+        z = 1.0 - 0.06 * (1 - colpo) - 0.04 * p    # colpo di zoom allo stacco, poi una lenta spinta in avanti
+        w, h = int(self.LW / 1.12 * z), int(self.LH / 1.12 * z)
+        x, y = (self.LW - w) // 2, (self.LH - h) // 2
+        return self.ultimo.crop((x, y, x + w, y + h)).resize((L, A), Image.BILINEAR)
+
+    def chiudi(self):
+        if self.processo is not None:
+            self.processo.kill()
+            self.processo.wait()
 
 
 @lru_cache(maxsize=1)
@@ -216,17 +255,21 @@ def video_parlato(notizia, uscita, media_scelti=(), seme=0):
         stacchi += [b["inizio"] + k * (b["fine"] - b["inizio"]) / n for k in range(n)]
     stacchi[0] = 0.0
     foto = [m["percorso"] for m in media_scelti if m.get("tipo") != "clip"]
-    riprese, ultima = [], None
+    tratti = [m for m in media_scelti if m.get("tipo") == "clip" and "inizio" in m]
+    # gioco vero il più possibile: due stacchi su tre sono clip ufficiali, il terzo una foto
+    riprese, i_foto, i_clip = [], 0, 0
     for k in range(len(stacchi)):
-        percorso = foto[k % len(foto)] if foto else None
-        if percorso is None or percorso != ultima or len(foto) == 1:
-            try:
-                riprese.append(Ripresa(percorso, rnd.randrange(10 ** 6)))
-            except OSError:
-                riprese.append(Ripresa(None, rnd.randrange(10 ** 6)))
-        ultima = percorso
-    while len(riprese) < len(stacchi):
-        riprese.append(riprese[len(riprese) % max(1, len(riprese))])
+        usa_clip = tratti and (not foto or k % 3 != 2)
+        if usa_clip:
+            riprese.append(RipresaClip(tratti[i_clip % len(tratti)], rnd.randrange(10 ** 6)))
+            i_clip += 1
+            continue
+        percorso = foto[i_foto % len(foto)] if foto else None
+        i_foto += 1
+        try:
+            riprese.append(Ripresa(percorso, rnd.randrange(10 ** 6)))
+        except OSError:
+            riprese.append(Ripresa(None, rnd.randrange(10 ** 6)))
     fini = stacchi[1:] + [durata]
 
     # --- testi
@@ -238,7 +281,7 @@ def video_parlato(notizia, uscita, media_scelti=(), seme=0):
     nome_etichetta = notizia.get("etichetta", "NEWS GTA VI")
     larg_et, alt_et, f_et = _pillola_testo(nome_etichetta)
     fonti = g.riga_piccola("Fonti: " + ", ".join(notizia["fonti"]), 28)
-    credito = g.riga_piccola("Immagini: Rockstar Games", 24) if foto else None
+    credito = g.riga_piccola("Immagini e clip di gioco: Rockstar Games", 24) if foto or tratti else None
     barra_piena = g.sfumatura(10, LARGO, g.ROSA, g.ARANCIO).rotate(90, expand=True).convert("RGBA")
 
     class _Niente:
@@ -257,6 +300,8 @@ def video_parlato(notizia, uscita, media_scelti=(), seme=0):
         t = video.tempo
         k = max(i for i, s in enumerate(stacchi) if s <= t + 1e-6)
         dentro = t - stacchi[k]
+        if k > 0 and isinstance(riprese[k - 1], RipresaClip):
+            riprese[k - 1].chiudi()
         quadro = riprese[k].quadro(dentro / max(0.1, fini[k] - stacchi[k]), g.ease_out(dentro / 0.28)).convert("RGBA")
         quadro.alpha_composite(ombre)
         if dentro < 0.12 and k > 0:      # lampo sullo stacco
@@ -308,4 +353,7 @@ def video_parlato(notizia, uscita, media_scelti=(), seme=0):
         if credito is not None:
             livelli.append((credito, ((X0 + X1) / 2 - credito.width / 2, g.Y_MAX + 6)))
         video.fotogramma(livelli, fondale=lambda _t, q=quadro: q)
+    for r in riprese:
+        if isinstance(r, RipresaClip):
+            r.chiudi()
     return video.chiudi()

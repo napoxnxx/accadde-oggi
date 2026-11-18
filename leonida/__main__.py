@@ -120,7 +120,7 @@ def _galleria(elenco, storico, parole, seme):
         if len(scelti) < FOTO_PER_VIDEO and m["file"] not in {x["file"] for x in scelti}:
             scelti.append(m)
     storico["media_usati"] = (storico["media_usati"] + [m["file"] for m in scelti])[-60:]
-    return scelti
+    return scelti + media.tratti_di_gioco(elenco, seme + "g", 8)   # e clip di gioco vero dai trailer ufficiali
 
 
 def contenuto_countdown(giorno, elenco, storico):
