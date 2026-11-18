@@ -350,7 +350,8 @@
    "preparato": "2026-11-16 02:25",
    "data": "2026-11-18",
    "slot": "pomeriggio",
-   "uscita": "2026-11-18T16:00:00+01:00"
+   "uscita": "2026-11-18T16:00:00+01:00",
+   "online": true
   },
   {
    "formato": "countdown",
