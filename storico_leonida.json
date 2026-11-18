@@ -556,6 +556,28 @@
    "data": "2026-11-19",
    "slot": "notizia",
    "uscita": "2026-11-19T13:00:00+01:00"
+  },
+  {
+   "formato": "notizia",
+   "titolo": "GTA 6, record su Metacritic: media 99/100 e supera GTA 4 | Recensioni",
+   "descrizione": "GTA 6 ha una media di 99 su 100 su Metacritic, secondo le recensioni della critica.\nSupera Grand Theft Auto 4 e ogni altro capitolo della serie di Rockstar Games.\nÈ tra i punteggi più alti mai registrati sull'aggregatore.\n\nTu cosa ne pensi? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nNotizia confermata da almeno 3 testate diverse e raccontata con parole nostre. Fonti:\n- Multiplayer.it: https://multiplayer.it/notizie/media-voti-gta-6-confronto-quella-capitoli-precedenti.html\n- IGN Italia: https://it.ign.com/grand-theft-auto-vi/229266/gta-vi-scrive-la-storia-e-il-gioco-meglio-recensito-di-sempre-su-metacritic-superato-ocarina-of-time\n- Everyeye.it: https://www.everyeye.it/notizie/gta-6-media-voto-record-confronto-precedenti-giochi-serie-912426.html\n- GameSpot: https://www.gamespot.com/articles/gta-6-has-a-metacritic-score-so-high-its-only-happened-once-before/\n- IGN: https://www.ign.com/articles/gta-6-is-now-the-joint-highest-rated-game-of-all-time\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Fonti: Everyeye.it, Multiplayer.it, IGN Italia, GameSpot",
+   "tag": "mattina-2026-11-19",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/mattina-2026-11-19/mattina-2026-11-19.mp4",
+   "dimensione": 19509185,
+   "preparato": "2026-11-19 00:21",
+   "link": [
+    "https://www.everyeye.it/notizie/gta-6-media-voto-record-confronto-precedenti-giochi-serie-912426.html",
+    "https://multiplayer.it/notizie/media-voti-gta-6-confronto-quella-capitoli-precedenti.html",
+    "https://it.ign.com/grand-theft-auto-vi/229266/gta-vi-scrive-la-storia-e-il-gioco-meglio-recensito-di-sempre-su-metacritic-superato-ocarina-of-time",
+    "https://www.everyeye.it/notizie/gta-6-cosa-dicono-recensioni-metascore-alto-sempre-912296.html",
+    "https://www.gamespot.com/articles/gta-6-has-a-metacritic-score-so-high-its-only-happened-once-before/",
+    "https://www.ign.com/articles/gta-6-is-now-the-joint-highest-rated-game-of-all-time"
+   ],
+   "chiave": "soggetti:gta 6|gta vi|metacritic|rockstar",
+   "data": "2026-11-19",
+   "slot": "mattina",
+   "uscita": "2026-11-19T09:00:00+01:00"
   }
  ],
  "riserva": [
@@ -581,13 +603,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/screenshot/Mount_Kalaga_National_Park_01.jpg",
-  "media_rockstar/screenshot/Port_Gellhorn_05.jpg",
-  "media_rockstar/screenshot/Port_Gellhorn_03.jpg",
-  "media_rockstar/screenshot/Jason_and_Lucia_03.jpg",
-  "media_rockstar/artwork/Jason_and_Lucia_Beach_phone.jpg",
-  "media_rockstar/screenshot/Jason_Duval_11.jpg",
-  "media_rockstar/screenshot/Jason_Duval_16.jpg",
   "media_rockstar/screenshot/Vice_City_02.jpg",
   "media_rockstar/screenshot/Ambrosia_03.jpg",
   "media_rockstar/screenshot/Port_Gellhorn_07.jpg",
@@ -640,14 +655,20 @@
   "media_rockstar/screenshot/Vice_City_05.jpg",
   "media_rockstar/screenshot/Jason_Duval_15.jpg",
   "media_rockstar/screenshot/Boobie_Ike_02.jpg",
-  "media_rockstar/screenshot/Jason_Duval_05.jpg"
+  "media_rockstar/screenshot/Jason_Duval_05.jpg",
+  "media_rockstar/screenshot/Vice_City_08.jpg",
+  "media_rockstar/screenshot/Cal_Hampton_01.jpg",
+  "media_rockstar/artwork/Jason_Lucia_Rooftop_landscape.jpg",
+  "media_rockstar/screenshot/Ambrosia_02.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_16.jpg",
+  "media_rockstar/screenshot/Raul_Bautista_04.jpg",
+  "media_rockstar/artwork/Real_Dimez_tablet.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
   "notizia": 1,
-  "2026-11-18:notizia": 1,
-  "2026-11-18:mattina": 1,
-  "2026-11-19:notizia": 1
+  "2026-11-19:notizia": 1,
+  "2026-11-19:mattina": 1
  },
  "chicche_usate": [
   {
@@ -704,6 +725,6 @@
   }
  ],
  "caricamenti": {
-  "2026-11-01": 55
+  "2026-11-01": 56
  }
 }
