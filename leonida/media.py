@@ -40,7 +40,7 @@ _FORMATI = r"landscape|portrait|mobile|desktop|phone|tablet|square|vertical|hori
 _RUMORE = r"(?i)\b(gtavi?|gta|vi|screenshots?|wallpapers?|video|clip|" + _FORMATI + r"|\d{3,4}x\d{3,4}|\d+k)\b"
 # immagini con scritte o grafiche sopra: belle nei montaggi, non come sfondo di numeri e testi
 GRAFICHE = r"(?i)postcard|cover|logo|badge|edition|pack|poster|key.?art|album|merch"
-VERSIONE = 3  # se cambia il modo di sistemare i file, i pacchetti si risistemano da capo
+VERSIONE = 4  # se cambia il modo di sistemare i file, i pacchetti si risistemano da capo
 _NON_DIDASCALIA = ("COVER", "ART", "LOGO", "EDITION", "PACK", "BADGE", "POSTER", "KEY", "ALBUM")
 
 
@@ -117,7 +117,7 @@ def secondi_buoni(percorso):
         if i < 2 or i > totale - 9:          # apertura e logo finale
             continue
         scuri = (q < 22).mean()              # i cartelli sono quasi tutti neri con poche scritte
-        if q.mean() > 30 and q.std() > 16 and scuri < 0.55:
+        if q.mean() > 20 and q.std() > 11 and scuri < 0.7:
             buoni.append(i)
     return buoni
 
@@ -156,12 +156,14 @@ def prepara():
             pronti, visti = [], set()
             with zipfile.ZipFile(temporaneo) as z:
                 voci = sorted(z.infolist(), key=lambda v: -v.file_size)  # prima le versioni più grandi
+                if tipo == "clip":
+                    print("    contenuto:", ", ".join(f"{Path(v.filename).name} ({v.file_size / 1e6:.0f} MB)" for v in voci if not v.is_dir()))
                 for voce in voci:
                     estensione = Path(voce.filename).suffix.lower()
                     nome = Path(voce.filename).name
                     if nome.startswith(".") or voce.is_dir():
                         continue
-                    chiave = _chiave(nome) + estensione
+                    chiave = (_chiave(nome) if tipo != "clip" else nome.lower()) + estensione
                     if chiave in visti:
                         continue
                     sorgente = CARTELLA / "estratto" / nome
@@ -178,6 +180,7 @@ def prepara():
                             shutil.copyfileobj(d, f)
                         meta = cartella_tipo / (Path(nome).stem + ".mp4")
                         buoni = _prepara_clip(sorgente, meta)
+                        print(f"    clip {nome}: {voce.file_size / 1e6:.0f} MB, {len(buoni or [])} secondi di gioco usabili")
                         if buoni and len(buoni) >= 4:
                             pronti.append({"file": str(meta.relative_to(RADICE)), "didascalia": didascalia(nome),
                                            "buoni": buoni})
