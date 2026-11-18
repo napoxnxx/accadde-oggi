@@ -40,7 +40,7 @@ _FORMATI = r"landscape|portrait|mobile|desktop|phone|tablet|square|vertical|hori
 _RUMORE = r"(?i)\b(gtavi?|gta|vi|screenshots?|wallpapers?|video|clip|" + _FORMATI + r"|\d{3,4}x\d{3,4}|\d+k)\b"
 # immagini con scritte o grafiche sopra: belle nei montaggi, non come sfondo di numeri e testi
 GRAFICHE = r"(?i)postcard|cover|logo|badge|edition|pack|poster|key.?art|album|merch"
-VERSIONE = 4  # se cambia il modo di sistemare i file, i pacchetti si risistemano da capo
+VERSIONE = 5  # se cambia il modo di sistemare i file, i pacchetti si risistemano da capo
 _NON_DIDASCALIA = ("COVER", "ART", "LOGO", "EDITION", "PACK", "BADGE", "POSTER", "KEY", "ALBUM")
 
 
@@ -114,7 +114,8 @@ def secondi_buoni(percorso):
     totale = len(quadri)
     buoni = []
     for i, q in enumerate(quadri):
-        if i < 2 or i > totale - 9:          # apertura e logo finale
+        coda = 8 if totale > 60 else 1       # i trailer lunghi finiscono col logo; le clip brevi no
+        if i < 1 or i > totale - 1 - coda:
             continue
         scuri = (q < 22).mean()              # i cartelli sono quasi tutti neri con poche scritte
         if q.mean() > 20 and q.std() > 11 and scuri < 0.7:
