@@ -32,6 +32,12 @@
   },
   {
    "data": "2026-11-19",
+   "ora": "13:00",
+   "formato": "notizia",
+   "titolo": "GTA 6: tutti i bonus per chi ha GTA+, c'è anche un'auto esclusiva"
+  },
+  {
+   "data": "2026-11-19",
    "ora": "21:30",
    "formato": "chicca",
    "titolo": "Le canzoni dei trailer 🎵 GTA 6"
@@ -74,7 +80,7 @@
   }
  ],
  "riserva": 2,
- "caricamenti_del_mese": "54 su 96",
+ "caricamenti_del_mese": "55 su 96",
  "avvisi": [],
  "media_ufficiali": {
   "screenshot": 138,
@@ -101,5 +107,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-18 14:29"
+ "aggiornato": "2026-11-18 19:09"
 }

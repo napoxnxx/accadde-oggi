@@ -535,6 +535,25 @@
    "data": "2026-11-21",
    "slot": "sera",
    "uscita": "2026-11-21T19:00:00+01:00"
+  },
+  {
+   "formato": "notizia",
+   "titolo": "GTA 6: tutti i bonus per chi ha GTA+, c'è anche un'auto esclusiva",
+   "descrizione": "Rockstar ha presentato i bonus di GTA 6 riservati a chi ha l'abbonamento GTA+.\nTra i vantaggi c'è un'auto esclusiva, disponibile solo per gli abbonati.\n\nTu cosa ne pensi? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nNotizia confermata da almeno 3 testate diverse e raccontata con parole nostre. Fonti:\n- Everyeye.it: https://www.everyeye.it/notizie/gta-6-bonus-esclusivi-chi-abbonato-gta-912358.html\n- Multiplayer.it: https://multiplayer.it/notizie/rockstar-games-svela-i-bonus-in-gta-6-per-chi-ha-labbonamento-gta.html\n- GameSpot: https://www.gamespot.com/articles/gta-6-gta-subscription-includes-a-free-supercar-discounts-and-more/\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Fonti: Everyeye.it, Multiplayer.it, GameSpot",
+   "tag": "notizia-2026-11-19",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notizia-2026-11-19/notizia-2026-11-19.mp4",
+   "dimensione": 9618895,
+   "preparato": "2026-11-18 19:09",
+   "link": [
+    "https://www.everyeye.it/notizie/gta-6-bonus-esclusivi-chi-abbonato-gta-912358.html",
+    "https://multiplayer.it/notizie/rockstar-games-svela-i-bonus-in-gta-6-per-chi-ha-labbonamento-gta.html",
+    "https://www.gamespot.com/articles/gta-6-gta-subscription-includes-a-free-supercar-discounts-and-more/"
+   ],
+   "chiave": "soggetti:gta|gta 6|rockstar games",
+   "data": "2026-11-19",
+   "slot": "notizia",
+   "uscita": "2026-11-19T13:00:00+01:00"
   }
  ],
  "riserva": [
@@ -560,13 +579,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/screenshot/Cal_Hampton_01.jpg",
-  "media_rockstar/screenshot/Mount_Kalaga_National_Park_05.jpg",
-  "media_rockstar/screenshot/Raul_Bautista_01.jpg",
-  "media_rockstar/artwork/Jason_and_Lucia_Beach_ultrawide.jpg",
-  "media_rockstar/screenshot/DreQuan_Priest_01.jpg",
-  "media_rockstar/screenshot/Vice_City_01.jpg",
-  "media_rockstar/screenshot/Vice_City_16.jpg",
   "media_rockstar/screenshot/Mount_Kalaga_National_Park_01.jpg",
   "media_rockstar/screenshot/Port_Gellhorn_05.jpg",
   "media_rockstar/screenshot/Port_Gellhorn_03.jpg",
@@ -619,13 +631,21 @@
   "media_rockstar/screenshot/Vice_City_14.jpg",
   "media_rockstar/screenshot/Jason_and_Lucia_08.jpg",
   "media_rockstar/screenshot/Leonida_Keys_02.jpg",
-  "media_rockstar/screenshot/Mount_Kalaga_National_Park_01.jpg"
+  "media_rockstar/screenshot/Mount_Kalaga_National_Park_01.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_17.jpg",
+  "media_rockstar/screenshot/Port_Gellhorn_04.jpg",
+  "media_rockstar/screenshot/Brian_Heder_02.jpg",
+  "media_rockstar/screenshot/Vice_City_05.jpg",
+  "media_rockstar/screenshot/Jason_Duval_15.jpg",
+  "media_rockstar/screenshot/Boobie_Ike_02.jpg",
+  "media_rockstar/screenshot/Jason_Duval_05.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
   "notizia": 1,
   "2026-11-18:notizia": 1,
-  "2026-11-18:mattina": 1
+  "2026-11-18:mattina": 1,
+  "2026-11-19:notizia": 1
  },
  "chicche_usate": [
   {
@@ -682,6 +702,6 @@
   }
  ],
  "caricamenti": {
-  "2026-11-01": 54
+  "2026-11-01": 55
  }
 }
