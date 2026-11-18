@@ -470,7 +470,8 @@
    "chiave": "soggetti:gta 6|rockstar",
    "data": "2026-11-18",
    "slot": "notizia",
-   "uscita": "2026-11-18T13:00:00+01:00"
+   "uscita": "2026-11-18T13:00:00+01:00",
+   "online": true
   },
   {
    "formato": "notizia",
@@ -520,6 +521,19 @@
    "data": "2026-11-20",
    "slot": "pomeriggio",
    "uscita": "2026-11-20T16:00:00+01:00"
+  },
+  {
+   "formato": "chicca",
+   "titolo": "Rinviato due volte 👀 GTA 6",
+   "descrizione": "GTA VI doveva uscire nell'autunno 2025.\nPoi è slittato al 26 maggio 2026 e infine al 19 novembre 2026.\n\nValeva la pena aspettare? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nInformazioni ufficiali di Rockstar Games (rockstargames.com/VI), raccontate con parole nostre.\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Leonida_Keys_03.jpg, Jason_and_Lucia_13.jpg, DreQuan_Priest_tablet.jpg, Vice_City_14.jpg, Jason_and_Lucia_08.jpg, Leonida_Keys_02.jpg, Mount_Kalaga_National_Park_01.jpg",
+   "tag": "sera-2026-11-21",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/sera-2026-11-21/sera-2026-11-21.mp4",
+   "dimensione": 9974607,
+   "preparato": "2026-11-18 14:29",
+   "data": "2026-11-21",
+   "slot": "sera",
+   "uscita": "2026-11-21T19:00:00+01:00"
   }
  ],
  "riserva": [
@@ -545,13 +559,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/screenshot/Ambrosia_05.jpg",
-  "media_rockstar/screenshot/Jason_and_Lucia_04.jpg",
-  "media_rockstar/screenshot/Vice_City_13.jpg",
-  "media_rockstar/screenshot/Vice_City_05.jpg",
-  "media_rockstar/screenshot/Jason_and_Lucia_08.jpg",
-  "media_rockstar/screenshot/Jason_and_Lucia_20.jpg",
-  "media_rockstar/screenshot/Port_Gellhorn_02.jpg",
   "media_rockstar/screenshot/Cal_Hampton_01.jpg",
   "media_rockstar/screenshot/Mount_Kalaga_National_Park_05.jpg",
   "media_rockstar/screenshot/Raul_Bautista_01.jpg",
@@ -604,7 +611,14 @@
   "media_rockstar/artwork/Jason_Lucia_Rooftop_phone.jpg",
   "media_rockstar/screenshot/Grassrivers_02.jpg",
   "media_rockstar/screenshot/Jason_Duval_06.jpg",
-  "media_rockstar/screenshot/Ambrosia_03.jpg"
+  "media_rockstar/screenshot/Ambrosia_03.jpg",
+  "media_rockstar/screenshot/Leonida_Keys_03.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_13.jpg",
+  "media_rockstar/artwork/DreQuan_Priest_tablet.jpg",
+  "media_rockstar/screenshot/Vice_City_14.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_08.jpg",
+  "media_rockstar/screenshot/Leonida_Keys_02.jpg",
+  "media_rockstar/screenshot/Mount_Kalaga_National_Park_01.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
@@ -660,9 +674,13 @@
   {
    "id": "trailer",
    "data": "2026-11-20"
+  },
+  {
+   "id": "rinvii",
+   "data": "2026-11-21"
   }
  ],
  "caricamenti": {
-  "2026-11-01": 53
+  "2026-11-01": 54
  }
 }
