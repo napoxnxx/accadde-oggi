@@ -493,6 +493,32 @@
    "data": "2026-11-18",
    "slot": "mattina",
    "uscita": "2026-11-18T09:00:00+01:00"
+  },
+  {
+   "formato": "chicca",
+   "titolo": "Il pacchetto Vintage Vice City 🎁 GTA 6",
+   "descrizione": "È il bonus per chi preordina GTA VI.\nNelle immagini ufficiali ci sono una Vapid Stanier del '55 e outfit e acconciature vintage.\n\nL'hai già preordinato? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nInformazioni ufficiali di Rockstar Games (rockstargames.com/VI), raccontate con parole nostre.\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: VINTAGE_VICE_CITY_WEAPON_PATTERN_01.jpg, Mount_Kalaga_National_Park_06.jpg, Ambrosia_05.jpg, Vice_City_21.jpg, Mount_Kalaga_National_Park_05.jpg, Vice_City_15.jpg, Vice_City_20.jpg",
+   "tag": "notte-2026-11-20",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notte-2026-11-20/notte-2026-11-20.mp4",
+   "dimensione": 9096115,
+   "preparato": "2026-11-18 02:44",
+   "data": "2026-11-20",
+   "slot": "notte",
+   "uscita": "2026-11-20T21:30:00+01:00"
+  },
+  {
+   "formato": "chicca",
+   "titolo": "I quattro trailer ufficiali 👀 GTA 6",
+   "descrizione": "Rockstar ha pubblicato Trailer 1, Trailer 2, An Extended Look e il Launch Trailer.\nIl Trailer 2 è uscito il 6 maggio 2025.\n\nQual è il tuo preferito? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nInformazioni ufficiali di Rockstar Games (rockstargames.com/VI), raccontate con parole nostre.\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Jason_and_Lucia_09.jpg, Ambrosia_04.jpg, Lucia_Caminos_10.jpg, Jason_Lucia_Rooftop_phone.jpg, Grassrivers_02.jpg, Jason_Duval_06.jpg, Ambrosia_03.jpg",
+   "tag": "pomeriggio-2026-11-20",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/pomeriggio-2026-11-20/pomeriggio-2026-11-20.mp4",
+   "dimensione": 7554387,
+   "preparato": "2026-11-18 02:45",
+   "data": "2026-11-20",
+   "slot": "pomeriggio",
+   "uscita": "2026-11-20T16:00:00+01:00"
   }
  ],
  "riserva": [
@@ -518,20 +544,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/screenshot/Vice_City_21.jpg",
-  "media_rockstar/screenshot/Jason_and_Lucia_07.jpg",
-  "media_rockstar/artwork/Boobie_Ike_portrait.jpg",
-  "media_rockstar/screenshot/Lucia_Caminos_03.jpg",
-  "media_rockstar/screenshot/Mount_Kalaga_National_Park_03.jpg",
-  "media_rockstar/screenshot/Vice_City_12.jpg",
-  "media_rockstar/artwork/Raul_Bautista_ultrawide.jpg",
-  "media_rockstar/screenshot/Raul_Bautista_03.jpg",
-  "media_rockstar/screenshot/Leonida_Keys_03.jpg",
-  "media_rockstar/screenshot/Lucia_Caminos_14.jpg",
-  "media_rockstar/screenshot/Jason_and_Lucia_17.jpg",
-  "media_rockstar/screenshot/Jason_Duval_08.jpg",
-  "media_rockstar/artwork/Jason_and_Lucia_Robbery_phone.jpg",
-  "media_rockstar/screenshot/Vice_City_06.jpg",
   "media_rockstar/screenshot/Ambrosia_05.jpg",
   "media_rockstar/screenshot/Jason_and_Lucia_04.jpg",
   "media_rockstar/screenshot/Vice_City_13.jpg",
@@ -577,7 +589,21 @@
   "media_rockstar/screenshot/Leonida_Keys_05.jpg",
   "media_rockstar/artwork/Boobie_Ike_tablet.jpg",
   "media_rockstar/screenshot/Lucia_Caminos_14.jpg",
-  "media_rockstar/screenshot/DreQuan_Priest_03.jpg"
+  "media_rockstar/screenshot/DreQuan_Priest_03.jpg",
+  "media_rockstar/vintage/VINTAGE_VICE_CITY_WEAPON_PATTERN_01.jpg",
+  "media_rockstar/screenshot/Mount_Kalaga_National_Park_06.jpg",
+  "media_rockstar/screenshot/Ambrosia_05.jpg",
+  "media_rockstar/screenshot/Vice_City_21.jpg",
+  "media_rockstar/screenshot/Mount_Kalaga_National_Park_05.jpg",
+  "media_rockstar/screenshot/Vice_City_15.jpg",
+  "media_rockstar/screenshot/Vice_City_20.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_09.jpg",
+  "media_rockstar/screenshot/Ambrosia_04.jpg",
+  "media_rockstar/screenshot/Lucia_Caminos_10.jpg",
+  "media_rockstar/artwork/Jason_Lucia_Rooftop_phone.jpg",
+  "media_rockstar/screenshot/Grassrivers_02.jpg",
+  "media_rockstar/screenshot/Jason_Duval_06.jpg",
+  "media_rockstar/screenshot/Ambrosia_03.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
@@ -625,9 +651,17 @@
   {
    "id": "ultimate",
    "data": "2026-11-20"
+  },
+  {
+   "id": "vintage",
+   "data": "2026-11-20"
+  },
+  {
+   "id": "trailer",
+   "data": "2026-11-20"
   }
  ],
  "caricamenti": {
-  "2026-11-01": 51
+  "2026-11-01": 53
  }
 }
