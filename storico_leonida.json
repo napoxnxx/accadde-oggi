@@ -492,7 +492,8 @@
    "chiave": "soggetti:geoff keighley|gta 6|the game awards",
    "data": "2026-11-18",
    "slot": "mattina",
-   "uscita": "2026-11-18T09:00:00+01:00"
+   "uscita": "2026-11-18T09:00:00+01:00",
+   "online": true
   },
   {
    "formato": "chicca",
