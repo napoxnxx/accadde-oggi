@@ -606,6 +606,19 @@
    "data": "2026-11-21",
    "slot": "pomeriggio",
    "uscita": "2026-11-21T16:00:00+01:00"
+  },
+  {
+   "formato": "chicca",
+   "titolo": "Bonnie e Clyde a Vice City 👀 GTA 6",
+   "descrizione": "Rockstar ha descritto la storia come un racconto alla Bonnie e Clyde.\nÈ il primo GTA con una coppia come protagonisti.\nJason è un ex militare, Lucia una lottatrice.\n\nCome finirà tra loro? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nRaccontato con parole nostre. Fonti:\n- Dazed (intervista a Rockstar): https://www.techradar.com/gaming/new-gta-6-details-reveal-a-bonnie-and-clyde-type-narrative-life-sim-systems-and-the-ability-to-seamlessly-swap-between-jason-and-lucia-during-gameplay\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Jason_Duval_10.jpg, Jason_and_Lucia_06.jpg, Jason_Duval_13.jpg, Leonida_Keys_06.jpg, Vice_City_10.jpg, Vice_City_23.jpg, Vice_City_16.jpg, Real_Dimez_Video_Clip.mp4, Raul_Bautista_Video_Clip.mp4, Lucia_Caminos_Video_Clip.mp4, Jason_Duval_Video_Clip.mp4, Cal_Hampton_Video_Clip.mp4, Boobie_Ike_Video_Clip.mp4, Brian_Heder_Video_Clip.mp4",
+   "tag": "sera-2026-11-22",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/sera-2026-11-22/sera-2026-11-22.mp4",
+   "dimensione": 14697154,
+   "preparato": "2026-11-19 14:32",
+   "data": "2026-11-22",
+   "slot": "sera",
+   "uscita": "2026-11-22T19:00:00+01:00"
   }
  ],
  "riserva": [
@@ -631,13 +644,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/artwork/Brian_Heder_tablet.jpg",
-  "media_rockstar/screenshot/Vice_City_07.jpg",
-  "media_rockstar/screenshot/Cal_Hampton_03.jpg",
-  "media_rockstar/artwork/Jason_and_Lucia_Robbery_landscape.jpg",
-  "media_rockstar/screenshot/Real_Dimez_01.jpg",
-  "media_rockstar/artwork/Cal_Hampton_portrait.jpg",
-  "media_rockstar/screenshot/Jason_Duval_04.jpg",
   "media_rockstar/screenshot/Leonida_Keys_05.jpg",
   "media_rockstar/artwork/Boobie_Ike_tablet.jpg",
   "media_rockstar/screenshot/Lucia_Caminos_14.jpg",
@@ -690,7 +696,14 @@
   "media_rockstar/screenshot/Mount_Kalaga_National_Park_02.jpg",
   "media_rockstar/screenshot/Vice_City_09.jpg",
   "media_rockstar/screenshot/Leonida_Keys_04.jpg",
-  "media_rockstar/screenshot/Vice_City_26.jpg"
+  "media_rockstar/screenshot/Vice_City_26.jpg",
+  "media_rockstar/screenshot/Jason_Duval_10.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_06.jpg",
+  "media_rockstar/screenshot/Jason_Duval_13.jpg",
+  "media_rockstar/screenshot/Leonida_Keys_06.jpg",
+  "media_rockstar/screenshot/Vice_City_10.jpg",
+  "media_rockstar/screenshot/Vice_City_23.jpg",
+  "media_rockstar/screenshot/Vice_City_16.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
@@ -758,9 +771,13 @@
   {
    "id": "r-trailer2",
    "data": "2026-11-21"
+  },
+  {
+   "id": "g-bonnie",
+   "data": "2026-11-22"
   }
  ],
  "caricamenti": {
-  "2026-11-01": 58
+  "2026-11-01": 59
  }
 }
