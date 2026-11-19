@@ -641,6 +641,26 @@
    "data": "2026-11-20",
    "slot": "notizia",
    "uscita": "2026-11-20T13:00:00+01:00"
+  },
+  {
+   "formato": "notizia",
+   "titolo": "GTA 6: gli attori di Jason e Lucia rompono il silenzio con un messaggio",
+   "descrizione": "Dylan Rourke e Manni L. Perez interpretano Jason e Lucia in GTA 6.\nI due attori hanno pubblicato un messaggio congiunto sulla loro esperienza nel gioco.\nÈ la prima volta che ne parlano, dopo anni di silenzio.\n\nTu cosa ne pensi? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nNotizia confermata da almeno 3 testate diverse e raccontata con parole nostre. Fonti:\n- Multiplayer.it: https://multiplayer.it/notizie/interpreti-di-jason-e-lucia-di-gta-6-hanno-parlato-per-prima-volta.html\n- IGN: https://www.ign.com/articles/gta-6s-jason-and-lucia-actors-break-years-of-silence-with-new-joint-statement\n- GameSpot: https://www.gamespot.com/articles/gta-6s-stars-release-a-very-nice-statement-as-game-goes-live/\n- Eurogamer: https://www.eurogamer.net/gta-6-full-cast-list-jason-duval-actor\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Fonti: Multiplayer.it, IGN, GameSpot, Eurogamer",
+   "tag": "mattina-2026-11-20",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/mattina-2026-11-20/mattina-2026-11-20.mp4",
+   "dimensione": 18561864,
+   "preparato": "2026-11-20 00:04",
+   "link": [
+    "https://multiplayer.it/notizie/interpreti-di-jason-e-lucia-di-gta-6-hanno-parlato-per-prima-volta.html",
+    "https://www.ign.com/articles/gta-6s-jason-and-lucia-actors-break-years-of-silence-with-new-joint-statement",
+    "https://www.gamespot.com/articles/gta-6s-stars-release-a-very-nice-statement-as-game-goes-live/",
+    "https://www.eurogamer.net/gta-6-full-cast-list-jason-duval-actor"
+   ],
+   "chiave": "soggetti:dylan rourke|gta 6|jason|lucia|manni l perez",
+   "data": "2026-11-20",
+   "slot": "mattina",
+   "uscita": "2026-11-20T09:00:00+01:00"
   }
  ],
  "riserva": [
@@ -666,13 +686,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/screenshot/Vice_City_21.jpg",
-  "media_rockstar/screenshot/Mount_Kalaga_National_Park_05.jpg",
-  "media_rockstar/screenshot/Vice_City_15.jpg",
-  "media_rockstar/screenshot/Vice_City_20.jpg",
-  "media_rockstar/screenshot/Jason_and_Lucia_09.jpg",
-  "media_rockstar/screenshot/Ambrosia_04.jpg",
-  "media_rockstar/screenshot/Lucia_Caminos_10.jpg",
   "media_rockstar/artwork/Jason_Lucia_Rooftop_phone.jpg",
   "media_rockstar/screenshot/Grassrivers_02.jpg",
   "media_rockstar/screenshot/Jason_Duval_06.jpg",
@@ -725,14 +738,20 @@
   "media_rockstar/screenshot/Vice_City_19.jpg",
   "media_rockstar/screenshot/Jason_and_Lucia_05.jpg",
   "media_rockstar/screenshot/Raul_Bautista_03.jpg",
-  "media_rockstar/screenshot/Lucia_Caminos_04.jpg"
+  "media_rockstar/screenshot/Lucia_Caminos_04.jpg",
+  "media_rockstar/screenshot/Boobie_Ike_01.jpg",
+  "media_rockstar/artwork/Jason_Lucia_Lock_And_Load_tablet.jpg",
+  "media_rockstar/artwork/Brian_Heder_tablet.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_14.jpg",
+  "media_rockstar/artwork/Raul_Bautista_ultrawide.jpg",
+  "media_rockstar/screenshot/Jason_Duval_05.jpg",
+  "media_rockstar/screenshot/Vice_City_20.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
   "notizia": 1,
-  "2026-11-19:notizia": 1,
-  "2026-11-19:mattina": 1,
-  "2026-11-20:notizia": 2
+  "2026-11-20:notizia": 2,
+  "2026-11-20:mattina": 1
  },
  "chicche_usate": [
   {
@@ -801,6 +820,6 @@
   }
  ],
  "caricamenti": {
-  "2026-11-01": 60
+  "2026-11-01": 61
  }
 }
