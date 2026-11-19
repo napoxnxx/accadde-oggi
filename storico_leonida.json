@@ -620,6 +620,25 @@
    "data": "2026-11-22",
    "slot": "sera",
    "uscita": "2026-11-22T19:00:00+01:00"
+  },
+  {
+   "formato": "notizia",
+   "titolo": "GTA 6: Rockstar pubblica la mappa ufficiale di Leonida",
+   "descrizione": "Rockstar Games ha pubblicato la mappa ufficiale di Grand Theft Auto VI.\nLa mappa è quella di Leonida.\n\nTu cosa ne pensi? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nNotizia confermata da almeno 3 testate diverse e raccontata con parole nostre. Fonti:\n- Everyeye.it: https://www.everyeye.it/notizie/gta-6-come-scaricare-mappa-leonida-alta-definizione-912615.html\n- Spaziogames: https://www.spaziogames.it/notizie/gta-6-la-mappa-ufficiale-di-leonida-e-gratis-da-scaricare\n- GameSpot: https://www.gamespot.com/articles/the-gta-6-map-is-truly-truly-massive-of-course/\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Fonti: Everyeye.it, Spaziogames, GameSpot",
+   "tag": "notizia-2026-11-20",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notizia-2026-11-20/notizia-2026-11-20.mp4",
+   "dimensione": 12946797,
+   "preparato": "2026-11-19 19:33",
+   "link": [
+    "https://www.everyeye.it/notizie/gta-6-come-scaricare-mappa-leonida-alta-definizione-912615.html",
+    "https://www.spaziogames.it/notizie/gta-6-la-mappa-ufficiale-di-leonida-e-gratis-da-scaricare",
+    "https://www.gamespot.com/articles/the-gta-6-map-is-truly-truly-massive-of-course/"
+   ],
+   "chiave": "soggetti:gta 6|leonida|rockstar",
+   "data": "2026-11-20",
+   "slot": "notizia",
+   "uscita": "2026-11-20T13:00:00+01:00"
   }
  ],
  "riserva": [
@@ -645,13 +664,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/screenshot/Leonida_Keys_05.jpg",
-  "media_rockstar/artwork/Boobie_Ike_tablet.jpg",
-  "media_rockstar/screenshot/Lucia_Caminos_14.jpg",
-  "media_rockstar/screenshot/DreQuan_Priest_03.jpg",
-  "media_rockstar/vintage/VINTAGE_VICE_CITY_WEAPON_PATTERN_01.jpg",
-  "media_rockstar/screenshot/Mount_Kalaga_National_Park_06.jpg",
-  "media_rockstar/screenshot/Ambrosia_05.jpg",
   "media_rockstar/screenshot/Vice_City_21.jpg",
   "media_rockstar/screenshot/Mount_Kalaga_National_Park_05.jpg",
   "media_rockstar/screenshot/Vice_City_15.jpg",
@@ -704,14 +716,21 @@
   "media_rockstar/screenshot/Leonida_Keys_06.jpg",
   "media_rockstar/screenshot/Vice_City_10.jpg",
   "media_rockstar/screenshot/Vice_City_23.jpg",
-  "media_rockstar/screenshot/Vice_City_16.jpg"
+  "media_rockstar/screenshot/Vice_City_16.jpg",
+  "media_rockstar/screenshot/Vice_City_14.jpg",
+  "media_rockstar/screenshot/Grassrivers_03.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_20.jpg",
+  "media_rockstar/screenshot/Vice_City_19.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_05.jpg",
+  "media_rockstar/screenshot/Raul_Bautista_03.jpg",
+  "media_rockstar/screenshot/Lucia_Caminos_04.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
   "notizia": 1,
   "2026-11-19:notizia": 1,
   "2026-11-19:mattina": 1,
-  "2026-11-20:notizia": 1
+  "2026-11-20:notizia": 2
  },
  "chicche_usate": [
   {
@@ -780,6 +799,6 @@
   }
  ],
  "caricamenti": {
-  "2026-11-01": 59
+  "2026-11-01": 60
  }
 }

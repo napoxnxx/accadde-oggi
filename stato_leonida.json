@@ -32,6 +32,12 @@
   },
   {
    "data": "2026-11-20",
+   "ora": "13:00",
+   "formato": "notizia",
+   "titolo": "GTA 6: Rockstar pubblica la mappa ufficiale di Leonida"
+  },
+  {
+   "data": "2026-11-20",
    "ora": "21:30",
    "formato": "chicca",
    "titolo": "Il pacchetto Vintage Vice City 🎁 GTA 6"
@@ -74,7 +80,7 @@
   }
  ],
  "riserva": 2,
- "caricamenti_del_mese": "59 su 96",
+ "caricamenti_del_mese": "60 su 96",
  "avvisi": [],
  "media_ufficiali": {
   "screenshot": 138,
@@ -102,5 +108,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-19 19:16"
+ "aggiornato": "2026-11-19 19:33"
 }
