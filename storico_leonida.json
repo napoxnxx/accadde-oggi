@@ -440,7 +440,8 @@
    "preparato": "2026-11-17 02:32",
    "data": "2026-11-19",
    "slot": "pomeriggio",
-   "uscita": "2026-11-19T16:00:00+01:00"
+   "uscita": "2026-11-19T16:00:00+01:00",
+   "online": true
   },
   {
    "formato": "chicca",
