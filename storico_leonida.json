@@ -555,7 +555,8 @@
    "chiave": "soggetti:gta|gta 6|rockstar games",
    "data": "2026-11-19",
    "slot": "notizia",
-   "uscita": "2026-11-19T13:00:00+01:00"
+   "uscita": "2026-11-19T13:00:00+01:00",
+   "online": true
   },
   {
    "formato": "notizia",
