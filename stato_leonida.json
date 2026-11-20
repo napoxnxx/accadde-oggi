@@ -1,34 +1,10 @@
 {
  "scorta": [
   {
-   "data": "2026-11-20",
+   "data": "2026-11-21",
    "ora": "09:00",
-   "formato": "notizia",
-   "titolo": "GTA 6: gli attori di Jason e Lucia rompono il silenzio con un messaggio"
-  },
-  {
-   "data": "2026-11-20",
-   "ora": "13:00",
-   "formato": "notizia",
-   "titolo": "GTA 6: Rockstar pubblica la mappa ufficiale di Leonida"
-  },
-  {
-   "data": "2026-11-20",
-   "ora": "21:30",
    "formato": "chicca",
-   "titolo": "Il pacchetto Vintage Vice City 🎁 GTA 6"
-  },
-  {
-   "data": "2026-11-20",
-   "ora": "16:00",
-   "formato": "chicca",
-   "titolo": "I quattro trailer ufficiali 👀 GTA 6"
-  },
-  {
-   "data": "2026-11-20",
-   "ora": "19:00",
-   "formato": "chicca",
-   "titolo": "Cosa c'è nell'Ultimate Edition 💎 GTA 6"
+   "titolo": "La colonna sonora è dei Justice 🎵 GTA 6"
   },
   {
    "data": "2026-11-21",
@@ -80,7 +56,7 @@
   }
  ],
  "riserva": 2,
- "caricamenti_del_mese": "65 su 96",
+ "caricamenti_del_mese": "66 su 96",
  "avvisi": [],
  "media_ufficiali": {
   "screenshot": 138,
@@ -94,7 +70,8 @@
   "2026-11-16: notizia, notizia non pubblicata: nessuna notizia confermata da almeno 3 testate",
   "2026-11-16: notizia, notizia non pubblicata: nessuna notizia confermata da almeno 3 testate",
   "2026-11-16: notizia, notizia non pubblicata: nessuna notizia confermata da almeno 3 testate",
-  "2026-11-19: notizia, notizia non pubblicata: Rockstar ha pubblicato online i crediti e il cast completo d: argomento escluso (morti, violenza, inchieste, scommesse…)"
+  "2026-11-19: notizia, notizia non pubblicata: Rockstar ha pubblicato online i crediti e il cast completo d: argomento escluso (morti, violenza, inchieste, scommesse…)",
+  "2026-11-21: mattina, notizia non pubblicata: Rockstar e Take-Two confermano che GTA VI ha incassato 3,79 : l'articolo 22 (Eurogamer) non parla dei protagonisti"
  ],
  "prova": {
   "quando": "2026-11-18 22:10",
@@ -108,5 +85,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-20 19:48"
+ "aggiornato": "2026-11-21 00:03"
 }

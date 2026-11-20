@@ -724,6 +724,19 @@
    "data": "2026-11-21",
    "slot": "notizia",
    "uscita": "2026-11-21T13:00:00+01:00"
+  },
+  {
+   "formato": "chicca",
+   "titolo": "La colonna sonora è dei Justice 🎵 GTA 6",
+   "descrizione": "La colonna sonora originale di GTA VI porta la firma dei Justice.\nRockstar l'ha annunciato il 29 ottobre 2026.\n\nTi piacciono i Justice? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nInformazioni ufficiali di Rockstar Games (rockstargames.com/VI), raccontate con parole nostre.\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Vice_City_22.jpg, Lucia_Caminos_06.jpg, Boobie_Ike_tablet.jpg, Port_Gellhorn_05.jpg, Jason_and_Lucia_02_portrait.jpg, Grassrivers_03.jpg, Lucia_Caminos_11.jpg, Boobie_Ike_Video_Clip.mp4, Real_Dimez_Video_Clip.mp4, Brian_Heder_Video_Clip.mp4, Lucia_Caminos_Video_Clip.mp4, Jason_Duval_Video_Clip.mp4, Raul_Bautista_Video_Clip.mp4, Cal_Hampton_Video_Clip.mp4",
+   "tag": "mattina-2026-11-21",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/mattina-2026-11-21/mattina-2026-11-21.mp4",
+   "dimensione": 13244140,
+   "preparato": "2026-11-21 00:03",
+   "data": "2026-11-21",
+   "slot": "mattina",
+   "uscita": "2026-11-21T09:00:00+01:00"
   }
  ],
  "riserva": [
@@ -749,13 +762,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/screenshot/Jason_and_Lucia_03.jpg",
-  "media_rockstar/artwork/Jason_and_Lucia_Robbery_phone.jpg",
-  "media_rockstar/screenshot/Real_Dimez_04.jpg",
-  "media_rockstar/screenshot/Lucia_Caminos_03.jpg",
-  "media_rockstar/artwork/Jason_and_Lucia_Beach_phone.jpg",
-  "media_rockstar/artwork/Brian_Heder_phone.jpg",
-  "media_rockstar/screenshot/Jason_and_Lucia_07.jpg",
   "media_rockstar/screenshot/Mount_Kalaga_National_Park_02.jpg",
   "media_rockstar/screenshot/Vice_City_09.jpg",
   "media_rockstar/screenshot/Leonida_Keys_04.jpg",
@@ -808,14 +814,20 @@
   "media_rockstar/screenshot/Lucia_Caminos_12.jpg",
   "media_rockstar/screenshot/Real_Dimez_03.jpg",
   "media_rockstar/screenshot/DreQuan_Priest_03.jpg",
-  "media_rockstar/screenshot/Vice_City_06.jpg"
+  "media_rockstar/screenshot/Vice_City_06.jpg",
+  "media_rockstar/screenshot/Vice_City_22.jpg",
+  "media_rockstar/screenshot/Lucia_Caminos_06.jpg",
+  "media_rockstar/artwork/Boobie_Ike_tablet.jpg",
+  "media_rockstar/screenshot/Port_Gellhorn_05.jpg",
+  "media_rockstar/artwork/Jason_and_Lucia_02_portrait.jpg",
+  "media_rockstar/screenshot/Grassrivers_03.jpg",
+  "media_rockstar/screenshot/Lucia_Caminos_11.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
   "notizia": 1,
-  "2026-11-20:notizia": 2,
-  "2026-11-20:mattina": 1,
-  "2026-11-21:notizia": 1
+  "2026-11-21:notizia": 1,
+  "2026-11-21:mattina": 1
  },
  "chicche_usate": [
   {
@@ -893,9 +905,13 @@
   {
    "id": "g-polizia",
    "data": "2026-11-23"
+  },
+  {
+   "id": "justice",
+   "data": "2026-11-21"
   }
  ],
  "caricamenti": {
-  "2026-11-01": 65
+  "2026-11-01": 66
  }
 }
