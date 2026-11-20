@@ -689,6 +689,19 @@
    "data": "2026-11-22",
    "slot": "pomeriggio",
    "uscita": "2026-11-22T16:00:00+01:00"
+  },
+  {
+   "formato": "chicca",
+   "titolo": "La polizia deve vederti 🎮 GTA 6",
+   "descrizione": "Diventi ricercato solo se qualcuno ti vede, ti denuncia o ti riprende una telecamera.\nSe la polizia non sa che faccia hai, le stelle restano vuote.\nCambiare taglio di capelli può confondere le descrizioni.\n\nQuante stelle prendi subito? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nRaccontato con parole nostre. Fonti:\n- IGN (intervista a Rockstar): https://www.vice.com/en/article/rockstar-reveals-35-new-gta-6-features-ign/\n- Anteprime della stampa: https://www.gtabase.com/articles/gta-6/gta-6-previews-recap-all-new-gameplay-features-revealed\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Leonida_Keys_05.jpg, Jason_Lucia_Rooftop_phone.jpg, Lucia_Caminos_09.jpg, Jason_Duval_16.jpg, Jason_and_Lucia_18.jpg, Leonida_Keys_07.jpg, Jason_and_Lucia_13.jpg, Jason_Duval_Video_Clip.mp4, Real_Dimez_Video_Clip.mp4, Lucia_Caminos_Video_Clip.mp4, Cal_Hampton_Video_Clip.mp4, Boobie_Ike_Video_Clip.mp4, Raul_Bautista_Video_Clip.mp4, Brian_Heder_Video_Clip.mp4",
+   "tag": "sera-2026-11-23",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/sera-2026-11-23/sera-2026-11-23.mp4",
+   "dimensione": 15543657,
+   "preparato": "2026-11-20 14:47",
+   "data": "2026-11-23",
+   "slot": "sera",
+   "uscita": "2026-11-23T19:00:00+01:00"
   }
  ],
  "riserva": [
@@ -714,13 +727,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/screenshot/Vice_City_05.jpg",
-  "media_rockstar/screenshot/Jason_Duval_15.jpg",
-  "media_rockstar/screenshot/Boobie_Ike_02.jpg",
-  "media_rockstar/screenshot/Jason_Duval_05.jpg",
-  "media_rockstar/screenshot/Vice_City_08.jpg",
-  "media_rockstar/screenshot/Cal_Hampton_01.jpg",
-  "media_rockstar/artwork/Jason_Lucia_Rooftop_landscape.jpg",
   "media_rockstar/screenshot/Ambrosia_02.jpg",
   "media_rockstar/screenshot/Jason_and_Lucia_16.jpg",
   "media_rockstar/screenshot/Raul_Bautista_04.jpg",
@@ -773,7 +779,14 @@
   "media_rockstar/screenshot/Leonida_Keys_03.jpg",
   "media_rockstar/screenshot/Vice_City_25.jpg",
   "media_rockstar/screenshot/Vice_City_15.jpg",
-  "media_rockstar/screenshot/Port_Gellhorn_02.jpg"
+  "media_rockstar/screenshot/Port_Gellhorn_02.jpg",
+  "media_rockstar/screenshot/Leonida_Keys_05.jpg",
+  "media_rockstar/artwork/Jason_Lucia_Rooftop_phone.jpg",
+  "media_rockstar/screenshot/Lucia_Caminos_09.jpg",
+  "media_rockstar/screenshot/Jason_Duval_16.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_18.jpg",
+  "media_rockstar/screenshot/Leonida_Keys_07.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_13.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
@@ -853,9 +866,13 @@
   {
    "id": "s-vicecity",
    "data": "2026-11-22"
+  },
+  {
+   "id": "g-polizia",
+   "data": "2026-11-23"
   }
  ],
  "caricamenti": {
-  "2026-11-01": 63
+  "2026-11-01": 64
  }
 }
