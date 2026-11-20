@@ -456,7 +456,8 @@
    "preparato": "2026-11-17 14:03",
    "data": "2026-11-20",
    "slot": "sera",
-   "uscita": "2026-11-20T19:00:00+01:00"
+   "uscita": "2026-11-20T19:00:00+01:00",
+   "online": true
   },
   {
    "formato": "notizia",
