@@ -660,7 +660,8 @@
    "chiave": "soggetti:dylan rourke|gta 6|jason|lucia|manni l perez",
    "data": "2026-11-20",
    "slot": "mattina",
-   "uscita": "2026-11-20T09:00:00+01:00"
+   "uscita": "2026-11-20T09:00:00+01:00",
+   "online": true
   },
   {
    "formato": "chicca",
