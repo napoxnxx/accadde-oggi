@@ -50,13 +50,25 @@
   },
   {
    "data": "2026-11-22",
+   "ora": "21:30",
+   "formato": "chicca",
+   "titolo": "Chi è Lucia Caminos? 🕶️ GTA 6"
+  },
+  {
+   "data": "2026-11-22",
+   "ora": "16:00",
+   "formato": "chicca",
+   "titolo": "Si torna a Vice City 📼 GTA 6"
+  },
+  {
+   "data": "2026-11-22",
    "ora": "19:00",
    "formato": "chicca",
    "titolo": "Bonnie e Clyde a Vice City 👀 GTA 6"
   }
  ],
  "riserva": 2,
- "caricamenti_del_mese": "61 su 96",
+ "caricamenti_del_mese": "63 su 96",
  "avvisi": [],
  "media_ufficiali": {
   "screenshot": 138,
@@ -84,5 +96,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-20 00:04"
+ "aggiornato": "2026-11-20 03:04"
 }
