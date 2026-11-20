@@ -32,6 +32,12 @@
   },
   {
    "data": "2026-11-21",
+   "ora": "13:00",
+   "formato": "notizia",
+   "titolo": "GTA 6 è uscito: il CEO di Take-Two risponde sulle domande su GTA 7"
+  },
+  {
+   "data": "2026-11-21",
    "ora": "21:30",
    "formato": "chicca",
    "titolo": "In GTA 6 puoi ingrassare 🎮 GTA 6"
@@ -74,7 +80,7 @@
   }
  ],
  "riserva": 2,
- "caricamenti_del_mese": "64 su 96",
+ "caricamenti_del_mese": "65 su 96",
  "avvisi": [],
  "media_ufficiali": {
   "screenshot": 138,
@@ -102,5 +108,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-20 14:47"
+ "aggiornato": "2026-11-20 19:48"
 }

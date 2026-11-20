@@ -703,6 +703,25 @@
    "data": "2026-11-23",
    "slot": "sera",
    "uscita": "2026-11-23T19:00:00+01:00"
+  },
+  {
+   "formato": "notizia",
+   "titolo": "GTA 6 è uscito: il CEO di Take-Two risponde sulle domande su GTA 7",
+   "descrizione": "Rockstar Games ha lanciato GTA 6 e le prime recensioni sono molto positive.\nAnche le vendite iniziali sono state molto alte.\nIl CEO di Take-Two, interpellato su GTA 7, dice che è presto: prima si pensa a GTA 6.\n\nTu cosa ne pensi? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nNotizia confermata da almeno 3 testate diverse e raccontata con parole nostre. Fonti:\n- IGN: https://www.ign.com/articles/gta-6-has-only-been-out-for-a-day-and-people-are-already-asking-take-twos-boss-about-gta-7\n- Multiplayer.it: https://multiplayer.it/notizie/gta-7-per-il-ceo-di-take-two-e-presto-prima-lasciamo-cuocere-gta-6.html\n- GameSpot: https://www.gamespot.com/articles/gta-7-please-let-gta-6-cook-first-take-two-ceo-says/\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Fonti: IGN, Multiplayer.it, GameSpot",
+   "tag": "notizia-2026-11-21",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notizia-2026-11-21/notizia-2026-11-21.mp4",
+   "dimensione": 19809885,
+   "preparato": "2026-11-20 19:48",
+   "link": [
+    "https://www.ign.com/articles/gta-6-has-only-been-out-for-a-day-and-people-are-already-asking-take-twos-boss-about-gta-7",
+    "https://multiplayer.it/notizie/gta-7-per-il-ceo-di-take-two-e-presto-prima-lasciamo-cuocere-gta-6.html",
+    "https://www.gamespot.com/articles/gta-7-please-let-gta-6-cook-first-take-two-ceo-says/"
+   ],
+   "chiave": "soggetti:gta 6|gta 7|rockstar|take-two",
+   "data": "2026-11-21",
+   "slot": "notizia",
+   "uscita": "2026-11-21T13:00:00+01:00"
   }
  ],
  "riserva": [
@@ -728,13 +747,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/screenshot/Ambrosia_02.jpg",
-  "media_rockstar/screenshot/Jason_and_Lucia_16.jpg",
-  "media_rockstar/screenshot/Raul_Bautista_04.jpg",
-  "media_rockstar/artwork/Real_Dimez_tablet.jpg",
-  "media_rockstar/screenshot/Vice_City_12.jpg",
-  "media_rockstar/screenshot/Lucia_Caminos_12.jpg",
-  "media_rockstar/screenshot/Jason_and_Lucia_02.jpg",
   "media_rockstar/screenshot/Jason_and_Lucia_03.jpg",
   "media_rockstar/artwork/Jason_and_Lucia_Robbery_phone.jpg",
   "media_rockstar/screenshot/Real_Dimez_04.jpg",
@@ -787,13 +799,21 @@
   "media_rockstar/screenshot/Jason_Duval_16.jpg",
   "media_rockstar/screenshot/Jason_and_Lucia_18.jpg",
   "media_rockstar/screenshot/Leonida_Keys_07.jpg",
-  "media_rockstar/screenshot/Jason_and_Lucia_13.jpg"
+  "media_rockstar/screenshot/Jason_and_Lucia_13.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_03.jpg",
+  "media_rockstar/screenshot/Cal_Hampton_02.jpg",
+  "media_rockstar/screenshot/Port_Gellhorn_06.jpg",
+  "media_rockstar/screenshot/Lucia_Caminos_12.jpg",
+  "media_rockstar/screenshot/Real_Dimez_03.jpg",
+  "media_rockstar/screenshot/DreQuan_Priest_03.jpg",
+  "media_rockstar/screenshot/Vice_City_06.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
   "notizia": 1,
   "2026-11-20:notizia": 2,
-  "2026-11-20:mattina": 1
+  "2026-11-20:mattina": 1,
+  "2026-11-21:notizia": 1
  },
  "chicche_usate": [
   {
@@ -874,6 +894,6 @@
   }
  ],
  "caricamenti": {
-  "2026-11-01": 64
+  "2026-11-01": 65
  }
 }
