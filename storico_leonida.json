@@ -640,7 +640,8 @@
    "chiave": "soggetti:gta 6|leonida|rockstar",
    "data": "2026-11-20",
    "slot": "notizia",
-   "uscita": "2026-11-20T13:00:00+01:00"
+   "uscita": "2026-11-20T13:00:00+01:00",
+   "online": true
   },
   {
    "formato": "notizia",
