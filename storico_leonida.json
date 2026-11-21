@@ -765,6 +765,19 @@
    "data": "2026-11-24",
    "slot": "sera",
    "uscita": "2026-11-24T19:00:00+01:00"
+  },
+  {
+   "formato": "chicca",
+   "titolo": "Di cosa parla GTA VI 👀 GTA 6",
+   "descrizione": "Jason e Lucia finiscono in una cospirazione criminale che attraversa lo stato di Leonida.\nTutto parte da un colpo facile andato storto.\nPer sopravvivere dovranno contare l'uno sull'altra.\n\nCome finirà secondo te? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nInformazioni ufficiali di Rockstar Games (rockstargames.com/VI), raccontate con parole nostre.\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Jason_Duval_02.jpg, Jason_Duval_18.jpg, Jason_and_Lucia_08.jpg, Vice_City_16.jpg, Port_Gellhorn_07.jpg, Mount_Kalaga_National_Park_03.jpg, Mount_Kalaga_National_Park_01.jpg, Jason_Duval_Video_Clip.mp4, Brian_Heder_Video_Clip.mp4, Boobie_Ike_Video_Clip.mp4, Raul_Bautista_Video_Clip.mp4, Cal_Hampton_Video_Clip.mp4, Real_Dimez_Video_Clip.mp4, Lucia_Caminos_Video_Clip.mp4",
+   "tag": "notte-2026-11-24",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notte-2026-11-24/notte-2026-11-24.mp4",
+   "dimensione": 15067937,
+   "preparato": "2026-11-21 15:03",
+   "data": "2026-11-24",
+   "slot": "notte",
+   "uscita": "2026-11-24T21:30:00+01:00"
   }
  ],
  "riserva": [
@@ -790,13 +803,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/screenshot/Vice_City_19.jpg",
-  "media_rockstar/screenshot/Jason_and_Lucia_05.jpg",
-  "media_rockstar/screenshot/Raul_Bautista_03.jpg",
-  "media_rockstar/screenshot/Lucia_Caminos_04.jpg",
-  "media_rockstar/screenshot/Boobie_Ike_01.jpg",
-  "media_rockstar/artwork/Jason_Lucia_Lock_And_Load_tablet.jpg",
-  "media_rockstar/artwork/Brian_Heder_tablet.jpg",
   "media_rockstar/screenshot/Jason_and_Lucia_14.jpg",
   "media_rockstar/artwork/Raul_Bautista_ultrawide.jpg",
   "media_rockstar/screenshot/Jason_Duval_05.jpg",
@@ -849,7 +855,14 @@
   "media_rockstar/screenshot/Leonida_Keys_04.jpg",
   "media_rockstar/screenshot/Vice_City_27.jpg",
   "media_rockstar/screenshot/Leonida_Keys_03.jpg",
-  "media_rockstar/screenshot/Port_Gellhorn_04.jpg"
+  "media_rockstar/screenshot/Port_Gellhorn_04.jpg",
+  "media_rockstar/screenshot/Jason_Duval_02.jpg",
+  "media_rockstar/screenshot/Jason_Duval_18.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_08.jpg",
+  "media_rockstar/screenshot/Vice_City_16.jpg",
+  "media_rockstar/screenshot/Port_Gellhorn_07.jpg",
+  "media_rockstar/screenshot/Mount_Kalaga_National_Park_03.jpg",
+  "media_rockstar/screenshot/Mount_Kalaga_National_Park_01.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
@@ -945,9 +958,13 @@
   {
    "id": "vice-city",
    "data": "2026-11-24"
+  },
+  {
+   "id": "storia",
+   "data": "2026-11-24"
   }
  ],
  "caricamenti": {
-  "2026-11-01": 68
+  "2026-11-01": 69
  }
 }

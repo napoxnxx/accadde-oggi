@@ -62,13 +62,19 @@
   },
   {
    "data": "2026-11-24",
+   "ora": "21:30",
+   "formato": "chicca",
+   "titolo": "Di cosa parla GTA VI 👀 GTA 6"
+  },
+  {
+   "data": "2026-11-24",
    "ora": "19:00",
    "formato": "chicca",
    "titolo": "Vice City, USA 🌴 GTA 6"
   }
  ],
  "riserva": 2,
- "caricamenti_del_mese": "68 su 96",
+ "caricamenti_del_mese": "69 su 96",
  "avvisi": [],
  "media_ufficiali": {
   "screenshot": 138,
@@ -97,5 +103,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-21 03:19"
+ "aggiornato": "2026-11-21 15:03"
 }
