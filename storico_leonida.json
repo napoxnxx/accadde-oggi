@@ -723,7 +723,8 @@
    "chiave": "soggetti:gta 6|gta 7|rockstar|take-two",
    "data": "2026-11-21",
    "slot": "notizia",
-   "uscita": "2026-11-21T13:00:00+01:00"
+   "uscita": "2026-11-21T13:00:00+01:00",
+   "online": true
   },
   {
    "formato": "chicca",
