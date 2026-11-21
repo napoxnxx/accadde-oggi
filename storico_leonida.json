@@ -779,6 +779,28 @@
    "data": "2026-11-24",
    "slot": "notte",
    "uscita": "2026-11-24T21:30:00+01:00"
+  },
+  {
+   "formato": "notizia",
+   "titolo": "GTA 6 record: 3,79 miliardi di dollari al lancio e 32,5 milioni di copie",
+   "descrizione": "GTA 6 ha incassato 3,79 miliardi di dollari nel primo giorno di vendita.\nSono state vendute 32,5 milioni di copie.\nÈ il lancio più grande di sempre nella storia dell'intrattenimento.\n\nTu cosa ne pensi? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nNotizia confermata da almeno 3 testate diverse e raccontata con parole nostre. Fonti:\n- Multiplayer.it: https://multiplayer.it/notizie/vendite-di-gta-6-hanno-prodotto-379-miliardi-di-dollari-di-incassi-in-24-ore.html\n- Eurogamer: https://www.eurogamer.net/gta-6-biggest-entertainment-launch\n- Everyeye.it: https://www.everyeye.it/notizie/gta-6-storia-vendite-folli-prime-24-ore-miglior-lancio-prodotto-intrattenimento-912813.html\n- IGN: https://www.ign.com/articles/gta-6-is-the-biggest-entertainment-launch-of-all-time-at-379-billion-on-day-one\n- GameSpot: https://www.gamespot.com/articles/gta-6-sets-even-more-records/\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Fonti: Multiplayer.it, Eurogamer, GameSpot, Everyeye.it",
+   "tag": "notizia-2026-11-22",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notizia-2026-11-22/notizia-2026-11-22.mp4",
+   "dimensione": 19779533,
+   "preparato": "2026-11-21 20:03",
+   "link": [
+    "https://multiplayer.it/notizie/vendite-di-gta-6-hanno-prodotto-379-miliardi-di-dollari-di-incassi-in-24-ore.html",
+    "https://www.eurogamer.net/gta-6-biggest-entertainment-launch",
+    "https://www.gamespot.com/articles/gta-6-sets-even-more-records/",
+    "https://www.everyeye.it/notizie/gta-6-storia-vendite-folli-prime-24-ore-miglior-lancio-prodotto-intrattenimento-912813.html",
+    "https://www.ign.com/articles/gta-6-is-the-biggest-entertainment-launch-of-all-time-at-379-billion-on-day-one",
+    "https://www.gamespot.com/articles/gta-6-hit-32-5-million-copies-sold-and-almost-4-billion-on-day-one/"
+   ],
+   "chiave": "soggetti:gta 6|rockstar games|take-two",
+   "data": "2026-11-22",
+   "slot": "notizia",
+   "uscita": "2026-11-22T13:00:00+01:00"
   }
  ],
  "riserva": [
@@ -804,13 +826,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/screenshot/Jason_and_Lucia_14.jpg",
-  "media_rockstar/artwork/Raul_Bautista_ultrawide.jpg",
-  "media_rockstar/screenshot/Jason_Duval_05.jpg",
-  "media_rockstar/screenshot/Vice_City_20.jpg",
-  "media_rockstar/screenshot/Jason_and_Lucia_12.jpg",
-  "media_rockstar/screenshot/Lucia_Caminos_14.jpg",
-  "media_rockstar/screenshot/Jason_and_Lucia_11.jpg",
   "media_rockstar/screenshot/Vice_City_08.jpg",
   "media_rockstar/screenshot/Leonida_Keys_02.jpg",
   "media_rockstar/screenshot/Vice_City_18.jpg",
@@ -863,13 +878,21 @@
   "media_rockstar/screenshot/Vice_City_16.jpg",
   "media_rockstar/screenshot/Port_Gellhorn_07.jpg",
   "media_rockstar/screenshot/Mount_Kalaga_National_Park_03.jpg",
-  "media_rockstar/screenshot/Mount_Kalaga_National_Park_01.jpg"
+  "media_rockstar/screenshot/Mount_Kalaga_National_Park_01.jpg",
+  "media_rockstar/screenshot/Lucia_Caminos_08.jpg",
+  "media_rockstar/screenshot/Grassrivers_02.jpg",
+  "media_rockstar/screenshot/Raul_Bautista_03.jpg",
+  "media_rockstar/screenshot/Vice_City_10.jpg",
+  "media_rockstar/screenshot/Jason_Duval_14.jpg",
+  "media_rockstar/screenshot/Cal_Hampton_01.jpg",
+  "media_rockstar/screenshot/DreQuan_Priest_01.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
   "notizia": 1,
   "2026-11-21:notizia": 1,
-  "2026-11-21:mattina": 1
+  "2026-11-21:mattina": 1,
+  "2026-11-22:notizia": 1
  },
  "chicche_usate": [
   {
@@ -966,6 +989,6 @@
   }
  ],
  "caricamenti": {
-  "2026-11-01": 69
+  "2026-11-01": 70
  }
 }
