@@ -803,6 +803,25 @@
    "data": "2026-11-22",
    "slot": "notizia",
    "uscita": "2026-11-22T13:00:00+01:00"
+  },
+  {
+   "formato": "notizia",
+   "titolo": "GTA 6: Metascore 99 ma review bombing degli utenti su Metacritic",
+   "descrizione": "GTA 6 ha un Metascore di 99 su Metacritic, assegnato dalla critica.\nGli utenti però stanno facendo review bombing, con voti molto più bassi.\nIl punteggio del pubblico è in forte contrasto con quello dei critici.\n\nTu cosa ne pensi? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nNotizia confermata da almeno 3 testate diverse e raccontata con parole nostre. Fonti:\n- Everyeye.it: https://www.everyeye.it/notizie/gta-6-vittima-review-bombing-davvero-gioco-woke-912943.html\n- Eurogamer: https://www.eurogamer.net/gta-6-review-bombed-metacritic-user-score\n- Multiplayer.it: https://multiplayer.it/notizie/gta-6-travolto-dal-review-bombing-su-metacritic-la-media-voti-degli-utenti-non-raggiunge-neppure-la-sufficienza.html\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Fonti: Everyeye.it, Eurogamer, Multiplayer.it",
+   "tag": "mattina-2026-11-22",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/mattina-2026-11-22/mattina-2026-11-22.mp4",
+   "dimensione": 17560069,
+   "preparato": "2026-11-22 00:03",
+   "link": [
+    "https://www.everyeye.it/notizie/gta-6-vittima-review-bombing-davvero-gioco-woke-912943.html",
+    "https://www.eurogamer.net/gta-6-review-bombed-metacritic-user-score",
+    "https://multiplayer.it/notizie/gta-6-travolto-dal-review-bombing-su-metacritic-la-media-voti-degli-utenti-non-raggiunge-neppure-la-sufficienza.html"
+   ],
+   "chiave": "soggetti:gta 6|metacritic",
+   "data": "2026-11-22",
+   "slot": "mattina",
+   "uscita": "2026-11-22T09:00:00+01:00"
   }
  ],
  "riserva": [
@@ -828,13 +847,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/screenshot/Vice_City_08.jpg",
-  "media_rockstar/screenshot/Leonida_Keys_02.jpg",
-  "media_rockstar/screenshot/Vice_City_18.jpg",
-  "media_rockstar/screenshot/Vice_City_21.jpg",
-  "media_rockstar/screenshot/Vice_City_27.jpg",
-  "media_rockstar/screenshot/Vice_City_12.jpg",
-  "media_rockstar/screenshot/Vice_City_03.jpg",
   "media_rockstar/screenshot/Leonida_Keys_03.jpg",
   "media_rockstar/screenshot/Vice_City_25.jpg",
   "media_rockstar/screenshot/Vice_City_15.jpg",
@@ -887,14 +899,20 @@
   "media_rockstar/screenshot/Vice_City_10.jpg",
   "media_rockstar/screenshot/Jason_Duval_14.jpg",
   "media_rockstar/screenshot/Cal_Hampton_01.jpg",
-  "media_rockstar/screenshot/DreQuan_Priest_01.jpg"
+  "media_rockstar/screenshot/DreQuan_Priest_01.jpg",
+  "media_rockstar/screenshot/Vice_City_04.jpg",
+  "media_rockstar/screenshot/Jason_Duval_09.jpg",
+  "media_rockstar/artwork/Boobie_Ike_tablet.jpg",
+  "media_rockstar/artwork/Jason_and_Lucia_Beach_phone.jpg",
+  "media_rockstar/screenshot/Port_Gellhorn_03.jpg",
+  "media_rockstar/screenshot/Grassrivers_06.jpg",
+  "media_rockstar/screenshot/Cal_Hampton_03.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
   "notizia": 1,
-  "2026-11-21:notizia": 1,
-  "2026-11-21:mattina": 1,
-  "2026-11-22:notizia": 1
+  "2026-11-22:notizia": 1,
+  "2026-11-22:mattina": 1
  },
  "chicche_usate": [
   {
@@ -991,6 +1009,6 @@
   }
  ],
  "caricamenti": {
-  "2026-11-01": 70
+  "2026-11-01": 71
  }
 }
