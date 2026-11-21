@@ -599,7 +599,8 @@
    "preparato": "2026-11-19 02:49",
    "data": "2026-11-21",
    "slot": "notte",
-   "uscita": "2026-11-21T21:30:00+01:00"
+   "uscita": "2026-11-21T21:30:00+01:00",
+   "online": true
   },
   {
    "formato": "chicca",
