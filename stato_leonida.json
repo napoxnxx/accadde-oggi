@@ -44,13 +44,19 @@
   },
   {
    "data": "2026-11-26",
+   "ora": "21:30",
+   "formato": "chicca",
+   "titolo": "13 anni di attesa 📼 GTA 6"
+  },
+  {
+   "data": "2026-11-26",
    "ora": "19:00",
    "formato": "chicca",
    "titolo": "Come si apre una cassaforte 🎮 GTA 6"
   }
  ],
  "riserva": 2,
- "caricamenti_del_mese": "75 su 96",
+ "caricamenti_del_mese": "76 su 96",
  "avvisi": [],
  "media_ufficiali": {
   "screenshot": 138,
@@ -79,5 +85,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-23 00:03"
+ "aggiornato": "2026-11-23 00:18"
 }

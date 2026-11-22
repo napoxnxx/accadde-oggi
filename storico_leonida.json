@@ -885,6 +885,19 @@
    "data": "2026-11-26",
    "slot": "sera",
    "uscita": "2026-11-26T19:00:00+01:00"
+  },
+  {
+   "formato": "chicca",
+   "titolo": "13 anni di attesa 📼 GTA 6",
+   "descrizione": "Tra GTA V e GTA 6 passano più di 13 anni.\nÈ la pausa più lunga di sempre tra due capitoli principali.\nNel frattempo Red Dead Redemption 2 ha superato gli 87 milioni di copie.\n\nQuanti anni avevi nel 2013? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nRaccontato con parole nostre. Fonti:\n- Take-Two: https://www.gamedeveloper.com/business/gta-v-surpasses-230-million-sales-months-before-gta-vi-touches-down\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Lucia_Caminos_11.jpg, Lucia_Caminos_01.jpg, Cal_Hampton_portrait.jpg, Port_Gellhorn_01.jpg, Ambrosia_04.jpg, Vice_City_27.jpg, Lucia_Caminos_05.jpg, Brian_Heder_Video_Clip.mp4, Lucia_Caminos_Video_Clip.mp4, Jason_Duval_Video_Clip.mp4, Real_Dimez_Video_Clip.mp4, Raul_Bautista_Video_Clip.mp4, Cal_Hampton_Video_Clip.mp4, Boobie_Ike_Video_Clip.mp4",
+   "tag": "notte-2026-11-26",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notte-2026-11-26/notte-2026-11-26.mp4",
+   "dimensione": 15946022,
+   "preparato": "2026-11-23 00:18",
+   "data": "2026-11-26",
+   "slot": "notte",
+   "uscita": "2026-11-26T21:30:00+01:00"
   }
  ],
  "riserva": [
@@ -910,13 +923,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/screenshot/Brian_Heder_01.jpg",
-  "media_rockstar/screenshot/Ambrosia_05.jpg",
-  "media_rockstar/screenshot/Mount_Kalaga_National_Park_05.jpg",
-  "media_rockstar/screenshot/Jason_Duval_05.jpg",
-  "media_rockstar/screenshot/Vice_City_20.jpg",
-  "media_rockstar/screenshot/Vice_City_03.jpg",
-  "media_rockstar/screenshot/Vice_City_17.jpg",
   "media_rockstar/screenshot/Leonida_Keys_04.jpg",
   "media_rockstar/screenshot/Vice_City_27.jpg",
   "media_rockstar/screenshot/Leonida_Keys_03.jpg",
@@ -969,7 +975,14 @@
   "media_rockstar/screenshot/Leonida_Keys_05.jpg",
   "media_rockstar/screenshot/Port_Gellhorn_02.jpg",
   "media_rockstar/screenshot/Port_Gellhorn_04.jpg",
-  "media_rockstar/screenshot/Vice_City_20.jpg"
+  "media_rockstar/screenshot/Vice_City_20.jpg",
+  "media_rockstar/screenshot/Lucia_Caminos_11.jpg",
+  "media_rockstar/screenshot/Lucia_Caminos_01.jpg",
+  "media_rockstar/artwork/Cal_Hampton_portrait.jpg",
+  "media_rockstar/screenshot/Port_Gellhorn_01.jpg",
+  "media_rockstar/screenshot/Ambrosia_04.jpg",
+  "media_rockstar/screenshot/Vice_City_27.jpg",
+  "media_rockstar/screenshot/Lucia_Caminos_05.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
@@ -1082,9 +1095,13 @@
   {
    "id": "g-cassaforte",
    "data": "2026-11-26"
+  },
+  {
+   "id": "s-attesa",
+   "data": "2026-11-26"
   }
  ],
  "caricamenti": {
-  "2026-11-01": 75
+  "2026-11-01": 76
  }
 }
