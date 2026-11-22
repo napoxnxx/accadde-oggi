@@ -53,10 +53,22 @@
    "ora": "19:00",
    "formato": "chicca",
    "titolo": "Vice City, USA 🌴 GTA 6"
+  },
+  {
+   "data": "2026-11-25",
+   "ora": "21:30",
+   "formato": "chicca",
+   "titolo": "Lo scandalo Hot Coffee ⚠️ GTA 6"
+  },
+  {
+   "data": "2026-11-25",
+   "ora": "19:00",
+   "formato": "chicca",
+   "titolo": "Il miliardo di GTA V 📼 GTA 6"
   }
  ],
  "riserva": 2,
- "caricamenti_del_mese": "71 su 96",
+ "caricamenti_del_mese": "73 su 96",
  "avvisi": [],
  "media_ufficiali": {
   "screenshot": 138,
@@ -85,5 +97,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-22 00:03"
+ "aggiornato": "2026-11-22 03:25"
 }
