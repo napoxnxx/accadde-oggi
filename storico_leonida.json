@@ -872,6 +872,19 @@
    "data": "2026-11-23",
    "slot": "notizia",
    "uscita": "2026-11-23T13:00:00+01:00"
+  },
+  {
+   "formato": "chicca",
+   "titolo": "Come si apre una cassaforte 🎮 GTA 6",
+   "descrizione": "Nei colpi puoi far saltare la cassaforte: fai prima, ma rovini parte del bottino.\nSe trovi la combinazione porti via di più.\nAlcuni edifici hanno uscite alternative per scappare.\n\nEsplosivo o combinazione? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nRaccontato con parole nostre. Fonti:\n- IGN (intervista a Rockstar): https://www.vice.com/en/article/rockstar-reveals-35-new-gta-6-features-ign/\n- Anteprime della stampa: https://www.gtabase.com/articles/gta-6/gta-6-previews-recap-all-new-gameplay-features-revealed\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Jason_and_Lucia_Robbery_landscape.jpg, Jason_and_Lucia_Robbery_phone.jpg, Grassrivers_08.jpg, Leonida_Keys_05.jpg, Port_Gellhorn_02.jpg, Port_Gellhorn_04.jpg, Vice_City_20.jpg, Raul_Bautista_Video_Clip.mp4, Cal_Hampton_Video_Clip.mp4, Lucia_Caminos_Video_Clip.mp4, Real_Dimez_Video_Clip.mp4, Boobie_Ike_Video_Clip.mp4, Jason_Duval_Video_Clip.mp4, Brian_Heder_Video_Clip.mp4",
+   "tag": "sera-2026-11-26",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/sera-2026-11-26/sera-2026-11-26.mp4",
+   "dimensione": 14966828,
+   "preparato": "2026-11-23 00:03",
+   "data": "2026-11-26",
+   "slot": "sera",
+   "uscita": "2026-11-26T19:00:00+01:00"
   }
  ],
  "riserva": [
@@ -897,13 +910,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/screenshot/Port_Gellhorn_05.jpg",
-  "media_rockstar/artwork/Jason_and_Lucia_02_portrait.jpg",
-  "media_rockstar/screenshot/Grassrivers_03.jpg",
-  "media_rockstar/screenshot/Lucia_Caminos_11.jpg",
-  "media_rockstar/screenshot/Brian_Heder_03.jpg",
-  "media_rockstar/screenshot/Lucia_Caminos_03.jpg",
-  "media_rockstar/screenshot/Vice_City_07.jpg",
   "media_rockstar/screenshot/Brian_Heder_01.jpg",
   "media_rockstar/screenshot/Ambrosia_05.jpg",
   "media_rockstar/screenshot/Mount_Kalaga_National_Park_05.jpg",
@@ -956,7 +962,14 @@
   "media_rockstar/screenshot/Jason_and_Lucia_01.jpg",
   "media_rockstar/screenshot/Ambrosia_01.jpg",
   "media_rockstar/screenshot/Grassrivers_01.jpg",
-  "media_rockstar/screenshot/Leonida_Keys_06.jpg"
+  "media_rockstar/screenshot/Leonida_Keys_06.jpg",
+  "media_rockstar/artwork/Jason_and_Lucia_Robbery_landscape.jpg",
+  "media_rockstar/artwork/Jason_and_Lucia_Robbery_phone.jpg",
+  "media_rockstar/screenshot/Grassrivers_08.jpg",
+  "media_rockstar/screenshot/Leonida_Keys_05.jpg",
+  "media_rockstar/screenshot/Port_Gellhorn_02.jpg",
+  "media_rockstar/screenshot/Port_Gellhorn_04.jpg",
+  "media_rockstar/screenshot/Vice_City_20.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
@@ -1065,9 +1078,13 @@
   {
    "id": "x-hotcoffee",
    "data": "2026-11-25"
+  },
+  {
+   "id": "g-cassaforte",
+   "data": "2026-11-26"
   }
  ],
  "caricamenti": {
-  "2026-11-01": 74
+  "2026-11-01": 75
  }
 }

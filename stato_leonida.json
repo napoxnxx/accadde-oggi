@@ -1,36 +1,6 @@
 {
  "scorta": [
   {
-   "data": "2026-11-22",
-   "ora": "09:00",
-   "formato": "notizia",
-   "titolo": "GTA 6: Metascore 99 ma review bombing degli utenti su Metacritic"
-  },
-  {
-   "data": "2026-11-22",
-   "ora": "13:00",
-   "formato": "notizia",
-   "titolo": "GTA 6 record: 3,79 miliardi di dollari al lancio e 32,5 milioni di copie"
-  },
-  {
-   "data": "2026-11-22",
-   "ora": "21:30",
-   "formato": "chicca",
-   "titolo": "Chi è Lucia Caminos? 🕶️ GTA 6"
-  },
-  {
-   "data": "2026-11-22",
-   "ora": "16:00",
-   "formato": "chicca",
-   "titolo": "Si torna a Vice City 📼 GTA 6"
-  },
-  {
-   "data": "2026-11-22",
-   "ora": "19:00",
-   "formato": "chicca",
-   "titolo": "Bonnie e Clyde a Vice City 👀 GTA 6"
-  },
-  {
    "data": "2026-11-23",
    "ora": "13:00",
    "formato": "notizia",
@@ -71,10 +41,16 @@
    "ora": "19:00",
    "formato": "chicca",
    "titolo": "Il miliardo di GTA V 📼 GTA 6"
+  },
+  {
+   "data": "2026-11-26",
+   "ora": "19:00",
+   "formato": "chicca",
+   "titolo": "Come si apre una cassaforte 🎮 GTA 6"
   }
  ],
  "riserva": 2,
- "caricamenti_del_mese": "74 su 96",
+ "caricamenti_del_mese": "75 su 96",
  "avvisi": [],
  "media_ufficiali": {
   "screenshot": 138,
@@ -103,5 +79,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-22 16:03"
+ "aggiornato": "2026-11-23 00:03"
 }
