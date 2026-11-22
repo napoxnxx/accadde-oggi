@@ -850,6 +850,25 @@
    "data": "2026-11-25",
    "slot": "notte",
    "uscita": "2026-11-25T21:30:00+01:00"
+  },
+  {
+   "formato": "notizia",
+   "titolo": "GTA 6, al lancio più di metà degli utenti PS5 e Xbox lo ha giocato",
+   "descrizione": "Nel giorno di lancio più della metà degli utenti PS5 e Xbox ha giocato a GTA 6.\nIn media i giocatori gli hanno dedicato 8 ore.\n\nTu cosa ne pensi? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nNotizia confermata da almeno 3 testate diverse e raccontata con parole nostre. Fonti:\n- Eurogamer: https://www.eurogamer.net/gta-6-launch-day-engagement-circana\n- Multiplayer.it: https://multiplayer.it/notizie/piu-di-meta-degli-utenti-ps5-e-xbox-in-usa-ha-giocato-a-gta-6-nel-giorno-di-lancio-per-8-ore-in-media.html\n- Everyeye.it: https://www.everyeye.it/notizie/gta-6-giocatori-passano-8-ore-leonida-numeri-record-912924.html\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Fonti: Eurogamer, Multiplayer.it, Everyeye.it",
+   "tag": "notizia-2026-11-23",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notizia-2026-11-23/notizia-2026-11-23.mp4",
+   "dimensione": 13991560,
+   "preparato": "2026-11-22 16:03",
+   "link": [
+    "https://www.eurogamer.net/gta-6-launch-day-engagement-circana",
+    "https://multiplayer.it/notizie/piu-di-meta-degli-utenti-ps5-e-xbox-in-usa-ha-giocato-a-gta-6-nel-giorno-di-lancio-per-8-ore-in-media.html",
+    "https://www.everyeye.it/notizie/gta-6-giocatori-passano-8-ore-leonida-numeri-record-912924.html"
+   ],
+   "chiave": "soggetti:circana|gta 6",
+   "data": "2026-11-23",
+   "slot": "notizia",
+   "uscita": "2026-11-23T13:00:00+01:00"
   }
  ],
  "riserva": [
@@ -875,13 +894,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/screenshot/Lucia_Caminos_12.jpg",
-  "media_rockstar/screenshot/Real_Dimez_03.jpg",
-  "media_rockstar/screenshot/DreQuan_Priest_03.jpg",
-  "media_rockstar/screenshot/Vice_City_06.jpg",
-  "media_rockstar/screenshot/Vice_City_22.jpg",
-  "media_rockstar/screenshot/Lucia_Caminos_06.jpg",
-  "media_rockstar/artwork/Boobie_Ike_tablet.jpg",
   "media_rockstar/screenshot/Port_Gellhorn_05.jpg",
   "media_rockstar/artwork/Jason_and_Lucia_02_portrait.jpg",
   "media_rockstar/screenshot/Grassrivers_03.jpg",
@@ -934,13 +946,21 @@
   "media_rockstar/artwork/Jason_Lucia_Rooftop_phone.jpg",
   "media_rockstar/screenshot/Vice_City_23.jpg",
   "media_rockstar/screenshot/Leonida_Keys_07.jpg",
-  "media_rockstar/artwork/Jason_and_Lucia_02_portrait.jpg"
+  "media_rockstar/artwork/Jason_and_Lucia_02_portrait.jpg",
+  "media_rockstar/screenshot/Lucia_Caminos_07.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_12.jpg",
+  "media_rockstar/screenshot/Vice_City_22.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_01.jpg",
+  "media_rockstar/screenshot/Ambrosia_01.jpg",
+  "media_rockstar/screenshot/Grassrivers_01.jpg",
+  "media_rockstar/screenshot/Leonida_Keys_06.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
   "notizia": 1,
   "2026-11-22:notizia": 1,
-  "2026-11-22:mattina": 1
+  "2026-11-22:mattina": 1,
+  "2026-11-23:notizia": 1
  },
  "chicche_usate": [
   {
@@ -1045,6 +1065,6 @@
   }
  ],
  "caricamenti": {
-  "2026-11-01": 73
+  "2026-11-01": 74
  }
 }

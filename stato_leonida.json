@@ -32,6 +32,12 @@
   },
   {
    "data": "2026-11-23",
+   "ora": "13:00",
+   "formato": "notizia",
+   "titolo": "GTA 6, al lancio più di metà degli utenti PS5 e Xbox lo ha giocato"
+  },
+  {
+   "data": "2026-11-23",
    "ora": "21:30",
    "formato": "chicca",
    "titolo": "Il caso dei licenziamenti ⚠️ GTA 6"
@@ -68,7 +74,7 @@
   }
  ],
  "riserva": 2,
- "caricamenti_del_mese": "73 su 96",
+ "caricamenti_del_mese": "74 su 96",
  "avvisi": [],
  "media_ufficiali": {
   "screenshot": 138,
@@ -97,5 +103,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-22 03:25"
+ "aggiornato": "2026-11-22 16:03"
 }
