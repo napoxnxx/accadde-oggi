@@ -821,7 +821,8 @@
    "chiave": "soggetti:gta 6|metacritic",
    "data": "2026-11-22",
    "slot": "mattina",
-   "uscita": "2026-11-22T09:00:00+01:00"
+   "uscita": "2026-11-22T09:00:00+01:00",
+   "online": true
   },
   {
    "formato": "chicca",
