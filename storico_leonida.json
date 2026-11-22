@@ -802,7 +802,8 @@
    "chiave": "soggetti:gta 6|rockstar games|take-two",
    "data": "2026-11-22",
    "slot": "notizia",
-   "uscita": "2026-11-22T13:00:00+01:00"
+   "uscita": "2026-11-22T13:00:00+01:00",
+   "online": true
   },
   {
    "formato": "notizia",
