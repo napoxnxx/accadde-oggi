@@ -921,6 +921,32 @@
    "data": "2026-11-24",
    "slot": "notizia",
    "uscita": "2026-11-24T13:00:00+01:00"
+  },
+  {
+   "formato": "chicca",
+   "titolo": "Chi è Cal Hampton? 🕶️ GTA 6",
+   "descrizione": "È amico di Jason e collabora con Brian.\nSi sente al sicuro solo a casa, a spiare le comunicazioni della Guardia Costiera con qualche birra.\n\nTi sta simpatico cal? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nInformazioni ufficiali di Rockstar Games (rockstargames.com/VI), raccontate con parole nostre.\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Cal_Hampton_02.jpg, Cal_Hampton_01.jpg, Cal_Hampton_tablet.jpg, Vice_City_23.jpg, Vice_City_08.jpg, Grassrivers_06.jpg, Vice_City_25.jpg, Boobie_Ike_Video_Clip.mp4, Brian_Heder_Video_Clip.mp4, Real_Dimez_Video_Clip.mp4, Cal_Hampton_Video_Clip.mp4, Raul_Bautista_Video_Clip.mp4, Jason_Duval_Video_Clip.mp4, Lucia_Caminos_Video_Clip.mp4",
+   "tag": "sera-2026-11-27",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/sera-2026-11-27/sera-2026-11-27.mp4",
+   "dimensione": 14102708,
+   "preparato": "2026-11-24 00:02",
+   "data": "2026-11-27",
+   "slot": "sera",
+   "uscita": "2026-11-27T19:00:00+01:00"
+  },
+  {
+   "formato": "chicca",
+   "titolo": "GTA 6 senza Dan Houser 🕵️ GTA 6",
+   "descrizione": "Dan Houser è tra i fondatori di Rockstar e ha scritto le storie dei GTA.\nHa lasciato l'azienda nel 2020.\nGTA 6 è il primo capitolo principale dopo il suo addio.\n\nSi sentirà la differenza? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nRaccontato con parole nostre. Fonti:\n- Wikipedia: https://en.wikipedia.org/wiki/Dan_Houser\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Lucia_Caminos_08.jpg, Jason_and_Lucia_13.jpg, Jason_Duval_06.jpg, Lucia_Caminos_13.jpg, Jason_Duval_16.jpg, Vice_City_26.jpg, Jason_Duval_08.jpg, Jason_Duval_Video_Clip.mp4, Cal_Hampton_Video_Clip.mp4, Raul_Bautista_Video_Clip.mp4, Real_Dimez_Video_Clip.mp4, Brian_Heder_Video_Clip.mp4, Boobie_Ike_Video_Clip.mp4, Lucia_Caminos_Video_Clip.mp4",
+   "tag": "notte-2026-11-27",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notte-2026-11-27/notte-2026-11-27.mp4",
+   "dimensione": 14187459,
+   "preparato": "2026-11-24 00:04",
+   "data": "2026-11-27",
+   "slot": "notte",
+   "uscita": "2026-11-27T21:30:00+01:00"
   }
  ],
  "riserva": [
@@ -946,20 +972,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/screenshot/Vice_City_16.jpg",
-  "media_rockstar/screenshot/Port_Gellhorn_07.jpg",
-  "media_rockstar/screenshot/Mount_Kalaga_National_Park_03.jpg",
-  "media_rockstar/screenshot/Mount_Kalaga_National_Park_01.jpg",
-  "media_rockstar/screenshot/Lucia_Caminos_08.jpg",
-  "media_rockstar/screenshot/Grassrivers_02.jpg",
-  "media_rockstar/screenshot/Raul_Bautista_03.jpg",
-  "media_rockstar/screenshot/Vice_City_10.jpg",
-  "media_rockstar/screenshot/Jason_Duval_14.jpg",
-  "media_rockstar/screenshot/Cal_Hampton_01.jpg",
-  "media_rockstar/screenshot/DreQuan_Priest_01.jpg",
-  "media_rockstar/screenshot/Vice_City_04.jpg",
-  "media_rockstar/screenshot/Jason_Duval_09.jpg",
-  "media_rockstar/artwork/Boobie_Ike_tablet.jpg",
   "media_rockstar/artwork/Jason_and_Lucia_Beach_phone.jpg",
   "media_rockstar/screenshot/Port_Gellhorn_03.jpg",
   "media_rockstar/screenshot/Grassrivers_06.jpg",
@@ -1005,7 +1017,21 @@
   "media_rockstar/screenshot/Leonida_Keys_03.jpg",
   "media_rockstar/screenshot/Vice_City_05.jpg",
   "media_rockstar/screenshot/Jason_Duval_11.jpg",
-  "media_rockstar/screenshot/Grassrivers_03.jpg"
+  "media_rockstar/screenshot/Grassrivers_03.jpg",
+  "media_rockstar/screenshot/Cal_Hampton_02.jpg",
+  "media_rockstar/screenshot/Cal_Hampton_01.jpg",
+  "media_rockstar/artwork/Cal_Hampton_tablet.jpg",
+  "media_rockstar/screenshot/Vice_City_23.jpg",
+  "media_rockstar/screenshot/Vice_City_08.jpg",
+  "media_rockstar/screenshot/Grassrivers_06.jpg",
+  "media_rockstar/screenshot/Vice_City_25.jpg",
+  "media_rockstar/screenshot/Lucia_Caminos_08.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_13.jpg",
+  "media_rockstar/screenshot/Jason_Duval_06.jpg",
+  "media_rockstar/screenshot/Lucia_Caminos_13.jpg",
+  "media_rockstar/screenshot/Jason_Duval_16.jpg",
+  "media_rockstar/screenshot/Vice_City_26.jpg",
+  "media_rockstar/screenshot/Jason_Duval_08.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
@@ -1121,9 +1147,17 @@
   {
    "id": "s-attesa",
    "data": "2026-11-26"
+  },
+  {
+   "id": "cal",
+   "data": "2026-11-27"
+  },
+  {
+   "id": "s-houser",
+   "data": "2026-11-27"
   }
  ],
  "caricamenti": {
-  "2026-11-01": 77
+  "2026-11-01": 79
  }
 }
