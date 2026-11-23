@@ -899,6 +899,26 @@
    "data": "2026-11-26",
    "slot": "notte",
    "uscita": "2026-11-26T21:30:00+01:00"
+  },
+  {
+   "formato": "notizia",
+   "titolo": "GTA 6, Rockstar taglia freccette e bowling: ecco perché mancano",
+   "descrizione": "In GTA VI mancano le freccette: Rockstar ha scelto di non includere il minigioco.\nAnche il bowling, un altro minigioco amato dai fan, non è entrato nel gioco.\nIl team non aveva denaro e tempo illimitati per farli bene.\n\nTu cosa ne pensi? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nNotizia confermata da almeno 3 testate diverse e raccontata con parole nostre. Fonti:\n- IGN Italia: https://it.ign.com/grand-theft-auto-vi/229323/gta-vi-il-gioco-delle-freccette-e-stato-eliminato-perche-non-cerano-denaro-o-tempo-illimitati\n- Eurogamer: https://www.eurogamer.net/grand-theft-auto-6-no-darts-didnt-have-resources\n- Multiplayer.it: https://multiplayer.it/notizie/autori-gta-6-non-avevano-soldi-tempo-inserire-minigioco-freccette.html\n- IGN: https://www.ign.com/articles/rockstar-says-darts-were-cut-from-gta-6-because-it-didnt-have-unlimited-money-or-time-to-make-it-feel-proper\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Fonti: IGN Italia, Eurogamer, Multiplayer.it, IGN",
+   "tag": "notizia-2026-11-24",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notizia-2026-11-24/notizia-2026-11-24.mp4",
+   "dimensione": 18407175,
+   "preparato": "2026-11-23 16:03",
+   "link": [
+    "https://it.ign.com/grand-theft-auto-vi/229323/gta-vi-il-gioco-delle-freccette-e-stato-eliminato-perche-non-cerano-denaro-o-tempo-illimitati",
+    "https://www.eurogamer.net/grand-theft-auto-6-no-darts-didnt-have-resources",
+    "https://multiplayer.it/notizie/autori-gta-6-non-avevano-soldi-tempo-inserire-minigioco-freccette.html",
+    "https://www.ign.com/articles/rockstar-says-darts-were-cut-from-gta-6-because-it-didnt-have-unlimited-money-or-time-to-make-it-feel-proper"
+   ],
+   "chiave": "soggetti:gta vi|rockstar",
+   "data": "2026-11-24",
+   "slot": "notizia",
+   "uscita": "2026-11-24T13:00:00+01:00"
   }
  ],
  "riserva": [
@@ -924,13 +944,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/screenshot/Leonida_Keys_04.jpg",
-  "media_rockstar/screenshot/Vice_City_27.jpg",
-  "media_rockstar/screenshot/Leonida_Keys_03.jpg",
-  "media_rockstar/screenshot/Port_Gellhorn_04.jpg",
-  "media_rockstar/screenshot/Jason_Duval_02.jpg",
-  "media_rockstar/screenshot/Jason_Duval_18.jpg",
-  "media_rockstar/screenshot/Jason_and_Lucia_08.jpg",
   "media_rockstar/screenshot/Vice_City_16.jpg",
   "media_rockstar/screenshot/Port_Gellhorn_07.jpg",
   "media_rockstar/screenshot/Mount_Kalaga_National_Park_03.jpg",
@@ -983,14 +996,20 @@
   "media_rockstar/screenshot/Port_Gellhorn_01.jpg",
   "media_rockstar/screenshot/Ambrosia_04.jpg",
   "media_rockstar/screenshot/Vice_City_27.jpg",
-  "media_rockstar/screenshot/Lucia_Caminos_05.jpg"
+  "media_rockstar/screenshot/Lucia_Caminos_05.jpg",
+  "media_rockstar/screenshot/Boobie_Ike_04.jpg",
+  "media_rockstar/artwork/Jason_and_Lucia_02_phone_B.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_05.jpg",
+  "media_rockstar/screenshot/Leonida_Keys_03.jpg",
+  "media_rockstar/screenshot/Vice_City_05.jpg",
+  "media_rockstar/screenshot/Jason_Duval_11.jpg",
+  "media_rockstar/screenshot/Grassrivers_03.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
   "notizia": 1,
-  "2026-11-22:notizia": 1,
-  "2026-11-22:mattina": 1,
-  "2026-11-23:notizia": 1
+  "2026-11-23:notizia": 1,
+  "2026-11-24:notizia": 1
  },
  "chicche_usate": [
   {
@@ -1103,6 +1122,6 @@
   }
  ],
  "caricamenti": {
-  "2026-11-01": 76
+  "2026-11-01": 77
  }
 }
