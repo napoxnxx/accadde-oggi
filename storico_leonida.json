@@ -920,7 +920,8 @@
    "chiave": "soggetti:gta vi|rockstar",
    "data": "2026-11-24",
    "slot": "notizia",
-   "uscita": "2026-11-24T13:00:00+01:00"
+   "uscita": "2026-11-24T13:00:00+01:00",
+   "online": true
   },
   {
    "formato": "chicca",
