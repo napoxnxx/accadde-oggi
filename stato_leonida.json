@@ -20,6 +20,12 @@
   },
   {
    "data": "2026-11-25",
+   "ora": "13:00",
+   "formato": "notizia",
+   "titolo": "GTA 6 record su PlayStation: oltre 39 milioni di giocatori su PS5"
+  },
+  {
+   "data": "2026-11-25",
    "ora": "21:30",
    "formato": "chicca",
    "titolo": "Lo scandalo Hot Coffee ⚠️ GTA 6"
@@ -56,7 +62,7 @@
   }
  ],
  "riserva": 2,
- "caricamenti_del_mese": "79 su 96",
+ "caricamenti_del_mese": "80 su 96",
  "avvisi": [],
  "media_ufficiali": {
   "screenshot": 138,
@@ -86,5 +92,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-24 16:02"
+ "aggiornato": "2026-11-24 16:18"
 }

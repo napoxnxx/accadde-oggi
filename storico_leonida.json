@@ -948,6 +948,28 @@
    "data": "2026-11-27",
    "slot": "notte",
    "uscita": "2026-11-27T21:30:00+01:00"
+  },
+  {
+   "formato": "notizia",
+   "titolo": "GTA 6 record su PlayStation: oltre 39 milioni di giocatori su PS5",
+   "descrizione": "Più di 39 milioni di persone hanno giocato a GTA VI su PS5, secondo Sony.\nPer PlayStation è il lancio più grande di sempre nella storia del marchio.\nSony segnala anche un forte aumento di nuove console PS5 collegate.\n\nTu cosa ne pensi? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nNotizia confermata da almeno 3 testate diverse e raccontata con parole nostre. Fonti:\n- IGN Italia: https://it.ign.com/ps5/229359/gta-vi-polverizza-ogni-record-su-playstation-quasi-40-milioni-di-giocatori-al-lancio-del-gioco\n- GameSpot: https://www.gamespot.com/articles/gta-6-players-on-ps5-averaged-17-hours-during-first-weekend/\n- Eurogamer: https://www.eurogamer.net/more-than-39-million-people-have-played-gta-6-on-playstation-alone-sony-says-as-the-game-breaks-all-time-player-numbers-on-the-platform\n- Multiplayer.it: https://multiplayer.it/notizie/gta-6-impennare-vendite-ps5-record-storico-nuove-console-connesse-in-un-solo-giorno.html\n- Everyeye.it: https://www.everyeye.it/notizie/gta-6-gioco-record-playstation-sony-svela-numeri-incredibili-913256.html\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Fonti: IGN Italia, GameSpot, Eurogamer, Multiplayer.it",
+   "tag": "notizia-2026-11-25",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notizia-2026-11-25/notizia-2026-11-25.mp4",
+   "dimensione": 19421618,
+   "preparato": "2026-11-24 16:18",
+   "link": [
+    "https://it.ign.com/ps5/229359/gta-vi-polverizza-ogni-record-su-playstation-quasi-40-milioni-di-giocatori-al-lancio-del-gioco",
+    "https://www.gamespot.com/articles/gta-6-players-on-ps5-averaged-17-hours-during-first-weekend/",
+    "https://www.eurogamer.net/more-than-39-million-people-have-played-gta-6-on-playstation-alone-sony-says-as-the-game-breaks-all-time-player-numbers-on-the-platform",
+    "https://multiplayer.it/notizie/gta-6-impennare-vendite-ps5-record-storico-nuove-console-connesse-in-un-solo-giorno.html",
+    "https://www.everyeye.it/notizie/gta-6-gioco-record-playstation-sony-svela-numeri-incredibili-913256.html",
+    "https://www.ign.com/articles/gta-6-was-biggest-launch-in-playstation-history"
+   ],
+   "chiave": "soggetti:gta vi|playstation|ps5|sony",
+   "data": "2026-11-25",
+   "slot": "notizia",
+   "uscita": "2026-11-25T13:00:00+01:00"
   }
  ],
  "riserva": [
@@ -973,13 +995,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/artwork/Jason_and_Lucia_Beach_phone.jpg",
-  "media_rockstar/screenshot/Port_Gellhorn_03.jpg",
-  "media_rockstar/screenshot/Grassrivers_06.jpg",
-  "media_rockstar/screenshot/Cal_Hampton_03.jpg",
-  "media_rockstar/screenshot/Vice_City_21.jpg",
-  "media_rockstar/screenshot/DreQuan_Priest_04.jpg",
-  "media_rockstar/screenshot/Vice_City_09.jpg",
   "media_rockstar/screenshot/Lucia_Caminos_10.jpg",
   "media_rockstar/artwork/Brian_Heder_phone.jpg",
   "media_rockstar/artwork/Raul_Bautista_portrait.jpg",
@@ -1032,13 +1047,20 @@
   "media_rockstar/screenshot/Lucia_Caminos_13.jpg",
   "media_rockstar/screenshot/Jason_Duval_16.jpg",
   "media_rockstar/screenshot/Vice_City_26.jpg",
-  "media_rockstar/screenshot/Jason_Duval_08.jpg"
+  "media_rockstar/screenshot/Jason_Duval_08.jpg",
+  "media_rockstar/screenshot/Port_Gellhorn_07.jpg",
+  "media_rockstar/screenshot/Real_Dimez_01.jpg",
+  "media_rockstar/screenshot/Mount_Kalaga_National_Park_02.jpg",
+  "media_rockstar/screenshot/Mount_Kalaga_National_Park_03.jpg",
+  "media_rockstar/screenshot/Jason_Duval_05.jpg",
+  "media_rockstar/screenshot/Real_Dimez_04.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_15.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
   "notizia": 1,
   "2026-11-24:notizia": 1,
-  "2026-11-25:notizia": 1
+  "2026-11-25:notizia": 2
  },
  "chicche_usate": [
   {
@@ -1159,6 +1181,6 @@
   }
  ],
  "caricamenti": {
-  "2026-11-01": 79
+  "2026-11-01": 80
  }
 }
