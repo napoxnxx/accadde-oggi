@@ -1,24 +1,6 @@
 {
  "scorta": [
   {
-   "data": "2026-11-24",
-   "ora": "13:00",
-   "formato": "notizia",
-   "titolo": "GTA 6, Rockstar taglia freccette e bowling: ecco perché mancano"
-  },
-  {
-   "data": "2026-11-24",
-   "ora": "21:30",
-   "formato": "chicca",
-   "titolo": "Di cosa parla GTA VI 👀 GTA 6"
-  },
-  {
-   "data": "2026-11-24",
-   "ora": "19:00",
-   "formato": "chicca",
-   "titolo": "Vice City, USA 🌴 GTA 6"
-  },
-  {
    "data": "2026-11-25",
    "ora": "13:00",
    "formato": "notizia",
@@ -59,10 +41,22 @@
    "ora": "19:00",
    "formato": "chicca",
    "titolo": "Chi è Cal Hampton? 🕶️ GTA 6"
+  },
+  {
+   "data": "2026-11-28",
+   "ora": "21:30",
+   "formato": "chicca",
+   "titolo": "Non serve per forza uccidere 🎮 GTA 6"
+  },
+  {
+   "data": "2026-11-28",
+   "ora": "19:00",
+   "formato": "chicca",
+   "titolo": "Chi è Boobie Ike? 🕶️ GTA 6"
   }
  ],
  "riserva": 2,
- "caricamenti_del_mese": "80 su 96",
+ "caricamenti_del_mese": "82 su 96",
  "avvisi": [],
  "media_ufficiali": {
   "screenshot": 138,
@@ -92,5 +86,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-24 16:18"
+ "aggiornato": "2026-11-25 00:04"
 }
