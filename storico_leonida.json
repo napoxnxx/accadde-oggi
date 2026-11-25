@@ -999,6 +999,25 @@
    "data": "2026-11-28",
    "slot": "notte",
    "uscita": "2026-11-28T21:30:00+01:00"
+  },
+  {
+   "formato": "notizia",
+   "titolo": "GTA 6, arrivano le carte collezionabili Panini: cosa sappiamo",
+   "descrizione": "Panini America ha annunciato le carte collezionabili ufficiali di GTA 6.\nLe carte fisiche si ispirano a quelle collezionabili presenti nel gioco.\nIl progetto nasce dalla collaborazione tra Rockstar Games e Panini.\n\nTu cosa ne pensi? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nNotizia confermata da almeno 3 testate diverse e raccontata con parole nostre. Fonti:\n- Multiplayer.it: https://multiplayer.it/notizie/gta-6-avra-anche-delle-carte-collezionabili-ufficiali-da-parte-di-panini.html\n- Everyeye.it: https://www.everyeye.it/notizie/gta-6-strade-vice-city-bustine-panini-annunciate-carte-ufficiali-913455.html\n- IGN: https://www.ign.com/articles/gta-6-gets-officially-licensed-trading-cards-based-on-in-game-collectibles\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Fonti: Multiplayer.it, Everyeye.it, IGN",
+   "tag": "notizia-2026-11-26",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notizia-2026-11-26/notizia-2026-11-26.mp4",
+   "dimensione": 17795618,
+   "preparato": "2026-11-25 16:03",
+   "link": [
+    "https://multiplayer.it/notizie/gta-6-avra-anche-delle-carte-collezionabili-ufficiali-da-parte-di-panini.html",
+    "https://www.everyeye.it/notizie/gta-6-strade-vice-city-bustine-panini-annunciate-carte-ufficiali-913455.html",
+    "https://www.ign.com/articles/gta-6-gets-officially-licensed-trading-cards-based-on-in-game-collectibles"
+   ],
+   "chiave": "soggetti:gta 6|panini|rockstar",
+   "data": "2026-11-26",
+   "slot": "notizia",
+   "uscita": "2026-11-26T13:00:00+01:00"
   }
  ],
  "riserva": [
@@ -1024,13 +1043,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/screenshot/Jason_and_Lucia_01.jpg",
-  "media_rockstar/screenshot/Ambrosia_01.jpg",
-  "media_rockstar/screenshot/Grassrivers_01.jpg",
-  "media_rockstar/screenshot/Leonida_Keys_06.jpg",
-  "media_rockstar/artwork/Jason_and_Lucia_Robbery_landscape.jpg",
-  "media_rockstar/artwork/Jason_and_Lucia_Robbery_phone.jpg",
-  "media_rockstar/screenshot/Grassrivers_08.jpg",
   "media_rockstar/screenshot/Leonida_Keys_05.jpg",
   "media_rockstar/screenshot/Port_Gellhorn_02.jpg",
   "media_rockstar/screenshot/Port_Gellhorn_04.jpg",
@@ -1083,13 +1095,20 @@
   "media_rockstar/screenshot/Raul_Bautista_03.jpg",
   "media_rockstar/screenshot/Jason_and_Lucia_10.jpg",
   "media_rockstar/screenshot/Jason_and_Lucia_19.jpg",
-  "media_rockstar/screenshot/Jason_and_Lucia_16.jpg"
+  "media_rockstar/screenshot/Jason_and_Lucia_16.jpg",
+  "media_rockstar/screenshot/Mount_Kalaga_National_Park_01.jpg",
+  "media_rockstar/screenshot/Lucia_Caminos_04.jpg",
+  "media_rockstar/screenshot/Grassrivers_01.jpg",
+  "media_rockstar/screenshot/Vice_City_23.jpg",
+  "media_rockstar/screenshot/Cal_Hampton_03.jpg",
+  "media_rockstar/artwork/Brian_Heder_tablet.jpg",
+  "media_rockstar/screenshot/Vice_City_02.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
   "notizia": 1,
-  "2026-11-24:notizia": 1,
-  "2026-11-25:notizia": 2
+  "2026-11-25:notizia": 2,
+  "2026-11-26:notizia": 1
  },
  "chicche_usate": [
   {
@@ -1218,6 +1237,6 @@
   }
  ],
  "caricamenti": {
-  "2026-11-01": 82
+  "2026-11-01": 83
  }
 }

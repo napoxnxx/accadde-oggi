@@ -20,6 +20,12 @@
   },
   {
    "data": "2026-11-26",
+   "ora": "13:00",
+   "formato": "notizia",
+   "titolo": "GTA 6, arrivano le carte collezionabili Panini: cosa sappiamo"
+  },
+  {
+   "data": "2026-11-26",
    "ora": "21:30",
    "formato": "chicca",
    "titolo": "13 anni di attesa 📼 GTA 6"
@@ -56,7 +62,7 @@
   }
  ],
  "riserva": 2,
- "caricamenti_del_mese": "82 su 96",
+ "caricamenti_del_mese": "83 su 96",
  "avvisi": [],
  "media_ufficiali": {
   "screenshot": 138,
@@ -86,5 +92,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-25 00:04"
+ "aggiornato": "2026-11-25 16:03"
 }
