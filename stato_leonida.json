@@ -1,24 +1,6 @@
 {
  "scorta": [
   {
-   "data": "2026-11-25",
-   "ora": "13:00",
-   "formato": "notizia",
-   "titolo": "GTA 6 record su PlayStation: oltre 39 milioni di giocatori su PS5"
-  },
-  {
-   "data": "2026-11-25",
-   "ora": "21:30",
-   "formato": "chicca",
-   "titolo": "Lo scandalo Hot Coffee ⚠️ GTA 6"
-  },
-  {
-   "data": "2026-11-25",
-   "ora": "19:00",
-   "formato": "chicca",
-   "titolo": "Il miliardo di GTA V 📼 GTA 6"
-  },
-  {
    "data": "2026-11-26",
    "ora": "13:00",
    "formato": "notizia",
@@ -59,10 +41,22 @@
    "ora": "19:00",
    "formato": "chicca",
    "titolo": "Chi è Boobie Ike? 🕶️ GTA 6"
+  },
+  {
+   "data": "2026-11-29",
+   "ora": "21:30",
+   "formato": "chicca",
+   "titolo": "Chi è Dre'Quan Priest? 🕶️ GTA 6"
+  },
+  {
+   "data": "2026-11-29",
+   "ora": "19:00",
+   "formato": "chicca",
+   "titolo": "Lucia fa la storia 📼 GTA 6"
   }
  ],
  "riserva": 2,
- "caricamenti_del_mese": "83 su 96",
+ "caricamenti_del_mese": "85 su 96",
  "avvisi": [],
  "media_ufficiali": {
   "screenshot": 138,
@@ -92,5 +86,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-25 16:03"
+ "aggiornato": "2026-11-26 00:03"
 }

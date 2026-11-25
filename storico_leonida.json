@@ -1020,6 +1020,32 @@
    "data": "2026-11-26",
    "slot": "notizia",
    "uscita": "2026-11-26T13:00:00+01:00"
+  },
+  {
+   "formato": "chicca",
+   "titolo": "Lucia fa la storia 📼 GTA 6",
+   "descrizione": "Nel primo GTA del 1997 si poteva scegliere anche un personaggio femminile.\nMa Lucia è la prima protagonista donna di un GTA con una storia tutta sua.\n\nLucia ti convince? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nRaccontato con parole nostre. Fonti:\n- GamesRadar+: https://www.gamesradar.com/newly-revealed-gta-6-characters-showcase-the-series-first-ever-female-protagonist-and-her-bonnie-and-clyde-style-relationship\n- LevelUp: https://www.levelup.com/en/news/gta-6-lucia-is-not-the-first-female-protagonist-in-the-franchise/\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Lucia_Caminos_14.jpg, Jason_and_Lucia_11.jpg, Jason_Lucia_Lock_And_Load_tablet.jpg, Ambrosia_06.jpg, Ambrosia_02.jpg, Leonida_Keys_05.jpg, Vice_City_18.jpg, Raul_Bautista_Video_Clip.mp4, Jason_Duval_Video_Clip.mp4, Boobie_Ike_Video_Clip.mp4, Real_Dimez_Video_Clip.mp4, Lucia_Caminos_Video_Clip.mp4, Cal_Hampton_Video_Clip.mp4, Brian_Heder_Video_Clip.mp4",
+   "tag": "sera-2026-11-29",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/sera-2026-11-29/sera-2026-11-29.mp4",
+   "dimensione": 12861362,
+   "preparato": "2026-11-26 00:02",
+   "data": "2026-11-29",
+   "slot": "sera",
+   "uscita": "2026-11-29T19:00:00+01:00"
+  },
+  {
+   "formato": "chicca",
+   "titolo": "Chi è Dre'Quan Priest? 🕶️ GTA 6",
+   "descrizione": "È sempre stato più un affarista che un gangster.\nSognava di sfondare nella musica anche mentre spacciava.\nHa messo sotto contratto i Real Dimez e punta alla scena di Vice City.\n\nTi fideresti di lui? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nInformazioni ufficiali di Rockstar Games (rockstargames.com/VI), raccontate con parole nostre.\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: DreQuan_Priest_03.jpg, DreQuan_Priest_01.jpg, DreQuan_Priest_phone.jpg, Grassrivers_05.jpg, Vice_City_06.jpg, Vice_City_03.jpg, Vice_City_24.jpg, Lucia_Caminos_Video_Clip.mp4, Jason_Duval_Video_Clip.mp4, Real_Dimez_Video_Clip.mp4, Raul_Bautista_Video_Clip.mp4, Brian_Heder_Video_Clip.mp4, Boobie_Ike_Video_Clip.mp4, Cal_Hampton_Video_Clip.mp4",
+   "tag": "notte-2026-11-29",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notte-2026-11-29/notte-2026-11-29.mp4",
+   "dimensione": 13361033,
+   "preparato": "2026-11-26 00:03",
+   "data": "2026-11-29",
+   "slot": "notte",
+   "uscita": "2026-11-29T21:30:00+01:00"
   }
  ],
  "riserva": [
@@ -1045,20 +1071,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/screenshot/Leonida_Keys_05.jpg",
-  "media_rockstar/screenshot/Port_Gellhorn_02.jpg",
-  "media_rockstar/screenshot/Port_Gellhorn_04.jpg",
-  "media_rockstar/screenshot/Vice_City_20.jpg",
-  "media_rockstar/screenshot/Lucia_Caminos_11.jpg",
-  "media_rockstar/screenshot/Lucia_Caminos_01.jpg",
-  "media_rockstar/artwork/Cal_Hampton_portrait.jpg",
-  "media_rockstar/screenshot/Port_Gellhorn_01.jpg",
-  "media_rockstar/screenshot/Ambrosia_04.jpg",
-  "media_rockstar/screenshot/Vice_City_27.jpg",
-  "media_rockstar/screenshot/Lucia_Caminos_05.jpg",
-  "media_rockstar/screenshot/Boobie_Ike_04.jpg",
-  "media_rockstar/artwork/Jason_and_Lucia_02_phone_B.jpg",
-  "media_rockstar/screenshot/Jason_and_Lucia_05.jpg",
   "media_rockstar/screenshot/Leonida_Keys_03.jpg",
   "media_rockstar/screenshot/Vice_City_05.jpg",
   "media_rockstar/screenshot/Jason_Duval_11.jpg",
@@ -1104,7 +1116,21 @@
   "media_rockstar/screenshot/Vice_City_23.jpg",
   "media_rockstar/screenshot/Cal_Hampton_03.jpg",
   "media_rockstar/artwork/Brian_Heder_tablet.jpg",
-  "media_rockstar/screenshot/Vice_City_02.jpg"
+  "media_rockstar/screenshot/Vice_City_02.jpg",
+  "media_rockstar/screenshot/Lucia_Caminos_14.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_11.jpg",
+  "media_rockstar/artwork/Jason_Lucia_Lock_And_Load_tablet.jpg",
+  "media_rockstar/screenshot/Ambrosia_06.jpg",
+  "media_rockstar/screenshot/Ambrosia_02.jpg",
+  "media_rockstar/screenshot/Leonida_Keys_05.jpg",
+  "media_rockstar/screenshot/Vice_City_18.jpg",
+  "media_rockstar/screenshot/DreQuan_Priest_03.jpg",
+  "media_rockstar/screenshot/DreQuan_Priest_01.jpg",
+  "media_rockstar/artwork/DreQuan_Priest_phone.jpg",
+  "media_rockstar/screenshot/Grassrivers_05.jpg",
+  "media_rockstar/screenshot/Vice_City_06.jpg",
+  "media_rockstar/screenshot/Vice_City_03.jpg",
+  "media_rockstar/screenshot/Vice_City_24.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
@@ -1236,9 +1262,17 @@
   {
    "id": "g-mira",
    "data": "2026-11-28"
+  },
+  {
+   "id": "s-lucia",
+   "data": "2026-11-29"
+  },
+  {
+   "id": "drequan",
+   "data": "2026-11-29"
   }
  ],
  "caricamenti": {
-  "2026-11-01": 83
+  "2026-11-01": 85
  }
 }
