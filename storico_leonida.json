@@ -1047,6 +1047,26 @@
    "data": "2026-11-29",
    "slot": "notte",
    "uscita": "2026-11-29T21:30:00+01:00"
+  },
+  {
+   "formato": "notizia",
+   "titolo": "GTA 6: Rockstar spiega perché non puoi rigiocare le missioni",
+   "descrizione": "In GTA 6 non si possono rigiocare le missioni, e Rockstar ha spiegato il motivo.\nSecondo Rockstar, la funzione non è coerente con la storia e la narrazione del gioco.\nIl gioco lascia ai giocatori molta libertà nello svolgimento di storia e missioni.\n\nTu cosa ne pensi? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nNotizia confermata da almeno 3 testate diverse e raccontata con parole nostre. Fonti:\n- Multiplayer.it: https://multiplayer.it/notizie/gta-6-non-permette-di-rigiocare-le-missioni-per-rockstar-games-avrebbe-stonato-con-la-storia.html\n- Everyeye.it: https://www.everyeye.it/notizie/gta-6-non-possono-rigiocare-missioni-rockstar-spiega-perche-913671.html\n- IGN: https://www.ign.com/articles/gta-6-doesnt-let-you-replay-missions-and-rockstar-says-theres-a-good-reason-for-that\n- GameSpot: https://www.gamespot.com/articles/why-gta-6-doesnt-let-you-replay-missions-it-felt-alien-and-disconnected/\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Fonti: Multiplayer.it, Everyeye.it, IGN, GameSpot",
+   "tag": "notizia-2026-11-27",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notizia-2026-11-27/notizia-2026-11-27.mp4",
+   "dimensione": 19404862,
+   "preparato": "2026-11-26 16:18",
+   "link": [
+    "https://multiplayer.it/notizie/gta-6-non-permette-di-rigiocare-le-missioni-per-rockstar-games-avrebbe-stonato-con-la-storia.html",
+    "https://www.everyeye.it/notizie/gta-6-non-possono-rigiocare-missioni-rockstar-spiega-perche-913671.html",
+    "https://www.ign.com/articles/gta-6-doesnt-let-you-replay-missions-and-rockstar-says-theres-a-good-reason-for-that",
+    "https://www.gamespot.com/articles/why-gta-6-doesnt-let-you-replay-missions-it-felt-alien-and-disconnected/"
+   ],
+   "chiave": "soggetti:gta 6|rockstar",
+   "data": "2026-11-27",
+   "slot": "notizia",
+   "uscita": "2026-11-27T13:00:00+01:00"
   }
  ],
  "riserva": [
@@ -1072,13 +1092,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/screenshot/Leonida_Keys_03.jpg",
-  "media_rockstar/screenshot/Vice_City_05.jpg",
-  "media_rockstar/screenshot/Jason_Duval_11.jpg",
-  "media_rockstar/screenshot/Grassrivers_03.jpg",
-  "media_rockstar/screenshot/Cal_Hampton_02.jpg",
-  "media_rockstar/screenshot/Cal_Hampton_01.jpg",
-  "media_rockstar/artwork/Cal_Hampton_tablet.jpg",
   "media_rockstar/screenshot/Vice_City_23.jpg",
   "media_rockstar/screenshot/Vice_City_08.jpg",
   "media_rockstar/screenshot/Grassrivers_06.jpg",
@@ -1131,13 +1144,20 @@
   "media_rockstar/screenshot/Grassrivers_05.jpg",
   "media_rockstar/screenshot/Vice_City_06.jpg",
   "media_rockstar/screenshot/Vice_City_03.jpg",
-  "media_rockstar/screenshot/Vice_City_24.jpg"
+  "media_rockstar/screenshot/Vice_City_24.jpg",
+  "media_rockstar/screenshot/Grassrivers_08.jpg",
+  "media_rockstar/artwork/Jason_and_Lucia_02_phone_B.jpg",
+  "media_rockstar/artwork/Real_Dimez_tablet.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_17.jpg",
+  "media_rockstar/screenshot/Grassrivers_02.jpg",
+  "media_rockstar/artwork/Raul_Bautista_ultrawide.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_02.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
   "notizia": 1,
   "2026-11-26:notizia": 1,
-  "2026-11-27:notizia": 1
+  "2026-11-27:notizia": 2
  },
  "chicche_usate": [
   {
@@ -1274,6 +1294,6 @@
   }
  ],
  "caricamenti": {
-  "2026-11-01": 85
+  "2026-11-01": 86
  }
 }
