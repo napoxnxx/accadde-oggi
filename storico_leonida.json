@@ -1069,6 +1069,32 @@
    "data": "2026-11-27",
    "slot": "notizia",
    "uscita": "2026-11-27T13:00:00+01:00"
+  },
+  {
+   "formato": "chicca",
+   "titolo": "Il bagagliaio serve davvero 🎮 GTA 6",
+   "descrizione": "Le auto personali hanno un bagagliaio che si può usare.\nDentro puoi tenere vestiti di ricambio e armi.\nE se l'auto è ammaccata, la rivendi a meno.\n\nChe auto ti tieni? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nRaccontato con parole nostre. Fonti:\n- IGN (intervista a Rockstar): https://www.vice.com/en/article/rockstar-reveals-35-new-gta-6-features-ign/\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Vice_City_07.jpg, Raul_Bautista_01.jpg, Lucia_Caminos_02.jpg, Vice_City_21.jpg, Cal_Hampton_04.jpg, Real_Dimez_04.jpg, Vice_City_10.jpg, Raul_Bautista_Video_Clip.mp4, Brian_Heder_Video_Clip.mp4, Lucia_Caminos_Video_Clip.mp4, Boobie_Ike_Video_Clip.mp4, Cal_Hampton_Video_Clip.mp4, Jason_Duval_Video_Clip.mp4, Real_Dimez_Video_Clip.mp4",
+   "tag": "sera-2026-11-30",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/sera-2026-11-30/sera-2026-11-30.mp4",
+   "dimensione": 13766755,
+   "preparato": "2026-11-27 00:03",
+   "data": "2026-11-30",
+   "slot": "sera",
+   "uscita": "2026-11-30T19:00:00+01:00"
+  },
+  {
+   "formato": "chicca",
+   "titolo": "Leonida Keys 🌴 GTA 6",
+   "descrizione": "È la zona di Jason.\nDopo l'esercito è tornato lì a lavorare per i trafficanti locali.\n\nTi piacciono le isole? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nInformazioni ufficiali di Rockstar Games (rockstargames.com/VI), raccontate con parole nostre.\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Leonida_Keys_06.jpg, Leonida_Keys_01.jpg, Leonida_Keys_02.jpg, Vice_City_19.jpg, Ambrosia_04.jpg, Vice_City_16.jpg, Vice_City_14.jpg, Raul_Bautista_Video_Clip.mp4, Boobie_Ike_Video_Clip.mp4, Real_Dimez_Video_Clip.mp4, Brian_Heder_Video_Clip.mp4, Jason_Duval_Video_Clip.mp4, Lucia_Caminos_Video_Clip.mp4, Cal_Hampton_Video_Clip.mp4",
+   "tag": "notte-2026-11-30",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notte-2026-11-30/notte-2026-11-30.mp4",
+   "dimensione": 12377043,
+   "preparato": "2026-11-27 00:04",
+   "data": "2026-11-30",
+   "slot": "notte",
+   "uscita": "2026-11-30T21:30:00+01:00"
   }
  ],
  "riserva": [
@@ -1094,20 +1120,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/screenshot/Vice_City_23.jpg",
-  "media_rockstar/screenshot/Vice_City_08.jpg",
-  "media_rockstar/screenshot/Grassrivers_06.jpg",
-  "media_rockstar/screenshot/Vice_City_25.jpg",
-  "media_rockstar/screenshot/Lucia_Caminos_08.jpg",
-  "media_rockstar/screenshot/Jason_and_Lucia_13.jpg",
-  "media_rockstar/screenshot/Jason_Duval_06.jpg",
-  "media_rockstar/screenshot/Lucia_Caminos_13.jpg",
-  "media_rockstar/screenshot/Jason_Duval_16.jpg",
-  "media_rockstar/screenshot/Vice_City_26.jpg",
-  "media_rockstar/screenshot/Jason_Duval_08.jpg",
-  "media_rockstar/screenshot/Port_Gellhorn_07.jpg",
-  "media_rockstar/screenshot/Real_Dimez_01.jpg",
-  "media_rockstar/screenshot/Mount_Kalaga_National_Park_02.jpg",
   "media_rockstar/screenshot/Mount_Kalaga_National_Park_03.jpg",
   "media_rockstar/screenshot/Jason_Duval_05.jpg",
   "media_rockstar/screenshot/Real_Dimez_04.jpg",
@@ -1153,7 +1165,21 @@
   "media_rockstar/screenshot/Jason_and_Lucia_17.jpg",
   "media_rockstar/screenshot/Grassrivers_02.jpg",
   "media_rockstar/artwork/Raul_Bautista_ultrawide.jpg",
-  "media_rockstar/screenshot/Jason_and_Lucia_02.jpg"
+  "media_rockstar/screenshot/Jason_and_Lucia_02.jpg",
+  "media_rockstar/screenshot/Vice_City_07.jpg",
+  "media_rockstar/screenshot/Raul_Bautista_01.jpg",
+  "media_rockstar/screenshot/Lucia_Caminos_02.jpg",
+  "media_rockstar/screenshot/Vice_City_21.jpg",
+  "media_rockstar/screenshot/Cal_Hampton_04.jpg",
+  "media_rockstar/screenshot/Real_Dimez_04.jpg",
+  "media_rockstar/screenshot/Vice_City_10.jpg",
+  "media_rockstar/screenshot/Leonida_Keys_06.jpg",
+  "media_rockstar/screenshot/Leonida_Keys_01.jpg",
+  "media_rockstar/screenshot/Leonida_Keys_02.jpg",
+  "media_rockstar/screenshot/Vice_City_19.jpg",
+  "media_rockstar/screenshot/Ambrosia_04.jpg",
+  "media_rockstar/screenshot/Vice_City_16.jpg",
+  "media_rockstar/screenshot/Vice_City_14.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
@@ -1293,9 +1319,17 @@
   {
    "id": "drequan",
    "data": "2026-11-29"
+  },
+  {
+   "id": "g-bagagliaio",
+   "data": "2026-11-30"
+  },
+  {
+   "id": "keys",
+   "data": "2026-11-30"
   }
  ],
  "caricamenti": {
-  "2026-11-01": 86
+  "2026-11-01": 88
  }
 }
