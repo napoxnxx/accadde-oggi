@@ -1117,6 +1117,32 @@
    "data": "2026-11-28",
    "slot": "notizia",
    "uscita": "2026-11-28T13:00:00+01:00"
+  },
+  {
+   "formato": "chicca",
+   "titolo": "Quando Rockstar ha detto sì 🕵️ GTA 6",
+   "descrizione": "Rockstar ha confermato il nuovo GTA nel febbraio 2022.\nDisse solo che lo sviluppo era già a buon punto.\nIl primo trailer è arrivato quasi due anni dopo.\n\nDa quanto lo aspetti? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nRaccontato con parole nostre. Fonti:\n- Wikipedia: https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Jason_and_Lucia_05.jpg, DreQuan_Priest_02.jpg, Lucia_Caminos_05.jpg, Vice_City_01.jpg, DreQuan_Priest_phone.jpg, Jason_Duval_14.jpg, Leonida_Keys_04.jpg, Jason_Duval_Video_Clip.mp4, Cal_Hampton_Video_Clip.mp4, Raul_Bautista_Video_Clip.mp4, Brian_Heder_Video_Clip.mp4, Lucia_Caminos_Video_Clip.mp4, Real_Dimez_Video_Clip.mp4, Boobie_Ike_Video_Clip.mp4",
+   "tag": "sera-2026-12-01",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/sera-2026-12-01/sera-2026-12-01.mp4",
+   "dimensione": 13990118,
+   "preparato": "2026-11-28 00:02",
+   "data": "2026-12-01",
+   "slot": "sera",
+   "uscita": "2026-12-01T19:00:00+01:00"
+  },
+  {
+   "formato": "chicca",
+   "titolo": "Il telefono di Jason e Lucia 🎮 GTA 6",
+   "descrizione": "Quando tiri fuori il telefono, la telecamera inquadra il cellulare in mano.\nJason e Lucia si scrivono messaggi di tutti i giorni.\nTipo ricordarsi di chiudere la porta o dire che vanno a letto.\n\nTi piace questo dettaglio? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nRaccontato con parole nostre. Fonti:\n- IGN (intervista a Rockstar): https://www.vice.com/en/article/rockstar-reveals-35-new-gta-6-features-ign/\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Immagini: Jason_and_Lucia_02_portrait.jpg, Lucia_Caminos_01.jpg, Jason_Duval_05.jpg, Vice_City_20.jpg, VINTAGE_VICE_CITY_WEAPON_PATTERN_01.jpg, Vice_City_03.jpg, Grassrivers_05.jpg, Cal_Hampton_Video_Clip.mp4, Real_Dimez_Video_Clip.mp4, Raul_Bautista_Video_Clip.mp4, Lucia_Caminos_Video_Clip.mp4, Boobie_Ike_Video_Clip.mp4, Brian_Heder_Video_Clip.mp4, Jason_Duval_Video_Clip.mp4",
+   "tag": "notte-2026-12-01",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notte-2026-12-01/notte-2026-12-01.mp4",
+   "dimensione": 15260990,
+   "preparato": "2026-11-28 00:04",
+   "data": "2026-12-01",
+   "slot": "notte",
+   "uscita": "2026-12-01T21:30:00+01:00"
   }
  ],
  "riserva": [
@@ -1142,20 +1168,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/screenshot/Vice_City_17.jpg",
-  "media_rockstar/screenshot/Vice_City_11.jpg",
-  "media_rockstar/vintage/VINTAGE_VICE_CITY_WEAPON_PATTERN_01.jpg",
-  "media_rockstar/screenshot/Mount_Kalaga_National_Park_05.jpg",
-  "media_rockstar/screenshot/Lucia_Caminos_03.jpg",
-  "media_rockstar/screenshot/Vice_City_07.jpg",
-  "media_rockstar/screenshot/Grassrivers_07.jpg",
-  "media_rockstar/screenshot/Raul_Bautista_03.jpg",
-  "media_rockstar/screenshot/Jason_and_Lucia_10.jpg",
-  "media_rockstar/screenshot/Jason_and_Lucia_19.jpg",
-  "media_rockstar/screenshot/Jason_and_Lucia_16.jpg",
-  "media_rockstar/screenshot/Mount_Kalaga_National_Park_01.jpg",
-  "media_rockstar/screenshot/Lucia_Caminos_04.jpg",
-  "media_rockstar/screenshot/Grassrivers_01.jpg",
   "media_rockstar/screenshot/Vice_City_23.jpg",
   "media_rockstar/screenshot/Cal_Hampton_03.jpg",
   "media_rockstar/artwork/Brian_Heder_tablet.jpg",
@@ -1201,7 +1213,21 @@
   "media_rockstar/screenshot/Lucia_Caminos_04.jpg",
   "media_rockstar/artwork/Raul_Bautista_portrait.jpg",
   "media_rockstar/artwork/Jason_Lucia_Lock_And_Load_phone.jpg",
-  "media_rockstar/screenshot/Jason_and_Lucia_09.jpg"
+  "media_rockstar/screenshot/Jason_and_Lucia_09.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_05.jpg",
+  "media_rockstar/screenshot/DreQuan_Priest_02.jpg",
+  "media_rockstar/screenshot/Lucia_Caminos_05.jpg",
+  "media_rockstar/screenshot/Vice_City_01.jpg",
+  "media_rockstar/artwork/DreQuan_Priest_phone.jpg",
+  "media_rockstar/screenshot/Jason_Duval_14.jpg",
+  "media_rockstar/screenshot/Leonida_Keys_04.jpg",
+  "media_rockstar/artwork/Jason_and_Lucia_02_portrait.jpg",
+  "media_rockstar/screenshot/Lucia_Caminos_01.jpg",
+  "media_rockstar/screenshot/Jason_Duval_05.jpg",
+  "media_rockstar/screenshot/Vice_City_20.jpg",
+  "media_rockstar/vintage/VINTAGE_VICE_CITY_WEAPON_PATTERN_01.jpg",
+  "media_rockstar/screenshot/Vice_City_03.jpg",
+  "media_rockstar/screenshot/Grassrivers_05.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
@@ -1349,9 +1375,17 @@
   {
    "id": "keys",
    "data": "2026-11-30"
+  },
+  {
+   "id": "s-conferma",
+   "data": "2026-12-01"
+  },
+  {
+   "id": "g-telefono",
+   "data": "2026-12-01"
   }
  ],
  "caricamenti": {
-  "2026-11-01": 89
+  "2026-11-01": 91
  }
 }

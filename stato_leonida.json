@@ -1,24 +1,6 @@
 {
  "scorta": [
   {
-   "data": "2026-11-27",
-   "ora": "13:00",
-   "formato": "notizia",
-   "titolo": "GTA 6: Rockstar spiega perché non puoi rigiocare le missioni"
-  },
-  {
-   "data": "2026-11-27",
-   "ora": "21:30",
-   "formato": "chicca",
-   "titolo": "GTA 6 senza Dan Houser 🕵️ GTA 6"
-  },
-  {
-   "data": "2026-11-27",
-   "ora": "19:00",
-   "formato": "chicca",
-   "titolo": "Chi è Cal Hampton? 🕶️ GTA 6"
-  },
-  {
    "data": "2026-11-28",
    "ora": "13:00",
    "formato": "notizia",
@@ -59,10 +41,22 @@
    "ora": "19:00",
    "formato": "chicca",
    "titolo": "Il bagagliaio serve davvero 🎮 GTA 6"
+  },
+  {
+   "data": "2026-12-01",
+   "ora": "21:30",
+   "formato": "chicca",
+   "titolo": "Il telefono di Jason e Lucia 🎮 GTA 6"
+  },
+  {
+   "data": "2026-12-01",
+   "ora": "19:00",
+   "formato": "chicca",
+   "titolo": "Quando Rockstar ha detto sì 🕵️ GTA 6"
   }
  ],
  "riserva": 2,
- "caricamenti_del_mese": "89 su 96",
+ "caricamenti_del_mese": "91 su 96",
  "avvisi": [],
  "media_ufficiali": {
   "screenshot": 138,
@@ -93,5 +87,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-27 16:03"
+ "aggiornato": "2026-11-28 00:04"
 }
