@@ -20,6 +20,12 @@
   },
   {
    "data": "2026-11-28",
+   "ora": "13:00",
+   "formato": "notizia",
+   "titolo": "GTA 6: il modello di guida curato con esperti di Gran Turismo"
+  },
+  {
+   "data": "2026-11-28",
    "ora": "21:30",
    "formato": "chicca",
    "titolo": "Non serve per forza uccidere 🎮 GTA 6"
@@ -56,7 +62,7 @@
   }
  ],
  "riserva": 2,
- "caricamenti_del_mese": "88 su 96",
+ "caricamenti_del_mese": "89 su 96",
  "avvisi": [],
  "media_ufficiali": {
   "screenshot": 138,
@@ -87,5 +93,5 @@
    }
   ]
  },
- "aggiornato": "2026-11-27 00:04"
+ "aggiornato": "2026-11-27 16:03"
 }

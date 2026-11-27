@@ -1096,6 +1096,25 @@
    "data": "2026-11-30",
    "slot": "notte",
    "uscita": "2026-11-30T21:30:00+01:00"
+  },
+  {
+   "formato": "notizia",
+   "titolo": "GTA 6: il modello di guida curato con esperti di Gran Turismo",
+   "descrizione": "Il modello di guida di GTA 6 è stato curato con il contributo di esperti di corse.\nTra i collaboratori ci sono persone che arrivano dal mondo di Gran Turismo.\nRockstar ha coinvolto questi esperti nel lavoro sulla fisica di guida.\n\nTu cosa ne pensi? Scrivilo nei commenti 👇\n\nOgni giorno notizie e immagini ufficiali di GTA 6: iscriviti per non perderti niente.\n\nNotizia confermata da almeno 3 testate diverse e raccontata con parole nostre. Fonti:\n- Everyeye.it: https://www.everyeye.it/notizie/gta-6-modello-guida-curato-piloti-esperti-pro-gran-turismo-913986.html\n- IGN: https://www.ign.com/articles/former-gran-turismo-world-series-competitor-helped-tune-gta-6-car-physics\n- Multiplayer.it: https://multiplayer.it/notizie/il-modello-di-guida-in-gta-6-e-stato-elaborato-da-esperti-provenienti-anche-da-gran-turismo.html\n\nImmagini e clip ufficiali: Rockstar Games (rockstargames.com/VI/media). Musica originale. Canale di fan non affiliato a Rockstar Games né a Take-Two.\n\n#gta6 #gtavi #gta #rockstargames #shorts",
+   "dettagli": "Fonti: Everyeye.it, IGN, Multiplayer.it",
+   "tag": "notizia-2026-11-28",
+   "url": "https://github.com/napoxnxx/accadde-oggi/releases/download/notizia-2026-11-28/notizia-2026-11-28.mp4",
+   "dimensione": 17523235,
+   "preparato": "2026-11-27 16:03",
+   "link": [
+    "https://www.everyeye.it/notizie/gta-6-modello-guida-curato-piloti-esperti-pro-gran-turismo-913986.html",
+    "https://www.ign.com/articles/former-gran-turismo-world-series-competitor-helped-tune-gta-6-car-physics",
+    "https://multiplayer.it/notizie/il-modello-di-guida-in-gta-6-e-stato-elaborato-da-esperti-provenienti-anche-da-gran-turismo.html"
+   ],
+   "chiave": "soggetti:gran turismo|gta 6|rockstar",
+   "data": "2026-11-28",
+   "slot": "notizia",
+   "uscita": "2026-11-28T13:00:00+01:00"
   }
  ],
  "riserva": [
@@ -1121,13 +1140,6 @@
   }
  ],
  "media_usati": [
-  "media_rockstar/screenshot/Mount_Kalaga_National_Park_03.jpg",
-  "media_rockstar/screenshot/Jason_Duval_05.jpg",
-  "media_rockstar/screenshot/Real_Dimez_04.jpg",
-  "media_rockstar/screenshot/Jason_and_Lucia_15.jpg",
-  "media_rockstar/artwork/Boobie_Ike_portrait.jpg",
-  "media_rockstar/screenshot/Boobie_Ike_03.jpg",
-  "media_rockstar/screenshot/Boobie_Ike_01.jpg",
   "media_rockstar/screenshot/Vice_City_17.jpg",
   "media_rockstar/screenshot/Vice_City_11.jpg",
   "media_rockstar/vintage/VINTAGE_VICE_CITY_WEAPON_PATTERN_01.jpg",
@@ -1180,13 +1192,20 @@
   "media_rockstar/screenshot/Vice_City_19.jpg",
   "media_rockstar/screenshot/Ambrosia_04.jpg",
   "media_rockstar/screenshot/Vice_City_16.jpg",
-  "media_rockstar/screenshot/Vice_City_14.jpg"
+  "media_rockstar/screenshot/Vice_City_14.jpg",
+  "media_rockstar/artwork/Boobie_Ike_tablet.jpg",
+  "media_rockstar/screenshot/Leonida_Keys_03.jpg",
+  "media_rockstar/screenshot/Grassrivers_03.jpg",
+  "media_rockstar/screenshot/Lucia_Caminos_04.jpg",
+  "media_rockstar/artwork/Raul_Bautista_portrait.jpg",
+  "media_rockstar/artwork/Jason_Lucia_Lock_And_Load_phone.jpg",
+  "media_rockstar/screenshot/Jason_and_Lucia_09.jpg"
  ],
  "tentativi_notizia": {
   "data": "2026-11-15",
   "notizia": 1,
-  "2026-11-26:notizia": 1,
-  "2026-11-27:notizia": 2
+  "2026-11-27:notizia": 2,
+  "2026-11-28:notizia": 1
  },
  "chicche_usate": [
   {
@@ -1331,6 +1350,6 @@
   }
  ],
  "caricamenti": {
-  "2026-11-01": 88
+  "2026-11-01": 89
  }
 }
