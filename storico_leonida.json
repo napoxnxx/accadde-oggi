@@ -954,7 +954,8 @@
    "preparato": "2026-11-24 00:04",
    "data": "2026-11-27",
    "slot": "notte",
-   "uscita": "2026-11-27T21:30:00+01:00"
+   "uscita": "2026-11-27T21:30:00+01:00",
+   "online": true
   },
   {
    "formato": "notizia",
